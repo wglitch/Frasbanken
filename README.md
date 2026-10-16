@@ -33,9 +33,9 @@ npm start
 
 ## Publicera på GitHub Pages
 
-Nuvarande publicering: **Settings → Pages → Deploy from a branch → main → / (root)**. Ändringar på main publicerar appen automatiskt. `.nojekyll` gör att filerna serveras som en vanlig statisk webbplats. Alla appvägar är relativa och fungerar under `/Frasbanken/`.
+Den senaste lyckade publiceringen gjordes med **GitHub Actions**, via Publicera Frasbanken på grenen main. Samma flöde publicerar nu uppdateringar vid push till main. Alla appvägar är relativa och fungerar under `/Frasbanken/`.
 
-GitHub Actions är förberett i `.github/workflows/pages.yml`, men startas nu enbart manuellt för att inte konkurrera med publiceringen från main. Om vi senare byter: välj **GitHub Actions** som källa under Pages och kör **Actions → Publicera Frasbanken → Run workflow**. Flödet testar koden och publicerar endast appfilerna. Ingen backend eller API-nyckel krävs.
+Arbetsflödet finns i `.github/workflows/pages.yml` och kan även startas manuellt via **Actions → Publicera Frasbanken → Run workflow**. Välj **GitHub Actions** som källa under Settings → Pages. Flödet testar koden och publicerar endast appfilerna. Ingen backend eller API-nyckel krävs. Direktpublicering från main och rotmappen är också tekniskt möjlig eftersom appen saknar byggsteg och innehåller `.nojekyll`, men ska inte användas parallellt med Actions.
 
 ## Historik och integritet
 

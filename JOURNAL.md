@@ -1,6 +1,6 @@
 # Current Next Step
 
-Provkör Frasbanken 2.0 på fysisk iPhone/Safari, särskilt släppytornas precision och svepgester. Samla återkoppling på kortkänslan. Nya konstverk tas fram separat; fortsätt publicera direkt från main och / (root).
+Provkör Frasbanken 2.0 på fysisk iPhone/Safari, särskilt släppytornas precision och svepgester. Samla återkoppling på kortkänslan. Nya konstverk tas fram separat. Den senaste lyckade publiceringen visade sig använda det förberedda Actions-flödet; 2.0 publiceras därför samma väg från main.
 
 # Elevator Pitch
 Frasbanken är en lugn repetitionsplats där samtalsfraser får bli en naturlig del av användarens eget språk.
@@ -15,7 +15,7 @@ Learned: Ångring behöver återställa både skav och senaste tidpunkt, eller t
 
 Next: Publicera den verifierade ändringen på main och kontrollera Pages. Därefter fysisk iPhone/Safari-kontroll med användaren.
 
-Open Questions: Fysisk iPhone/Safari och nya konstverk återstår. Pages fortsätter från main; det förberedda Actions-flödet startas nu bara manuellt så att det inte konkurrerar med nuvarande publicering.
+Open Questions: Fysisk iPhone/Safari och nya konstverk återstår. Kontroll av GitHub visade att den senaste lyckade publiceringen kördes av Publicera Frasbanken (run 38929568455). Actions-flödet behåller därför automatisk publicering från main, och ingen Pages-inställning har ändrats av agenten.
 
 ## 2026-10-16 – Första versionen live, session avslutad
 
