@@ -1,0 +1,2379 @@
+{
+  "schemaVersion": 1,
+  "title": "Frasbanken – inventering",
+  "status": "utkast för granskning",
+  "categories": [
+    {
+      "id": "utforska",
+      "name": "Utforskaren",
+      "image": "magnifying-glass.webp"
+    },
+    {
+      "id": "spegla",
+      "name": "Spegeln",
+      "image": "mirror.webp"
+    },
+    {
+      "id": "pausa",
+      "name": "Pausknappen",
+      "image": "pause-button.webp"
+    },
+    {
+      "id": "grans",
+      "name": "Muren",
+      "image": "wall.webp"
+    },
+    {
+      "id": "styra",
+      "name": "Fyren",
+      "image": "lighthouse.webp"
+    },
+    {
+      "id": "avsluta",
+      "name": "Utgången",
+      "image": "open-door.webp"
+    },
+    {
+      "id": "besluta",
+      "name": "Vägskälet",
+      "image": null
+    },
+    {
+      "id": "delegera",
+      "name": "Stafettpinnen",
+      "image": null
+    },
+    {
+      "id": "relation",
+      "name": "Bron",
+      "image": null
+    },
+    {
+      "id": "aterkoppla",
+      "name": "Spegelverkstaden",
+      "image": null
+    },
+    {
+      "id": "konflikt",
+      "name": "Stormen",
+      "image": null
+    },
+    {
+      "id": "kommunicera",
+      "name": "Scenen",
+      "image": null
+    }
+  ],
+  "cards": [
+    {
+      "id": "F001",
+      "type": "template",
+      "text": "Berätta mer om…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 1, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F002",
+      "type": "template",
+      "text": "Vad har bidragit till…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 1, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F003",
+      "type": "template",
+      "text": "Vad fick dig att…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 1, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F004",
+      "type": "phrase",
+      "text": "Jag vill inte svara på den frågan.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 2, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F005",
+      "type": "phrase",
+      "text": "Tack för att ni lyssnade.",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 2, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F006",
+      "type": "phrase",
+      "text": "Det har inte du med att göra, nästa fråga.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 2, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F007",
+      "type": "template",
+      "text": "Hur upplevde du…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 3, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F008",
+      "type": "template",
+      "text": "När märkte du att…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 3, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F009",
+      "type": "template",
+      "text": "Hur tänkte du…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 3, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F010",
+      "type": "phrase",
+      "text": "Låt mig få återkomma till dig.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 4, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F011",
+      "type": "phrase",
+      "text": "Vi får återuppta detta ett annat tillfälle.",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 4, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F012",
+      "type": "phrase",
+      "text": "Vad får dig att fråga mig det?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 4, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F013",
+      "type": "template",
+      "text": "Hur kändes det…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 5, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F014",
+      "type": "phrase",
+      "text": "Vad hände sen?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 5, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F015",
+      "type": "phrase",
+      "text": "Hur tror du de andra uppfattade det som hände?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 5, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F016",
+      "type": "phrase",
+      "text": "Jag stoppar där.",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 6, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F017",
+      "type": "phrase",
+      "text": "Det känns obekvämt när du frågar det.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 6, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F018",
+      "type": "phrase",
+      "text": "Hur skulle du själv svara på det?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 1, rad 6, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F019",
+      "type": "phrase",
+      "text": "Vilka känslor var starkast i det här?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 1, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F020",
+      "type": "phrase",
+      "text": "Det låter som det finns mer här",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 1, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F021",
+      "type": "phrase",
+      "text": "Vad skulle du ha gjort annorlunda?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 1, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F022",
+      "type": "template",
+      "text": "Jag är inte säker på vad du frågar egentligen…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 2, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F023",
+      "type": "phrase",
+      "text": "Det vet inte jag.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 2, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F024",
+      "type": "template",
+      "text": "Det jag försöker säga är…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 2, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F025",
+      "type": "phrase",
+      "text": "Hur känner du nu?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 3, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F026",
+      "type": "template",
+      "text": "Vad har du lärt dig av…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 3, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F027",
+      "type": "template",
+      "text": "Vad tänkte du när…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 3, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F028",
+      "type": "template",
+      "text": "Det måste jag få tänka på en stund. Ge mig ett ögonblick…",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 4, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F029",
+      "type": "phrase",
+      "text": "Det jag ska säga nu kan vara svårt att greppa så ha lite tålamod med mig.",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 4, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F030",
+      "type": "template",
+      "text": "Det viktigaste med det här är…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 4, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F031",
+      "type": "template",
+      "text": "Vilka känslor dyker upp när du pratar om…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 5, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F032",
+      "type": "template",
+      "text": "Vad är den största lärdomen av…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 5, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F033",
+      "type": "phrase",
+      "text": "Vad betyder det här för dig?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 5, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F034",
+      "type": "phrase",
+      "text": "Det kan inte jag svara på.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 6, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F035",
+      "type": "template",
+      "text": "Min poäng är…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 6, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F036",
+      "type": "template",
+      "text": "Ett annat sätt att säga det på är…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 2, rad 6, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F037",
+      "type": "phrase",
+      "text": "Vad tror du det här säger om dig?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 1, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F038",
+      "type": "phrase",
+      "text": "Vad hade du velat säga till dig själv då?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 1, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F039",
+      "type": "template",
+      "text": "Det låter som det finns fler lager här…",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 1, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F040",
+      "type": "template",
+      "text": "För att summera…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 2, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F041",
+      "type": "phrase",
+      "text": "Det är några andra här som jag också vill prata med, men först vill jag fråga dig om det där du sa.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 2, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F042",
+      "type": "template",
+      "text": "Av anledning X lämnar jag den här konversationen nu.",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 2, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F043",
+      "type": "phrase",
+      "text": "Vad skulle du säga är den röda tråden? Jag kommer lämna det",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 3, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F044",
+      "type": "phrase",
+      "text": "Hur tänker du nu?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 3, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F045",
+      "type": "method",
+      "text": "Spegla (återupprepa några utvalda ord)",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 3, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F046",
+      "type": "phrase",
+      "text": "här samtalet nu, när du är redo att fortsätta på ett konstruktivt sätt kan du höra av dig.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 4, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F047",
+      "type": "phrase",
+      "text": "Jag respekterar mig själv för mycket för att acceptera det här.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 4, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F048",
+      "type": "template",
+      "text": "Intressant fråga, men det viktiga här är ju...",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 4, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F049",
+      "type": "phrase",
+      "text": "Vad får dig att tro att du har rätt?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 5, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F050",
+      "type": "template",
+      "text": "Jag vill gärna gräva lite djupare när det gäller…",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 5, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F051",
+      "type": "template",
+      "text": "Det låter som…",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 5, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F052",
+      "type": "phrase",
+      "text": "Vet du, jag har tänkt på det och det funkar inte för mig.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 6, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F053",
+      "type": "phrase",
+      "text": "Jag känner mig attackerad/kritiserad kan du säga det där på ett annat sätt?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 6, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F054",
+      "type": "phrase",
+      "text": "Behandla mig inte som en karikatyr, tillskriv mig inte åsikter som jag inte har uttryckt.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 6, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F055",
+      "type": "template",
+      "text": "Det verkar som…",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 1, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F056",
+      "type": "template",
+      "text": "Om jag förstår dig rätt så…",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 1, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F057",
+      "type": "template",
+      "text": "När du sa … så förändrades ditt tonfall, hur kommer det sig?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 1, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F058",
+      "type": "template",
+      "text": "Det är inte mitt ansvar, du borde prata med X.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 2, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F059",
+      "type": "phrase",
+      "text": "Hörde jag dig rätt, kan du upprepa?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 2, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F060",
+      "type": "phrase",
+      "text": "Det finns många sätt att göra rätt på, men det där var inte ett av dem.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 2, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F061",
+      "type": "template",
+      "text": "Det ser ut som…",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 3, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F062",
+      "type": "template",
+      "text": "Det får mig att tänka på… (kort) plus fråga tillbaka (typ: vad har du för råd?)",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 3, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F063",
+      "type": "template",
+      "text": "Jag hör att…",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 3, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F064",
+      "type": "phrase",
+      "text": "Det var olyckligt (att det hände/att du valde dom orden)",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 4, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F065",
+      "type": "template",
+      "text": "Det vill jag inte svara på för att…",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 4, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F066",
+      "type": "method",
+      "text": "Var berättarrösten. Beskriv sker som vad nu precis",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 4, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F067",
+      "type": "template",
+      "text": "Så det du säger är…",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 5, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F068",
+      "type": "template",
+      "text": "Du nämnde … berätta mer om det.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 5, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F069",
+      "type": "method",
+      "text": "VAR TYST (och vänta på fortsättning) Vid oacceptabla beteenden: beteendet säg hen hur neutralt och säg",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 5, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F070",
+      "type": "template",
+      "text": "Låt mig förtydliga vad jag hörde innan jag svarar...",
+      "primaryCategory": "spegla",
+      "functions": [
+        "spegla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 6, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F071",
+      "type": "phrase",
+      "text": "Jag ska ta en stund och reflektera över hur jag ska svara på det här.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 6, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F072",
+      "type": "phrase",
+      "text": "(\"Din göra hand rätt. ska axel, det gillar min på är bort den.\") inte jag, ta",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 4, rad 6, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F073",
+      "type": "template",
+      "text": "Jag vill gå tillbaka till det du sa tidigare om…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 1, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F074",
+      "type": "phrase",
+      "text": "Vilka är dina bästa argument?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 1, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F075",
+      "type": "phrase",
+      "text": "Vad är de största riskerna med det perspektivet?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 1, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F076",
+      "type": "phrase",
+      "text": "Jag förstår inte frågan, och skulle uppskatta om du kunde förtydliga den.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 2, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F077",
+      "type": "phrase",
+      "text": "Det känns som att den här konversationen inte leder någonvart just nu, jag föreslår en paus.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 2, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F078",
+      "type": "phrase",
+      "text": "Jag har svårt att förstå hur det du säger är relevant för det vi pratar om, kan vi komma tillbaka till ämnet?",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 2, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F079",
+      "type": "phrase",
+      "text": "Varför då?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 3, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F080",
+      "type": "phrase",
+      "text": "Vad döljer du?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 3, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F081",
+      "type": "phrase",
+      "text": "Hur kan det här påverka andra på lång sikt? Jag förstår att du har",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 3, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F082",
+      "type": "phrase",
+      "text": "Jag vet vad jag såg/hörde/upplevde (Återupprepa vid behov)",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 4, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F083",
+      "type": "phrase",
+      "text": "Hur menar du då?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 4, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F084",
+      "type": "phrase",
+      "text": "starka känslor kring det här, men det är inte acceptabelt att uttrycka sig på det sättet.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 4, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F085",
+      "type": "phrase",
+      "text": "Varför försvarar du det här så hårt?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 5, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F086",
+      "type": "phrase",
+      "text": "Hjälp mig förstå hur du kom fram till det?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 5, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F087",
+      "type": "phrase",
+      "text": "Hur säker är du på att det här stämmer?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 5, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F088",
+      "type": "phrase",
+      "text": "Jag hör vad du säger, men jag håller inte med och det är okej.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 6, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F089",
+      "type": "phrase",
+      "text": "Jag uppskattar att du delar med dig, men jag är inte säker på att det här är rätt forum.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 6, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F090",
+      "type": "phrase",
+      "text": "Jag hör vad du säger, men sättet du uttrycker det på känns respektlöst.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 5, rad 6, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F091",
+      "type": "phrase",
+      "text": "Vad tänker du att de som inte håller med dig har missförstått?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 1, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F092",
+      "type": "phrase",
+      "text": "Om det inte fungerade, vad skulle nästa steg bli?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 1, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F093",
+      "type": "phrase",
+      "text": "Hur kändes det?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 1, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F094",
+      "type": "phrase",
+      "text": "Om vi ska fortsätta den här diskussionen behöver vi hålla en bättre ton.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 2, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F095",
+      "type": "phrase",
+      "text": "Det är intressant att vi ser på det här på olika sätt, jag uppskattar att höra din syn.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 2, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F096",
+      "type": "template",
+      "text": "När du gör/säger X så får det mig att känna Y, jag skulle uppskatta om . du gjorde Z istället",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 2, kolumn 3",
+      "notes": null
+    },
+    {
+      "id": "F097",
+      "type": "phrase",
+      "text": "Vad skulle behöva hända för att du ska ändra uppfattning?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 3, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F098",
+      "type": "phrase",
+      "text": "Hur skulle du beskriva det för någon som var skeptisk?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 3, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F099",
+      "type": "phrase",
+      "text": "Det där känns som en personlig attack, och jag ber dig att sluta.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 4, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F100",
+      "type": "phrase",
+      "text": "Vi behöver inte vara överens om allt för att ha en bra dialog.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 4, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F101",
+      "type": "phrase",
+      "text": "Vad ser du som det största motargumentet?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 5, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F102",
+      "type": "phrase",
+      "text": "Hur gick dina tankar där i den stunden?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 5, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "F103",
+      "type": "phrase",
+      "text": "Det är okej att vi tycker olika, men det är inte okej att uttrycka sig på det sättet.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 6, kolumn 1",
+      "notes": null
+    },
+    {
+      "id": "F104",
+      "type": "phrase",
+      "text": "Att vi tycker olika kan vara en styrka, det ger fler perspektiv.",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 6, rad 6, kolumn 2",
+      "notes": null
+    },
+    {
+      "id": "W001",
+      "type": "method",
+      "text": "SOAR: Source – Observation – Action – Result",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W002",
+      "type": "method",
+      "text": "Freestyle-tal: varför är vi här – gemensam upplevelse – vad har jag att säga – call to action",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W003",
+      "type": "method",
+      "text": "Bryt babblet: interrupt – yes-set – compliance-set – recap",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W004",
+      "type": "method",
+      "text": "Feel – Felt – Found",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W005",
+      "type": "method",
+      "text": "DESC: Describe – Effects – Say – Consequence",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W006",
+      "type": "method",
+      "text": "1–2–3: en sak, två fördjupningar, tre konkreta steg",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W007",
+      "type": "method",
+      "text": "Tactical verbal pattern: Först av allt… För det andra… Och till sist…",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W008",
+      "type": "method",
+      "text": "Go-to-komplimanger med fokus på ansträngning",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W009",
+      "type": "method",
+      "text": "Mötesstrategier: summarize – clarify – be the source of truth",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W010",
+      "type": "method",
+      "text": "STAR: Situation – Task – Action – Result",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W011",
+      "type": "method",
+      "text": "Competence cues: avslappnade axlar, högt huvud, steeple fingers",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W012",
+      "type": "method",
+      "text": "Recover from mistakes: acceptera, slappna av, återgå till nuet, kompensera inte",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W013",
+      "type": "method",
+      "text": "CRAC: Conclusion – Rule – Analysis – Conclusion",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W014",
+      "type": "method",
+      "text": "FORD: Family – Occupation – Recreation – Dreams",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W015",
+      "type": "method",
+      "text": "Gester: iconic – metaforic – deictic – pragmatic – beat",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W016",
+      "type": "method",
+      "text": "Warmth cues: triple nod – head tilt – vokalisera – savor smile",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W017",
+      "type": "method",
+      "text": "Story: krok – show don’t tell – konflikt",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W018",
+      "type": "phrase",
+      "text": "Skulle det vara helt omöjligt?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W019",
+      "type": "template",
+      "text": "Är det helt galet att tänka sig…?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W020",
+      "type": "template",
+      "text": "Är det helt uteslutet att…?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W021",
+      "type": "template",
+      "text": "Skulle det ge väldigt stora konsekvenser om…?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W022",
+      "type": "phrase",
+      "text": "Är det orimligt?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "N001",
+      "type": "method",
+      "text": "Svara på oväntade frågor: be om förtydligande – upprepa kärnan – experience eller exploration",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N002",
+      "type": "template",
+      "text": "Det får mig att tänka på…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N003",
+      "type": "template",
+      "text": "Om jag skulle göra det skulle jag gå till väga så här…",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N004",
+      "type": "phrase",
+      "text": "Jag vet inte, men jag kan ta reda på det och återkomma om någon timme.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N005",
+      "type": "method",
+      "text": "Avsluta socialt samtal: spegla – pivot – ge en positiv kontakt – jagbudskap och gå vidare",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N006",
+      "type": "phrase",
+      "text": "Det var trevligt att prata med dig. Jag ska vidare nu.",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N007",
+      "type": "phrase",
+      "text": "Jag ska röra på mig.",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N008",
+      "type": "phrase",
+      "text": "Tack för ditt tålamod.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N009",
+      "type": "phrase",
+      "text": "Tack för att du lyssnar.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N010",
+      "type": "phrase",
+      "text": "Tack för att du frågade.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N011",
+      "type": "method",
+      "text": "När någon frågar hur du mår: känsla – handling – tacksamhet",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N012",
+      "type": "phrase",
+      "text": "Jag är sur över något som jag inte vill prata om, och jag ville inte säga att allt var bra. Tack för att du frågade.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N013",
+      "type": "phrase",
+      "text": "Kan du upprepa det?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N014",
+      "type": "phrase",
+      "text": "Kan du säga det igen?",
+      "primaryCategory": "utforska",
+      "functions": [
+        "utforska"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N015",
+      "type": "phrase",
+      "text": "Okej.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N016",
+      "type": "phrase",
+      "text": "Jag släpper det.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N017",
+      "type": "phrase",
+      "text": "Det står för dig, jag tar inte det.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N018",
+      "type": "method",
+      "text": "DOR: Deposit (varm sann inledning) – Own (jagbudskap) – Room (utrymme för svar)",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N019",
+      "type": "phrase",
+      "text": "Jag gillar att jobba med dig, det är därför jag tar upp det här. När mötet börjar och du inte är där så täcker jag upp och jag börjar känna mig utnyttjad. Vad tänker du om det?",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N020",
+      "type": "method",
+      "text": "Försvara beslutet, inte dig själv.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N021",
+      "type": "template",
+      "text": "Bedömningen jag gjorde var…",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N022",
+      "type": "template",
+      "text": "Prioriteringen jag gjorde var…",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N023",
+      "type": "template",
+      "text": "Avvägningen jag gjorde var…",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N024",
+      "type": "template",
+      "text": "Slutsatsen jag drog var…",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N025",
+      "type": "method",
+      "text": "Evidence – Conclusion – Decision: underlag – slutsats – beslut",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N026",
+      "type": "template",
+      "text": "På grund av X blev min slutsats Y och beslutet jag fattade var Z.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N027",
+      "type": "template",
+      "text": "Beslutet jag fattade var X, baserat på Y.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N028",
+      "type": "template",
+      "text": "Beslutet jag fattade var fel. Nästa gång ska jag basera det på…",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N029",
+      "type": "phrase",
+      "text": "Vill du veta varför det blev så eller ska vi prata om vad vi ska göra annorlunda nästa gång?",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N030",
+      "type": "phrase",
+      "text": "Om det inte var det rätta beslutet, låt oss prata om vad det skulle ha baserats på.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N031",
+      "type": "template",
+      "text": "Det var det beslut jag fattade. Här är nästa steg…",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N032",
+      "type": "method",
+      "text": "Acceptera inte en felaktig premiss.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N033",
+      "type": "phrase",
+      "text": "Det är beslutet jag har landat i. Nästa fråga.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N034",
+      "type": "phrase",
+      "text": "Du måste inte hålla med om beslutet, men det är beslutet som gäller.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N035",
+      "type": "phrase",
+      "text": "Tack, det betyder mycket – när det kommer från dig.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N036",
+      "type": "phrase",
+      "text": "Vad är det du tittar efter, så kan jag kontrollera det extra noga nästa gång?",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N037",
+      "type": "phrase",
+      "text": "Kan du förklara vad du ändrade så att du inte behöver göra om det nästa gång?",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N038",
+      "type": "phrase",
+      "text": "Jag tänkte göra så här klockan 13 om jag inte hör något annat från dig.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N039",
+      "type": "template",
+      "text": "Jag bestämde X för att Y. Vill du vara delaktig i sådana beslut?",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    }
+  ]
+}

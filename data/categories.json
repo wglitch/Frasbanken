@@ -1,0 +1,110 @@
+[
+  {
+    "id": "utforska",
+    "name": "Utforskaren",
+    "description": "Ställa frågor och förstå",
+    "icon": "⌕",
+    "tint": "#e0e6c7",
+    "image": "assets/utforskaren.svg",
+    "alt": "Ett stort förstoringsglas bland böljande gröna kullar."
+  },
+  {
+    "id": "spegla",
+    "name": "Spegeln",
+    "description": "Lyssna, spegla och bekräfta",
+    "icon": "◒",
+    "tint": "#e9ddce",
+    "image": "assets/spegeln.svg",
+    "alt": "En välvd spegel som speglar ett stilla, varmt landskap."
+  },
+  {
+    "id": "pausa",
+    "name": "Pausknappen",
+    "description": "Vinna tid och tänka",
+    "icon": "Ⅱ",
+    "tint": "#e5dfa9",
+    "image": "assets/pausknappen.svg",
+    "alt": "En stor rund pausknapp i ett solgult landskap."
+  },
+  {
+    "id": "grans",
+    "name": "Muren",
+    "description": "Sätta gränser och invända",
+    "icon": "⊓",
+    "tint": "#e6cfc3",
+    "image": "assets/muren.svg",
+    "alt": "En terrakottafärgad mur med en öppen välvd port."
+  },
+  {
+    "id": "styra",
+    "name": "Fyren",
+    "description": "Förtydliga och styra samtal",
+    "icon": "⌁",
+    "tint": "#ccdedc",
+    "image": "assets/fyren.svg",
+    "alt": "En fyr som lyser över ett lugnt, blågrönt hav."
+  },
+  {
+    "id": "avsluta",
+    "name": "Utgången",
+    "description": "Avsluta och lämna samtal",
+    "icon": "↗",
+    "tint": "#e3dbb9",
+    "image": "assets/utgangen.svg",
+    "alt": "En öppen dörr leder ut mot ett ljust landskap."
+  },
+  {
+    "id": "besluta",
+    "name": "Vägskälet",
+    "description": "Fatta och förklara beslut",
+    "icon": "⑂",
+    "tint": "#e4dcb8",
+    "image": "assets/placeholder.svg",
+    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+  },
+  {
+    "id": "delegera",
+    "name": "Stafettpinnen",
+    "description": "Lämna över och ge utrymme",
+    "icon": "↗",
+    "tint": "#d8dfc2",
+    "image": "assets/placeholder.svg",
+    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+  },
+  {
+    "id": "relation",
+    "name": "Bron",
+    "description": "Skapa kontakt och visa värme",
+    "icon": "⌒",
+    "tint": "#ead6cd",
+    "image": "assets/placeholder.svg",
+    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+  },
+  {
+    "id": "aterkoppla",
+    "name": "Spegelverkstaden",
+    "description": "Ge och ta emot återkoppling",
+    "icon": "◒",
+    "tint": "#ded4e1",
+    "image": "assets/placeholder.svg",
+    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+  },
+  {
+    "id": "konflikt",
+    "name": "Stormen",
+    "description": "Möta motstånd och oenighet",
+    "icon": "≈",
+    "tint": "#cdd9df",
+    "image": "assets/placeholder.svg",
+    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+  },
+  {
+    "id": "kommunicera",
+    "name": "Scenen",
+    "description": "Berätta och nå fram",
+    "icon": "◇",
+    "tint": "#e4d8b6",
+    "image": "assets/placeholder.svg",
+    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+  }
+]

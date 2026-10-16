@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+    <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".13"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+    <g filter="url(#grain)"><path fill="#ede5b9" d="M0 0h960v520H0z"/>
+      <circle cx="740" cy="122" r="64" fill="#f7efd0"/>
+      <path d="M0 316Q150 233 342 294T960 286V520H0Z" fill="#d6ca92"/>
+      <path d="M0 431Q205 307 490 403T960 369V520H0Z" fill="#b7b582"/>
+      <path d="M0 511Q325 392 620 472T960 435V520H0Z" fill="#999f71"/>
+      <ellipse cx="485" cy="425" rx="149" ry="21" fill="#7e8d64" opacity=".35"/>
+      <circle cx="491" cy="266" r="143" fill="#ab9b5d"/>
+      <circle cx="479" cy="248" r="139" fill="#ddce8b" stroke="#baa66a" stroke-width="3"/>
+      <circle cx="479" cy="248" r="119" fill="#eadb9c" stroke="#eee3b1" stroke-width="2"/>
+      <rect x="426" y="188" width="35" height="118" rx="8" fill="#7c8356"/><rect x="494" y="188" width="35" height="118" rx="8" fill="#7c8356"/>
+      <path d="M378 205Q391 160 432 141" fill="none" stroke="#f8edbc" stroke-width="7" stroke-linecap="round"/>
+      <g stroke="#83916a" fill="none" stroke-width="3"><path d="M213 390q-15-52 5-74m-5 57q-32-20-28-40m31 20q26-19 23-38M770 411q-6-43 6-68m-6 49q-24-11-24-32"/></g>
+      <path d="M277 160v18m-9-9h18M662 210v18m-9-9h18" stroke="#b4a36c" stroke-width="2"/></g></svg>

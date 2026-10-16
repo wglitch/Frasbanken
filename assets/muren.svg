@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520">
+    <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".13"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+    <g filter="url(#grain)"><path fill="#edd5c6" d="M0 0h960v520H0z"/>
+      <circle cx="747" cy="111" r="57" fill="#f5e5c9"/>
+      <path d="M0 340Q250 227 488 335T960 293V520H0Z" fill="#c6bd9e"/>
+      <path d="M0 453Q180 337 430 422T960 391V520H0Z" fill="#a4ad87"/>
+      <path d="M215 400V177H728V400H549V284A64 64 0 0 0 421 284V400Z" fill="#be866f"/>
+      <path d="M215 177l22-22h512l-21 22ZM728 177l21-22v229l-21 16Z" fill="#a56e5c"/>
+      <g stroke="#e3b9a0" stroke-width="3" opacity=".75"><path d="M215 230h218m102 0h193M215 285h205m132 0h176M215 340h205m132 0h176M290 177v53m123-53v53m150-53v53m111-53v53M247 230v55m117-55v55m232-55v55m78-55v55M290 285v55m-43 0v60m117-60v60m232-60v60m78-60v60M621 285v55"/></g>
+      <path d="M410 401V284A75 75 0 0 1 560 284V401" stroke="#d9a58a" fill="none" stroke-width="18"/>
+      <path d="M437 520Q540 437 485 400" stroke="#e9dcc0" stroke-width="54" fill="none"/>
+      <path d="M418 401l2-109q2-54 61-66v175Z" fill="#8f7057"/>
+      <path d="M420 292l-1 109 43-13V257q-37 9-42 35Z" fill="#a88b67"/>
+      <g fill="#788d6d"><ellipse cx="167" cy="368" rx="23" ry="33"/><ellipse cx="786" cy="388" rx="27" ry="27"/></g></g></svg>
