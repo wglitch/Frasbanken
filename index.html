@@ -2,72 +2,71 @@
 <html lang="sv">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f4ed">
-  <meta name="description" content="En lugn plats att öva samtalsfraser. Lyft blicken, säg orden högt och gör dem till dina.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eeece4">
+  <meta name="description" content="En digital konstkortlek. Säg frasen högt och gör orden till dina.">
   <title>Frasbanken · Gör orden till dina</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script type="module" src="app.js"></script>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script type="module" src="app.js?v=2"></script>
 </head>
 <body>
-  <a class="skip" href="#main">Till repetitionen</a>
-  <header class="site-header">
-    <a class="brand" href="./" aria-label="Frasbanken, startsida"><span class="brand-mark" aria-hidden="true">f.</span>frasbanken</a>
-    <span class="header-note">Ett litet rum för stora samtal</span>
-    <button class="text-button" id="about-button"><span aria-hidden="true">↗</span> Så fungerar det</button>
-  </header>
-
-  <main id="main">
-    <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow"><span class="little-star" aria-hidden="true">✳</span> DITT MENTALA VERKTYGSBIBLIOTEK</p>
-      <h1 id="page-title">Gör orden <em>till dina.</em></h1>
-      <p>Lyft blicken. Säg det högt. Prova igen.<br>Här får orden landa, i din egen takt.</p>
-    </section>
-
-    <div class="workspace">
-      <aside class="library" aria-label="Välj repetition">
-        <div class="section-label">DIN REPETITION</div>
-        <nav class="modes" aria-label="Repetitionsläge">
-          <button data-mode="all" aria-pressed="true"><span aria-hidden="true">◈</span> Alla kort <span class="count" id="all-count">…</span></button>
-          <button data-mode="high" aria-pressed="false"><span aria-hidden="true">≈</span> Mer att utforska <span class="count" id="high-count">0</span><small>Ovant & motstånd</small></button>
-          <button data-mode="unrated" aria-pressed="false"><span aria-hidden="true">○</span> Ännu inte bedömda <span class="count" id="unrated-count">…</span></button>
-        </nav>
-        <div class="category-heading"><span class="section-label">BILDVÄRLDAR</span><button id="clear-category" class="text-button" hidden>Visa alla</button></div>
-        <nav id="categories" class="categories" aria-label="Kategori"></nav>
-        <div class="library-footer"><span aria-hidden="true">↳</span><p>Ingen prestation.<br>Bara lite mer du.</p></div>
-        <button class="text-button backup-button" id="backup-button"><span aria-hidden="true">↓↑</span> Din historik</button>
-      </aside>
-
-      <section class="practice" aria-label="Repetera ett kort" aria-busy="true">
-        <div class="practice-top"><span id="selection-label">Alla bildvärldar</span><span class="mix-label" id="mix-label"><span aria-hidden="true">⤨</span> Blandad ordning</span></div>
-        <div id="loading" class="empty-state">Ett ögonblick, vi plockar fram orden…</div>
-        <article id="card" class="phrase-card" hidden>
-          <div class="art-wrap"><img id="card-image" src="assets/utforskaren.svg" alt="" width="960" height="520"><span id="category-badge" class="category-badge"></span><span id="card-type" class="type-badge"></span></div>
-          <div class="card-body">
-            <p class="card-invitation" id="card-invitation">EN FRAS ATT PROVA</p>
-            <h2 id="phrase" tabindex="-1"></h2>
-            <ol id="method-steps" hidden></ol>
-            <div class="card-bottom"><span class="whisper"><span aria-hidden="true">↗</span> Lyft blicken och säg det högt.</span><span id="card-id"></span></div>
-          </div>
-        </article>
-        <div id="empty" class="empty-state" hidden><span aria-hidden="true">✳</span><h2 id="empty-title"></h2><p id="empty-text"></p><button class="primary" id="show-all">Repetera alla kort <span aria-hidden="true">↗</span></button></div>
-        <div id="practice-controls" hidden>
-          <fieldset class="rating"><legend>Hur känns orden i din mun? <span>Välj det som stämmer just nu.</span></legend><div class="rating-options">
-            <button type="button" data-skav="1" aria-pressed="false"><span class="rating-symbol" aria-hidden="true">◡</span><span><strong>Naturligt</strong><small>Det här låter som jag</small></span></button>
-            <button type="button" data-skav="2" aria-pressed="false"><span class="rating-symbol" aria-hidden="true">∿</span><span><strong>Ovant</strong><small>Behöver repeteras</small></span></button>
-            <button type="button" data-skav="3" aria-pressed="false"><span class="rating-symbol" aria-hidden="true">ϟ</span><span><strong>Motstånd</strong><small>Svårt att säga eller stå för</small></span></button>
-          </div></fieldset>
-          <div class="next-row"><p id="save-hint">Stanna så länge du vill.</p><button id="next-button" class="primary">Nästa kort <span aria-hidden="true">→</span></button></div>
-        </div>
-      </section>
+  <main id="table" aria-label="Frasbankens kortlek">
+    <p id="loading" role="status">Kortleken öppnas…</p>
+    <article id="card" class="art-card" tabindex="0" aria-label="Repetitionskort" aria-describedby="gesture-help" hidden>
+      <div class="artwork"><img id="card-image" alt="" draggable="false" decoding="async"><div id="art-fallback" class="art-fallback" hidden aria-hidden="true">✳</div></div>
+      <div id="phrase-content" class="phrase-content"><h1 id="phrase"></h1><ol id="method-steps" hidden></ol></div>
+    </article>
+    <div id="baskets" class="baskets" aria-hidden="true" inert>
+      <div class="basket resistance" data-basket="3"><span class="basket-mark" aria-hidden="true">ϟ</span><span>Motstånd</span><span class="basket-lines" aria-hidden="true"></span></div>
+      <div class="basket unfamiliar" data-basket="2"><span class="basket-mark" aria-hidden="true">∿</span><span>Ovant</span><span class="basket-lines" aria-hidden="true"></span></div>
+      <div class="basket natural" data-basket="1"><span class="basket-mark" aria-hidden="true">◡</span><span>Naturligt</span><span class="basket-lines" aria-hidden="true"></span></div>
     </div>
-    <footer class="page-footer"><span>Små fraser. Nya möjligheter.</span><span><span class="privacy-dot" aria-hidden="true"></span> Din historik stannar i din webbläsare</span></footer>
-    <p id="status" role="status" class="status" hidden></p>
-    <p id="storage-warning" role="alert" class="storage-warning" hidden></p>
+    <section id="empty" class="empty" hidden><span aria-hidden="true">✳</span><h1>Inga kort i det här urvalet.</h1><p>Välj en annan kategori eller repetitionsform i biblioteket.</p><button id="empty-library">Öppna biblioteket</button><button id="empty-back">Ångra senaste sorteringen</button></section>
+    <button id="menu-button" class="menu-button" aria-label="Kortmeny – sortera, ångra eller öppna biblioteket" aria-haspopup="dialog"><span aria-hidden="true">···</span></button>
+    <p id="gesture-help" class="sr-only">Dra kortet åt höger till Motstånd överst, Ovant i mitten eller Naturligt nederst. Svep vänster för att ångra. Svep upp för biblioteket. Använd kortmenyn om du föredrar knappar. Med tangentbord: vänsterpil ångrar, uppåtpil öppnar biblioteket och högerpil öppnar sorteringsmenyn.</p>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
   </main>
+  <p id="notice" class="notice" role="status" hidden></p>
+  <p id="storage-warning" class="storage-warning" role="alert" hidden></p>
 
-  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">EN LITEN REPETITION</span><button class="close" data-close aria-label="Stäng">×</button></div><h2 id="about-title">Mer teaterrepetition<br>än glosförhör.</h2><p>Du behöver inte säga exakt rätt. Låt frasen bli ett sätt att hitta dina egna ord.</p><ol class="instructions"><li>Titta på bilden och läs frasen.</li><li>Lyft blicken och säg den högt.</li><li>Prova en annan betoning, röst eller formulering.</li><li>Känn efter. Välj skavfaktor när du vill.</li><li>Tryck på Nästa kort när du är klar.</li></ol><p class="dialog-note">Ingen tidspress. Ingen bedömning utifrån. Du bestämmer.</p><button class="primary" data-close>Börja i din egen takt <span aria-hidden="true">→</span></button></dialog>
-  <dialog id="backup-dialog" aria-labelledby="backup-title"><div class="dialog-top"><span class="eyebrow">BARA PÅ DIN ENHET</span><button class="close" data-close aria-label="Stäng">×</button></div><h2 id="backup-title">Ta hand om din historik.</h2><p>Skavfaktor och senaste avslutade repetition sparas i den här webbläsaren. Gör en säkerhetskopia om du vill byta enhet eller rensa webbläsaren.</p><p id="history-summary"></p><button id="export-button" class="primary">Exportera som JSON <span aria-hidden="true">↓</span></button><label class="import-label" for="import-file">Importera säkerhetskopia <span aria-hidden="true">↑</span></label><input type="file" id="import-file" accept="application/json,.json"><p class="dialog-note">Importen slår ihop historiken. Den senaste repetitionen per kort behålls, även för kort som inte finns i biblioteket just nu. En pågående bedömning sparas först när du går vidare.</p><p id="backup-status" role="status"></p></dialog>
+  <dialog id="actions-dialog" class="actions-dialog" aria-labelledby="actions-title">
+    <header class="dialog-header"><h2 id="actions-title">Kortleken</h2><button class="close" data-close aria-label="Stäng kortmenyn">×</button></header>
+    <p class="muted">Hur kändes det att säga orden?</p>
+    <div class="accessible-ratings" role="group" aria-label="Sortera kortet">
+      <button data-grade="3"><span aria-hidden="true">ϟ</span> Motstånd <small>Svårt att säga eller stå för</small></button>
+      <button data-grade="2"><span aria-hidden="true">∿</span> Ovant <small>Behöver repeteras</small></button>
+      <button data-grade="1"><span aria-hidden="true">◡</span> Naturligt <small>Det här låter som jag</small></button>
+    </div>
+    <div class="action-links"><button id="back-button">← Ångra senaste sorteringen</button><button id="skip-button">Nästa utan att bedöma →</button><button id="open-library">↑ Öppna biblioteket</button></div>
+    <p id="previous-rating" class="muted small"></p>
+  </dialog>
+
+  <dialog id="library-dialog" class="library-dialog" aria-labelledby="library-title">
+    <header class="dialog-header sticky"><div><span class="eyebrow">FRASBANKEN</span><h2 id="library-title">Biblioteket</h2></div><button class="close" data-close aria-label="Stäng biblioteket och återgå till kortet">×</button></header>
+    <div class="library-content">
+      <section aria-labelledby="mode-title"><h3 id="mode-title">Din kortlek</h3><div class="modes" role="group" aria-label="Repetitionsform">
+        <button data-mode="all" aria-pressed="true">Alla kort <span id="all-count"></span></button>
+        <button data-mode="high" aria-pressed="false">Ovant & motstånd <span id="high-count"></span></button>
+        <button data-mode="unrated" aria-pressed="false">Obedömda <span id="unrated-count"></span></button>
+        <button data-mode="rated" aria-pressed="false">Bedömda <span id="rated-count"></span></button>
+      </div></section>
+      <section aria-labelledby="category-title"><div class="section-heading"><h3 id="category-title">Alla bildvärldar</h3><button id="all-categories" aria-pressed="true">Blanda alla</button></div><div id="categories" class="category-grid" role="group" aria-label="Välj kategori"></div></section>
+      <button id="resume-button" class="primary full">Till kortleken <span aria-hidden="true">↓</span></button>
+      <section aria-labelledby="stats-title"><h3 id="stats-title">Din historik</h3><p id="history-summary" class="muted"></p><dl class="stats"><div><dt>Naturligt</dt><dd id="natural-count">0</dd></div><div><dt>Ovant</dt><dd id="unfamiliar-count">0</dd></div><div><dt>Motstånd</dt><dd id="resistance-count">0</dd></div><div><dt>Obedömda</dt><dd id="new-count">0</dd></div></dl><p class="small muted">Dina egna känslor just nu. Inga poäng eller mål.</p></section>
+      <section aria-labelledby="settings-title"><h3 id="settings-title">Inställningar & säkerhetskopia</h3><label class="motion-setting"><input type="checkbox" id="reduce-motion"> Minska rörelser</label><div class="backup-actions"><button id="export-button">Exportera historik ↓</button><label class="file-label">Importera historik ↑<input type="file" id="import-file" accept="application/json,.json"></label></div><p class="small muted">Import slår ihop historiken. Senaste repetitionen per kort behålls, även för kort som inte finns i biblioteket längre.</p><p id="backup-status" role="status" class="small"></p></section>
+      <section class="about" aria-labelledby="about-title"><span class="eyebrow">OM APPEN</span><h3 id="about-title">Gör orden till dina.</h3><p>Mer teaterrepetition än glosförhör. Lyft blicken, säg frasen högt och prova olika uttryck. Stanna så länge du vill.</p><button id="intro-button">Visa den korta introduktionen ↗</button><h4>Din data stannar i din webbläsare.</h4><p>Din träningshistorik sparas lokalt och skickas inte till någon server. Om du rensar webbläsardata kan historiken försvinna. Du kan exportera en säkerhetskopia.</p><p class="small muted">Ingen inloggning, analys eller spårning. GitHub Pages levererar appens filer och kan hantera vanliga anslutningsuppgifter som IP-adress. Historiken ingår aldrig i dessa hämtningar. Bilder läses bara från samma webbplats. Import och export sker på din enhet.</p><p class="small muted">De 165 korten är ett granskningsutkast. Bilderna är tillfälliga; nya konstverk läggs till separat. Frasbanken 2.0.</p></section>
+    </div>
+  </dialog>
+
+  <dialog id="intro-dialog" class="intro-dialog" aria-labelledby="intro-title">
+    <header class="dialog-header"><span class="eyebrow">EN KORT INTRODUKTION</span><button class="close" id="dismiss-intro" aria-label="Stäng introduktionen direkt">×</button></header>
+    <h2 id="intro-title">Låt orden landa.</h2>
+    <p>Läs frasen. Lyft blicken och säg den högt tills den känns naturlig.</p>
+    <p>Dra sedan kortet till den hög som bäst beskriver hur det kändes.</p>
+    <div class="intro-diagram" aria-label="Dra åt höger: Motstånd överst, Ovant i mitten, Naturligt nederst."><div class="mini-card" aria-hidden="true">✳<span>→</span></div><div class="mini-baskets"><span>ϟ &nbsp; Motstånd</span><span>∿ &nbsp; Ovant</span><span>◡ &nbsp; Naturligt</span></div></div>
+    <div class="intro-other"><span>← Ångra</span><span>↑ Bibliotek</span><span>··· Knappar</span></div>
+    <button id="start-button" class="primary full">Öppna kortleken <span aria-hidden="true">→</span></button>
+  </dialog>
 </body>
 </html>

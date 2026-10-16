@@ -8,6 +8,6 @@
 - Redigera och lägga till kort direkt i appen.
 
 # Candidates
-- Ersätt tillfälliga SVG-illustrationer med de sex framtagna originalbilderna.
+- Ta fram starkare surrealistiska, humoristiska och varierade konstverk per kategori; bildproduktionen sker separat från appändringarna.
 - Lägg till individuella bilder via kortets image-fält.
-- Ersätt testfraserna med slutligt innehåll och bevara befintliga kort-ID:n.
+- Språkgranska inventeringsutkastet med 165 kort och bevara befintliga kort-ID:n.
