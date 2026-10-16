@@ -1,6 +1,6 @@
 # Current Next Step
 
-Kontrollera GitHub Actions efter uppladdning till det publika repositoryt wglitch/Frasbanken. Aktivera GitHub Pages med GitHub Actions som källa om det inte redan är gjort. Därefter provkör på en fysisk iPhone.
+Aktivera GitHub Pages under https://github.com/wglitch/Frasbanken/settings/pages med GitHub Actions som källa. Kör sedan Publicera Frasbanken manuellt under Actions. Koden är uppladdad och verifierad; webbplatsen är inte live ännu. Därefter provkör på en fysisk iPhone.
 
 # Elevator Pitch
 Frasbanken är en lugn repetitionsplats där samtalsfraser får bli en naturlig del av användarens eget språk.
@@ -9,13 +9,13 @@ Frasbanken är en lugn repetitionsplats där samtalsfraser får bli en naturlig 
 
 ## 2026-10-16 – GitHub
 
-Done: Publikt repository wglitch/Frasbanken skapat av användaren och initialiserat via GitHub-anslutningen. Projektet har förberetts för en samlad uppladdning med samtliga 165 kort, bilder, tester och Pages-arbetsflöde. Tio tester passerar lokalt.
+Done: Publikt repository wglitch/Frasbanken skapat av användaren och initialiserat via GitHub-anslutningen. Samtliga 27 projektfiler är uppladdade till main, inklusive 165 kort, bilder, tester och Pages-arbetsflöde. Uppladdningen verifierades via GitHubs offentliga API och råfilen för kortbiblioteket. Tio tester passerar lokalt.
 
 Learned: Repositoryts namn har stor begynnelsebokstav: Frasbanken. Det var tomt och behövde ett första commit före samlad uppladdning.
 
-Next: Verifiera uppladdningen och kontrollera Actions samt Pages.
+Next: Användaren väljer GitHub Actions under Settings → Pages och startar Publicera Frasbanken manuellt under Actions. GitHub visar ännu inga workflow-körningar och den förväntade webbplatsadressen svarar 404.
 
-Open Questions: GitHub Pages kan behöva aktiveras under repositoryts Settings → Pages.
+Open Questions: Pages-inställningen kräver användarens inloggade GitHub-session. Den tillgängliga webbläsaren är utloggad och anslutningen saknar verktyg för Pages-inställningar.
 
 ## 2026-10-16 – Inlagt kortbibliotek
 
