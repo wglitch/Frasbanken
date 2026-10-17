@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "Frasbanken – inventering",
-  "status": "utkast för granskning",
+  "status": "redaktionellt reviderat arbetsbibliotek",
   "categories": [
     {
       "id": "utforska",
@@ -73,11 +73,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F001.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 1, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Berätta mer om…"
     },
     {
       "id": "F002",
@@ -87,11 +88,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F002.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 1, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad har bidragit till…"
     },
     {
       "id": "F003",
@@ -101,11 +103,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F003.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 1, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad fick dig att…"
     },
     {
       "id": "F004",
@@ -115,11 +118,12 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F004.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 2, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag vill inte svara på den frågan."
     },
     {
       "id": "F005",
@@ -129,25 +133,27 @@
       "functions": [
         "avsluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/F005.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 2, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utgången: Tack för att ni lyssnade."
     },
     {
       "id": "F006",
       "type": "phrase",
-      "text": "Det har inte du med att göra, nästa fråga.",
-      "primaryCategory": "utforska",
+      "text": "Det vill jag inte gå in på. Nu går vi vidare.",
+      "primaryCategory": "grans",
       "functions": [
-        "utforska"
+        "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F006.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 2, kolumn 3",
-      "notes": null
+      "notes": "Tidigare: Det har inte du med att göra. Nästa fråga. Mildrat enligt användarens godkännande 2026-10-18.",
+      "imageAlt": "Konstverk till Muren: Det vill jag inte gå in på. Nu går vi vidare."
     },
     {
       "id": "F007",
@@ -157,11 +163,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F007.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 3, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur upplevde du…"
     },
     {
       "id": "F008",
@@ -171,25 +178,27 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F008.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 3, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: När märkte du att…"
     },
     {
       "id": "F009",
       "type": "template",
-      "text": "Hur tänkte du…",
+      "text": "Hur tänkte du när …?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F009.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 3, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur tänkte du när …?"
     },
     {
       "id": "F010",
@@ -199,25 +208,27 @@
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F010.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 4, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Låt mig få återkomma till dig."
     },
     {
       "id": "F011",
       "type": "phrase",
-      "text": "Vi får återuppta detta ett annat tillfälle.",
-      "primaryCategory": "avsluta",
+      "text": "Vi får återuppta det här vid ett annat tillfälle.",
+      "primaryCategory": "pausa",
       "functions": [
-        "avsluta"
+        "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F011.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 4, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Vi får återuppta det här vid ett annat tillfälle."
     },
     {
       "id": "F012",
@@ -227,11 +238,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F012.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 4, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad får dig att fråga mig det?"
     },
     {
       "id": "F013",
@@ -241,11 +253,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F013.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 5, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur kändes det…"
     },
     {
       "id": "F014",
@@ -255,11 +268,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F014.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 5, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad hände sen?"
     },
     {
       "id": "F015",
@@ -269,11 +283,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F015.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 5, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur tror du de andra uppfattade det som hände?"
     },
     {
       "id": "F016",
@@ -283,25 +298,27 @@
       "functions": [
         "avsluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/F016.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 6, kolumn 1",
-      "notes": null
+      "notes": "Jag stoppar där innebär att jag skulle kunna säga mer men väljer att stanna. Det lämnar plats för följdfrågor och är mindre definitivt än att avsluta.",
+      "imageAlt": "Konstverk till Utgången: Jag stoppar där."
     },
     {
       "id": "F017",
       "type": "phrase",
       "text": "Det känns obekvämt när du frågar det.",
-      "primaryCategory": "utforska",
+      "primaryCategory": "grans",
       "functions": [
-        "utforska"
+        "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F017.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 6, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Det känns obekvämt när du frågar det."
     },
     {
       "id": "F018",
@@ -311,11 +328,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F018.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 1, rad 6, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur skulle du själv svara på det?"
     },
     {
       "id": "F019",
@@ -325,25 +343,27 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F019.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 1, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vilka känslor var starkast i det här?"
     },
     {
       "id": "F020",
       "type": "phrase",
-      "text": "Det låter som det finns mer här",
+      "text": "Det låter som att det finns mer här.",
       "primaryCategory": "spegla",
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F020.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 1, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Det låter som att det finns mer här."
     },
     {
       "id": "F021",
@@ -353,25 +373,27 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F021.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 1, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad skulle du ha gjort annorlunda?"
     },
     {
       "id": "F022",
-      "type": "template",
-      "text": "Jag är inte säker på vad du frågar egentligen…",
+      "type": "phrase",
+      "text": "Jag är inte säker på vad du frågar egentligen.",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F022.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 2, kolumn 1",
-      "notes": null
+      "notes": "Dubbeltydigheten är avsiktlig: vad du egentligen frågar är inte samma sak som vad du menar med frågan.",
+      "imageAlt": "Konstverk till Utforskaren: Jag är inte säker på vad du frågar egentligen."
     },
     {
       "id": "F023",
@@ -381,11 +403,12 @@
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F023.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 2, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Det vet inte jag."
     },
     {
       "id": "F024",
@@ -395,11 +418,12 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F024.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 2, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Det jag försöker säga är…"
     },
     {
       "id": "F025",
@@ -409,11 +433,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F025.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 3, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur känner du nu?"
     },
     {
       "id": "F026",
@@ -423,11 +448,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F026.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 3, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad har du lärt dig av…"
     },
     {
       "id": "F027",
@@ -437,25 +463,27 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F027.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 3, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad tänkte du när…"
     },
     {
       "id": "F028",
-      "type": "template",
-      "text": "Det måste jag få tänka på en stund. Ge mig ett ögonblick…",
+      "type": "phrase",
+      "text": "Det behöver jag tänka på en stund. Ge mig ett ögonblick.",
       "primaryCategory": "pausa",
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F028.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 4, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Det behöver jag tänka på en stund. Ge mig ett ögonblick."
     },
     {
       "id": "F029",
@@ -465,11 +493,12 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F029.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 4, kolumn 2",
-      "notes": null
+      "notes": "Behåll att det som ska sägas är svårt att greppa; svårigheten är själva poängen, inte en brist som ska skrivas bort.",
+      "imageAlt": "Konstverk till Fyren: Det jag ska säga nu kan vara svårt att greppa så ha lite tålamod med mig."
     },
     {
       "id": "F030",
@@ -479,11 +508,12 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F030.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 4, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Det viktigaste med det här är…"
     },
     {
       "id": "F031",
@@ -493,11 +523,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F031.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 5, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vilka känslor dyker upp när du pratar om…"
     },
     {
       "id": "F032",
@@ -507,11 +538,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F032.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 5, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad är den största lärdomen av…"
     },
     {
       "id": "F033",
@@ -521,11 +553,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F033.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 5, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad betyder det här för dig?"
     },
     {
       "id": "F034",
@@ -535,11 +568,12 @@
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F034.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 6, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Det kan inte jag svara på."
     },
     {
       "id": "F035",
@@ -549,11 +583,12 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F035.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 6, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Min poäng är…"
     },
     {
       "id": "F036",
@@ -563,25 +598,27 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F036.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 2, rad 6, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Ett annat sätt att säga det på är…"
     },
     {
       "id": "F037",
       "type": "phrase",
-      "text": "Vad tror du det här säger om dig?",
+      "text": "Vad har du lärt dig om dig själv av det här?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F037.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 1, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad har du lärt dig om dig själv av det här?"
     },
     {
       "id": "F038",
@@ -591,25 +628,27 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F038.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 1, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad hade du velat säga till dig själv då?"
     },
     {
       "id": "F039",
-      "type": "template",
-      "text": "Det låter som det finns fler lager här…",
+      "type": "phrase",
+      "text": "Det låter som att det finns fler lager här.",
       "primaryCategory": "spegla",
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F039.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 1, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Det låter som att det finns fler lager här."
     },
     {
       "id": "F040",
@@ -619,53 +658,58 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F040.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 2, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: För att summera…"
     },
     {
       "id": "F041",
       "type": "phrase",
-      "text": "Det är några andra här som jag också vill prata med, men först vill jag fråga dig om det där du sa.",
-      "primaryCategory": "utforska",
+      "text": "Innan jag går vidare vill jag fråga om det du sa.",
+      "primaryCategory": "avsluta",
       "functions": [
+        "avsluta",
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F041.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 2, kolumn 2",
-      "notes": null
+      "notes": "Avsikten är att sätta en mjuk punkt på konversationen; primär kategori Utgången enligt bildgranskning 2026-10-18. Frågan är en sista följdfråga före avslutet. Bilden med förstoringsglas behöver anpassas till kategoribytet.",
+      "imageAlt": "Konstverk till Utgången: Innan jag går vidare vill jag fråga om det du sa."
     },
     {
       "id": "F042",
       "type": "template",
-      "text": "Av anledning X lämnar jag den här konversationen nu.",
+      "text": "Jag lämnar samtalet nu eftersom …",
       "primaryCategory": "avsluta",
       "functions": [
         "avsluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/F042.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 2, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utgången: Jag lämnar samtalet nu eftersom …"
     },
     {
       "id": "F043",
       "type": "phrase",
-      "text": "Vad skulle du säga är den röda tråden? Jag kommer lämna det",
-      "primaryCategory": "avsluta",
+      "text": "Vad skulle du säga är den röda tråden?",
+      "primaryCategory": "utforska",
       "functions": [
-        "avsluta"
+        "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F043.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 3, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad skulle du säga är den röda tråden?"
     },
     {
       "id": "F044",
@@ -675,39 +719,43 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F044.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 3, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur tänker du nu?"
     },
     {
       "id": "F045",
       "type": "method",
-      "text": "Spegla (återupprepa några utvalda ord)",
+      "text": "Upprepa några av den andres ord och ge plats för ett svar.",
       "primaryCategory": "spegla",
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F045.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 3, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Upprepa några av den andres ord och ge plats för ett svar."
     },
     {
       "id": "F046",
       "type": "phrase",
-      "text": "här samtalet nu, när du är redo att fortsätta på ett konstruktivt sätt kan du höra av dig.",
-      "primaryCategory": "utforska",
+      "text": "Jag kommer lämna det här samtalet nu men fortsätter gärna på ett konstruktivt sätt när du är redo för det.",
+      "primaryCategory": "avsluta",
       "functions": [
-        "utforska"
+        "avsluta",
+        "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F046.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 4, kolumn 1",
-      "notes": null
+      "notes": "Återställd och omformulerad av användaren 2026-10-17; ursprungstexten var delad mellan F043 och F046.",
+      "imageAlt": "Konstverk till Utgången: Jag kommer lämna det här samtalet nu men fortsätter gärna på ett konstruktivt sätt när du är redo för det."
     },
     {
       "id": "F047",
@@ -717,11 +765,12 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F047.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 4, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag respekterar mig själv för mycket för att acceptera det här."
     },
     {
       "id": "F048",
@@ -731,25 +780,27 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F048.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 4, kolumn 3",
-      "notes": null
+      "notes": "Avsiktlig pivot: avfärda frågan med en artighetsfras och för samtalet tillbaka till det viktiga.",
+      "imageAlt": "Konstverk till Fyren: Intressant fråga, men det viktiga här är ju..."
     },
     {
       "id": "F049",
       "type": "phrase",
-      "text": "Vad får dig att tro att du har rätt?",
+      "text": "Vad grundar du din uppfattning på?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F049.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 5, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad grundar du din uppfattning på?"
     },
     {
       "id": "F050",
@@ -759,11 +810,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F050.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 5, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Jag vill gärna gräva lite djupare när det gäller…"
     },
     {
       "id": "F051",
@@ -773,11 +825,12 @@
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F051.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 5, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Det låter som…"
     },
     {
       "id": "F052",
@@ -787,39 +840,42 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F052.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 6, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Vet du, jag har tänkt på det och det funkar inte för mig."
     },
     {
       "id": "F053",
       "type": "phrase",
-      "text": "Jag känner mig attackerad/kritiserad kan du säga det där på ett annat sätt?",
-      "primaryCategory": "utforska",
-      "functions": [
-        "utforska"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frageleken",
-      "sourceLocation": "sida 3, rad 6, kolumn 2",
-      "notes": null
-    },
-    {
-      "id": "F054",
-      "type": "phrase",
-      "text": "Behandla mig inte som en karikatyr, tillskriv mig inte åsikter som jag inte har uttryckt.",
+      "text": "Jag känner mig attackerad. Kan du säga det på ett annat sätt?",
       "primaryCategory": "grans",
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F053.webp",
+      "style": null,
+      "source": "frageleken",
+      "sourceLocation": "sida 3, rad 6, kolumn 2",
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag känner mig attackerad. Kan du säga det på ett annat sätt?"
+    },
+    {
+      "id": "F054",
+      "type": "phrase",
+      "text": "Tillskriv mig inte åsikter som jag inte har uttryckt.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": "assets/art/cards/F054.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 3, rad 6, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Tillskriv mig inte åsikter som jag inte har uttryckt."
     },
     {
       "id": "F055",
@@ -829,11 +885,12 @@
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F055.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 1, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Det verkar som…"
     },
     {
       "id": "F056",
@@ -843,67 +900,72 @@
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F056.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 1, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Om jag förstår dig rätt så…"
     },
     {
       "id": "F057",
       "type": "template",
-      "text": "När du sa … så förändrades ditt tonfall, hur kommer det sig?",
+      "text": "Jag lade märke till att ditt tonfall ändrades när du sa … Vad hände där?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F057.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 1, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Jag lade märke till att ditt tonfall ändrades när du sa … Vad hände där?"
     },
     {
       "id": "F058",
       "type": "template",
-      "text": "Det är inte mitt ansvar, du borde prata med X.",
+      "text": "Det ligger inte inom mitt ansvar. Du kan prata med …",
       "primaryCategory": "grans",
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F058.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 2, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Det ligger inte inom mitt ansvar. Du kan prata med …"
     },
     {
       "id": "F059",
       "type": "phrase",
-      "text": "Hörde jag dig rätt, kan du upprepa?",
+      "text": "Hörde jag rätt, kan du säga det igen?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F059.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 2, kolumn 2",
-      "notes": null
+      "notes": "Ger samtalspartnern möjlighet att backa från ett drastiskt uttalande; uttrycker inte främst osäkerhet om vad som hördes.",
+      "imageAlt": "Konstverk till Utforskaren: Hörde jag rätt, kan du säga det igen?"
     },
     {
       "id": "F060",
       "type": "phrase",
       "text": "Det finns många sätt att göra rätt på, men det där var inte ett av dem.",
-      "primaryCategory": "utforska",
+      "primaryCategory": "grans",
       "functions": [
-        "utforska"
+        "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F060.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 2, kolumn 3",
-      "notes": null
+      "notes": "Avsiktligt tillrättavisande: flera sätt kan vara rätt, men just detta sätt avvisas. Behåll originaltexten.",
+      "imageAlt": "Konstverk till Muren: Det finns många sätt att göra rätt på, men det där var inte ett av dem."
     },
     {
       "id": "F061",
@@ -913,25 +975,27 @@
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F061.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 3, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Det ser ut som…"
     },
     {
       "id": "F062",
-      "type": "template",
-      "text": "Det får mig att tänka på… (kort) plus fråga tillbaka (typ: vad har du för råd?)",
-      "primaryCategory": "pausa",
+      "type": "method",
+      "text": "Knyt kort an till en egen erfarenhet och ställ sedan en fråga tillbaka.",
+      "primaryCategory": "relation",
       "functions": [
-        "pausa"
+        "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/F062.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 3, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Knyt kort an till en egen erfarenhet och ställ sedan en fråga tillbaka."
     },
     {
       "id": "F063",
@@ -941,25 +1005,27 @@
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F063.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 3, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Jag hör att…"
     },
     {
       "id": "F064",
       "type": "phrase",
-      "text": "Det var olyckligt (att det hände/att du valde dom orden)",
-      "primaryCategory": "utforska",
+      "text": "Det var olyckligt.",
+      "primaryCategory": "konflikt",
       "functions": [
-        "utforska"
+        "konflikt"
       ],
-      "image": null,
+      "image": "assets/art/cards/F064.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 4, kolumn 1",
-      "notes": null
+      "notes": "Brett uttryck i konflikt, inte begränsat till medkänsla.",
+      "imageAlt": "Konstverk till Stormen: Det var olyckligt."
     },
     {
       "id": "F065",
@@ -969,25 +1035,28 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F065.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 4, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Det vill jag inte svara på för att…"
     },
     {
       "id": "F066",
       "type": "method",
-      "text": "Var berättarrösten. Beskriv sker som vad nu precis",
-      "primaryCategory": "utforska",
+      "text": "Beskriv det som sker precis just nu.",
+      "primaryCategory": "pausa",
       "functions": [
-        "utforska"
+        "pausa",
+        "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F066.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 4, kolumn 3",
-      "notes": null
+      "notes": "Instruktion, inte en replik. Används för att förtydliga det pågående samspelet och vinna tid att formulera sig. Originalinstruktionen var kursiverad.",
+      "imageAlt": "Konstverk till Pausknappen: Beskriv det som sker precis just nu."
     },
     {
       "id": "F067",
@@ -997,39 +1066,43 @@
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F067.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 5, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Spegeln: Så det du säger är…"
     },
     {
       "id": "F068",
       "type": "template",
-      "text": "Du nämnde … berätta mer om det.",
+      "text": "Du nämnde … Berätta mer om det.",
       "primaryCategory": "utforska",
       "functions": [
-        "utforska"
+        "utforska",
+        "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F068.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 5, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Du nämnde … Berätta mer om det."
     },
     {
       "id": "F069",
       "type": "method",
-      "text": "VAR TYST (och vänta på fortsättning) Vid oacceptabla beteenden: beteendet säg hen hur neutralt och säg",
+      "text": "Var tyst och vänta på fortsättning.",
       "primaryCategory": "pausa",
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F069.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 5, kolumn 3",
-      "notes": null
+      "notes": "Instruktion. Det efterföljande textfragmentet i inventeringen hörde till F072 och har tagits bort här.",
+      "imageAlt": "Konstverk till Pausknappen: Var tyst och vänta på fortsättning."
     },
     {
       "id": "F070",
@@ -1039,39 +1112,42 @@
       "functions": [
         "spegla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F070.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 6, kolumn 1",
-      "notes": null
+      "notes": "Avsikten är att förtydliga vad jag hörde så att det blir tydligt för samtalspartnern. Behåll förtydliga, inte det mer neutrala återge.",
+      "imageAlt": "Konstverk till Spegeln: Låt mig förtydliga vad jag hörde innan jag svarar..."
     },
     {
       "id": "F071",
       "type": "phrase",
-      "text": "Jag ska ta en stund och reflektera över hur jag ska svara på det här.",
+      "text": "Jag behöver en stund för att tänka på hur jag vill svara.",
       "primaryCategory": "pausa",
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F071.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 6, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Jag behöver en stund för att tänka på hur jag vill svara."
     },
     {
       "id": "F072",
       "type": "phrase",
-      "text": "(\"Din göra hand rätt. ska axel, det gillar min på är bort den.\") inte jag, ta",
-      "primaryCategory": "utforska",
+      "text": "Du har handen på min axel. Jag gillar inte det. Ta bort handen.",
+      "primaryCategory": "grans",
       "functions": [
-        "utforska"
+        "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F072.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 4, rad 6, kolumn 3",
-      "notes": null
+      "notes": "Fysisk gränssättning: beteende – reaktion – uppmaning. Användarens återställda original: ”Din hand är på min axel. Jag gillar inte det. Ta bort den.” Nuvarande text är ett språkligt förslag; originalet bevaras här.",
+      "imageAlt": "Konstverk till Muren: Du har handen på min axel. Jag gillar inte det. Ta bort handen."
     },
     {
       "id": "F073",
@@ -1081,11 +1157,12 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F073.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 1, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Jag vill gå tillbaka till det du sa tidigare om…"
     },
     {
       "id": "F074",
@@ -1095,11 +1172,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F074.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 1, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vilka är dina bästa argument?"
     },
     {
       "id": "F075",
@@ -1109,11 +1187,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F075.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 1, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad är de största riskerna med det perspektivet?"
     },
     {
       "id": "F076",
@@ -1123,39 +1202,42 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F076.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 2, kolumn 1",
-      "notes": null
+      "notes": "Behåll originalets tydliga begäran om ett förtydligande.",
+      "imageAlt": "Konstverk till Utforskaren: Jag förstår inte frågan, och skulle uppskatta om du kunde förtydliga den."
     },
     {
       "id": "F077",
       "type": "phrase",
-      "text": "Det känns som att den här konversationen inte leder någonvart just nu, jag föreslår en paus.",
+      "text": "Det känns som att vi inte kommer vidare just nu. Kan vi ta en paus?",
       "primaryCategory": "pausa",
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/F077.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 2, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Det känns som att vi inte kommer vidare just nu. Kan vi ta en paus?"
     },
     {
       "id": "F078",
       "type": "phrase",
-      "text": "Jag har svårt att förstå hur det du säger är relevant för det vi pratar om, kan vi komma tillbaka till ämnet?",
+      "text": "Jag ser inte kopplingen till det vi pratade om. Kan vi återgå till ämnet?",
       "primaryCategory": "styra",
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/F078.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 2, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Jag ser inte kopplingen till det vi pratade om. Kan vi återgå till ämnet?"
     },
     {
       "id": "F079",
@@ -1165,53 +1247,57 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F079.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 3, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Varför då?"
     },
     {
       "id": "F080",
       "type": "phrase",
-      "text": "Vad döljer du?",
+      "text": "Vad mer behöver jag känna till?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F080.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 3, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad mer behöver jag känna till?"
     },
     {
       "id": "F081",
       "type": "phrase",
-      "text": "Hur kan det här påverka andra på lång sikt? Jag förstår att du har",
+      "text": "Hur kan det här påverka andra på lång sikt?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F081.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 3, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur kan det här påverka andra på lång sikt?"
     },
     {
       "id": "F082",
       "type": "phrase",
-      "text": "Jag vet vad jag såg/hörde/upplevde (Återupprepa vid behov)",
-      "primaryCategory": "utforska",
+      "text": "Jag vet vad jag upplevde.",
+      "primaryCategory": "grans",
       "functions": [
-        "utforska"
+        "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F082.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 4, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag vet vad jag upplevde."
     },
     {
       "id": "F083",
@@ -1221,53 +1307,57 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F083.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 4, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur menar du då?"
     },
     {
       "id": "F084",
       "type": "phrase",
-      "text": "starka känslor kring det här, men det är inte acceptabelt att uttrycka sig på det sättet.",
+      "text": "Jag förstår att du har starka känslor kring det här, men det är inte acceptabelt att uttrycka sig på det sättet.",
       "primaryCategory": "grans",
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F084.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 4, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag förstår att du har starka känslor kring det här, men det är inte acceptabelt att uttrycka sig på det sättet."
     },
     {
       "id": "F085",
       "type": "phrase",
-      "text": "Varför försvarar du det här så hårt?",
+      "text": "Hur kommer det sig att det här är så viktigt för dig?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F085.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 5, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur kommer det sig att det här är så viktigt för dig?"
     },
     {
       "id": "F086",
       "type": "phrase",
-      "text": "Hjälp mig förstå hur du kom fram till det?",
+      "text": "Hjälp mig att förstå hur du kom fram till det.",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F086.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 5, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hjälp mig att förstå hur du kom fram till det."
     },
     {
       "id": "F087",
@@ -1277,39 +1367,42 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F087.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 5, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur säker är du på att det här stämmer?"
     },
     {
       "id": "F088",
       "type": "phrase",
-      "text": "Jag hör vad du säger, men jag håller inte med och det är okej.",
+      "text": "Jag hör vad du säger, men jag håller inte med.",
       "primaryCategory": "grans",
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F088.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 6, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag hör vad du säger, men jag håller inte med."
     },
     {
       "id": "F089",
       "type": "phrase",
       "text": "Jag uppskattar att du delar med dig, men jag är inte säker på att det här är rätt forum.",
-      "primaryCategory": "utforska",
+      "primaryCategory": "grans",
       "functions": [
-        "utforska"
+        "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F089.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 6, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag uppskattar att du delar med dig, men jag är inte säker på att det här är rätt forum."
     },
     {
       "id": "F090",
@@ -1319,25 +1412,27 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F090.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 5, rad 6, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Jag hör vad du säger, men sättet du uttrycker det på känns respektlöst."
     },
     {
       "id": "F091",
       "type": "phrase",
-      "text": "Vad tänker du att de som inte håller med dig har missförstått?",
+      "text": "Vad tänker du att de som inte håller med dig inte har förstått?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F091.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 1, kolumn 1",
-      "notes": null
+      "notes": "Undersöker vad personen tror att meningsmotståndarna inte har förstått; behåll fokus på förståelse.",
+      "imageAlt": "Konstverk till Utforskaren: Vad tänker du att de som inte håller med dig inte har förstått?"
     },
     {
       "id": "F092",
@@ -1347,11 +1442,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F092.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 1, kolumn 2",
-      "notes": null
+      "notes": "Tempuset och det hypotetiska resonemanget är avsiktliga; behåll originaltexten. Användaren hänvisade till F093 i sin kommentar om detta.",
+      "imageAlt": "Konstverk till Utforskaren: Om det inte fungerade, vad skulle nästa steg bli?"
     },
     {
       "id": "F093",
@@ -1361,11 +1457,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F093.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 1, kolumn 3",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur kändes det?"
     },
     {
       "id": "F094",
@@ -1375,39 +1472,42 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F094.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 2, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Om vi ska fortsätta den här diskussionen behöver vi hålla en bättre ton."
     },
     {
       "id": "F095",
       "type": "phrase",
-      "text": "Det är intressant att vi ser på det här på olika sätt, jag uppskattar att höra din syn.",
-      "primaryCategory": "utforska",
+      "text": "Vi ser olika på det här, och jag uppskattar att höra ditt perspektiv.",
+      "primaryCategory": "relation",
       "functions": [
-        "utforska"
+        "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/F095.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 2, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Vi ser olika på det här, och jag uppskattar att höra ditt perspektiv."
     },
     {
       "id": "F096",
       "type": "template",
-      "text": "När du gör/säger X så får det mig att känna Y, jag skulle uppskatta om . du gjorde Z istället",
-      "primaryCategory": "utforska",
+      "text": "När du … känner jag … Jag skulle uppskatta om du …",
+      "primaryCategory": "aterkoppla",
       "functions": [
-        "utforska"
+        "aterkoppla"
       ],
-      "image": null,
+      "image": "assets/art/cards/F096.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 2, kolumn 3",
-      "notes": null
+      "notes": "Primär funktion är återkoppling. Kategorinamnet Spegelverkstaden är provisoriskt och ska diskuteras.",
+      "imageAlt": "Konstverk till Spegelverkstaden: När du … känner jag … Jag skulle uppskatta om du …"
     },
     {
       "id": "F097",
@@ -1417,11 +1517,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F097.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 3, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad skulle behöva hända för att du ska ändra uppfattning?"
     },
     {
       "id": "F098",
@@ -1431,11 +1532,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F098.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 3, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Hur skulle du beskriva det för någon som var skeptisk?"
     },
     {
       "id": "F099",
@@ -1445,25 +1547,27 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F099.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 4, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Det där känns som en personlig attack, och jag ber dig att sluta."
     },
     {
       "id": "F100",
       "type": "phrase",
       "text": "Vi behöver inte vara överens om allt för att ha en bra dialog.",
-      "primaryCategory": "utforska",
+      "primaryCategory": "relation",
       "functions": [
-        "utforska"
+        "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/F100.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 4, kolumn 2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Vi behöver inte vara överens om allt för att ha en bra dialog."
     },
     {
       "id": "F101",
@@ -1473,11 +1577,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F101.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 5, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Vad ser du som det största motargumentet?"
     },
     {
       "id": "F102",
@@ -1487,11 +1592,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/F102.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 5, kolumn 2",
-      "notes": null
+      "notes": "Hur tankarna gick är en annan fråga än vad personen tänkte. Behåll originaltexten. Användaren hänvisade till F101 i sin kommentar om detta.",
+      "imageAlt": "Konstverk till Utforskaren: Hur gick dina tankar där i den stunden?"
     },
     {
       "id": "F103",
@@ -1501,277 +1607,169 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/F103.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 6, kolumn 1",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Det är okej att vi tycker olika, men det är inte okej att uttrycka sig på det sättet."
     },
     {
       "id": "F104",
       "type": "phrase",
       "text": "Att vi tycker olika kan vara en styrka, det ger fler perspektiv.",
-      "primaryCategory": "utforska",
+      "primaryCategory": "relation",
       "functions": [
-        "utforska"
+        "relation",
+        "konflikt"
       ],
-      "image": null,
+      "image": "assets/art/cards/F104.webp",
       "style": null,
       "source": "frageleken",
       "sourceLocation": "sida 6, rad 6, kolumn 2",
-      "notes": null
-    },
-    {
-      "id": "W001",
-      "type": "method",
-      "text": "SOAR: Source – Observation – Action – Result",
-      "primaryCategory": "kommunicera",
-      "functions": [
-        "kommunicera"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": "Lyfter avsiktligt oliktänkande som en styrka och fördjupar med fler perspektiv. Konflikt behöver inte vara farlig.",
+      "imageAlt": "Konstverk till Bron: Att vi tycker olika kan vara en styrka, det ger fler perspektiv."
     },
     {
       "id": "W002",
       "type": "method",
-      "text": "Freestyle-tal: varför är vi här – gemensam upplevelse – vad har jag att säga – call to action",
+      "text": "Håll ett kort tal enligt formen:",
       "primaryCategory": "kommunicera",
       "functions": [
         "kommunicera"
       ],
-      "image": null,
+      "image": "assets/art/cards/W002.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W003",
-      "type": "method",
-      "text": "Bryt babblet: interrupt – yes-set – compliance-set – recap",
-      "primaryCategory": "styra",
-      "functions": [
-        "styra"
+      "notes": null,
+      "steps": [
+        "Varför är vi här?",
+        "En gemensam upplevelse.",
+        "Vad har jag att säga?",
+        "Vad vill jag att lyssnaren gör?"
       ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W004",
-      "type": "method",
-      "text": "Feel – Felt – Found",
-      "primaryCategory": "relation",
-      "functions": [
-        "relation"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W005",
-      "type": "method",
-      "text": "DESC: Describe – Effects – Say – Consequence",
-      "primaryCategory": "aterkoppla",
-      "functions": [
-        "aterkoppla"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "imageAlt": "Konstverk till Scenen: Håll ett kort tal enligt formen:"
     },
     {
       "id": "W006",
       "type": "method",
-      "text": "1–2–3: en sak, två fördjupningar, tre konkreta steg",
+      "text": "Prata om vilket ämne som helst med metoden 1–2–3.",
       "primaryCategory": "kommunicera",
       "functions": [
         "kommunicera"
       ],
-      "image": null,
+      "image": "assets/art/cards/W006.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": null,
+      "steps": [
+        "En sak.",
+        "Två fördjupningar.",
+        "Tre konkreta steg."
+      ],
+      "imageAlt": "Konstverk till Scenen: Prata om vilket ämne som helst med metoden 1–2–3."
     },
     {
       "id": "W007",
-      "type": "method",
-      "text": "Tactical verbal pattern: Först av allt… För det andra… Och till sist…",
+      "type": "template",
+      "text": "För det första … För det andra … Och till sist …",
       "primaryCategory": "kommunicera",
       "functions": [
         "kommunicera"
       ],
-      "image": null,
+      "image": "assets/art/cards/W007.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Scenen: För det första … För det andra … Och till sist …"
     },
     {
       "id": "W008",
       "type": "method",
-      "text": "Go-to-komplimanger med fokus på ansträngning",
+      "text": "Ge en uppriktig komplimang med fokus på processen, inte resultatet.",
       "primaryCategory": "relation",
       "functions": [
         "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/W008.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W009",
-      "type": "method",
-      "text": "Mötesstrategier: summarize – clarify – be the source of truth",
-      "primaryCategory": "styra",
-      "functions": [
-        "styra"
+      "notes": "Åtta exempel på uppriktiga, processinriktade komplimanger. Välj bara ord som du menar. Utökad efter bildgranskning 2026-10-18.",
+      "steps": [
+        "Bra kämpat!",
+        "Stark insats!",
+        "Det syns att du utmanar dig själv. Fortsätt så!",
+        "Det syns att du har lagt mycket tid på det här.",
+        "Jag uppskattar hur noggrant du tog dig an det.",
+        "Du gjorde det lätt att förstå.",
+        "Du ställde en fråga som tog oss vidare.",
+        "Du höll i även när det blev svårt."
       ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "imageAlt": "Konstverk till Bron: Ge en uppriktig komplimang med fokus på processen, inte resultatet."
     },
     {
       "id": "W010",
       "type": "method",
-      "text": "STAR: Situation – Task – Action – Result",
+      "text": "Berätta om en situation: sammanhang – uppgift – vad du gjorde – hur det gick.",
       "primaryCategory": "kommunicera",
       "functions": [
         "kommunicera"
       ],
-      "image": null,
+      "image": "assets/art/cards/W010.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W011",
-      "type": "method",
-      "text": "Competence cues: avslappnade axlar, högt huvud, steeple fingers",
-      "primaryCategory": "kommunicera",
-      "functions": [
-        "kommunicera"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Scenen: Berätta om en situation: sammanhang – uppgift – vad du gjorde – hur det gick."
     },
     {
       "id": "W012",
       "type": "method",
-      "text": "Recover from mistakes: acceptera, slappna av, återgå till nuet, kompensera inte",
+      "text": "När du tappar tråden: stanna upp, slappna av och återgå till det du vill säga. Gå inte tillbaka för att korrigera.",
       "primaryCategory": "pausa",
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/W012.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W013",
-      "type": "method",
-      "text": "CRAC: Conclusion – Rule – Analysis – Conclusion",
-      "primaryCategory": "kommunicera",
-      "functions": [
-        "kommunicera"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W014",
-      "type": "method",
-      "text": "FORD: Family – Occupation – Recreation – Dreams",
-      "primaryCategory": "relation",
-      "functions": [
-        "relation"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W015",
-      "type": "method",
-      "text": "Gester: iconic – metaforic – deictic – pragmatic – beat",
-      "primaryCategory": "kommunicera",
-      "functions": [
-        "kommunicera"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
-    },
-    {
-      "id": "W016",
-      "type": "method",
-      "text": "Warmth cues: triple nod – head tilt – vokalisera – savor smile",
-      "primaryCategory": "relation",
-      "functions": [
-        "relation"
-      ],
-      "image": null,
-      "style": null,
-      "source": "frameworks",
-      "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: När du tappar tråden: stanna upp, slappna av och återgå till det du vill säga. Gå inte tillbaka för att korrigera."
     },
     {
       "id": "W017",
       "type": "method",
-      "text": "Story: krok – show don’t tell – konflikt",
+      "text": "Berätta med en tydlig öppning, en konkret scen och något som står på spel.",
       "primaryCategory": "kommunicera",
       "functions": [
         "kommunicera"
       ],
-      "image": null,
+      "image": "assets/art/cards/W017.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Scenen: Berätta med en tydlig öppning, en konkret scen och något som står på spel."
     },
     {
       "id": "W018",
-      "type": "phrase",
-      "text": "Skulle det vara helt omöjligt?",
+      "type": "template",
+      "text": "Skulle det vara helt omöjligt att …?",
       "primaryCategory": "utforska",
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/W018.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": "Nejorienterad fråga. Avsikten är att öppna för ett nej som kan kännas tryggare att säga; ändra inte till en jaorienterad eller allmänt öppen fråga.",
+      "imageAlt": "Konstverk till Utforskaren: Skulle det vara helt omöjligt att …?"
     },
     {
       "id": "W019",
@@ -1781,11 +1779,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/W019.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": "Nejorienterad fråga. Avsikten är att öppna för ett nej som kan kännas tryggare att säga; ändra inte till en jaorienterad eller allmänt öppen fråga.",
+      "imageAlt": "Konstverk till Utforskaren: Är det helt galet att tänka sig…?"
     },
     {
       "id": "W020",
@@ -1795,11 +1794,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/W020.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": "Nejorienterad fråga. Avsikten är att öppna för ett nej som kan kännas tryggare att säga; ändra inte till en jaorienterad eller allmänt öppen fråga.",
+      "imageAlt": "Konstverk till Utforskaren: Är det helt uteslutet att…?"
     },
     {
       "id": "W021",
@@ -1809,11 +1809,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/W021.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": "Nejorienterad fråga. Avsikten är att öppna för ett nej som kan kännas tryggare att säga; ändra inte till en jaorienterad eller allmänt öppen fråga.",
+      "imageAlt": "Konstverk till Utforskaren: Skulle det ge väldigt stora konsekvenser om…?"
     },
     {
       "id": "W022",
@@ -1823,25 +1824,27 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/W022.webp",
       "style": null,
       "source": "frameworks",
       "sourceLocation": "Frameworks-leken, sidorna 1–2",
-      "notes": null
+      "notes": "Nejorienterad fråga. Avsikten är att öppna för ett nej som kan kännas tryggare att säga; ändra inte till en jaorienterad eller allmänt öppen fråga.",
+      "imageAlt": "Konstverk till Utforskaren: Är det orimligt?"
     },
     {
       "id": "N001",
       "type": "method",
-      "text": "Svara på oväntade frågor: be om förtydligande – upprepa kärnan – experience eller exploration",
+      "text": "Vinn tid genom att be om ett förtydligande. Berätta sedan om egna erfarenheter kopplade till frågan, eller utforska vad det skulle kunna ge.",
       "primaryCategory": "pausa",
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/N001.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Vägvalet efter förtydligandet är egen erfarenhet eller utforskande; båda ska inte behöva genomföras.",
+      "imageAlt": "Konstverk till Pausknappen: Vinn tid genom att be om ett förtydligande. Berätta sedan om egna erfarenheter kopplade till frågan, eller utforska vad det skulle kunna ge."
     },
     {
       "id": "N002",
@@ -1851,11 +1854,12 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/N002.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Avsikten är en pivot: styra samtalet till något annat. Primär kategori Fyren.",
+      "imageAlt": "Konstverk till Fyren: Det får mig att tänka på…"
     },
     {
       "id": "N003",
@@ -1865,11 +1869,12 @@
       "functions": [
         "kommunicera"
       ],
-      "image": null,
+      "image": "assets/art/cards/N003.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Scenen: Om jag skulle göra det skulle jag gå till väga så här…"
     },
     {
       "id": "N004",
@@ -1879,25 +1884,12 @@
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/N004.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
-    },
-    {
-      "id": "N005",
-      "type": "method",
-      "text": "Avsluta socialt samtal: spegla – pivot – ge en positiv kontakt – jagbudskap och gå vidare",
-      "primaryCategory": "avsluta",
-      "functions": [
-        "avsluta"
-      ],
-      "image": null,
-      "style": null,
-      "source": "anteckningar",
-      "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Jag vet inte, men jag kan ta reda på det och återkomma om någon timme."
     },
     {
       "id": "N006",
@@ -1907,11 +1899,12 @@
       "functions": [
         "avsluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N006.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utgången: Det var trevligt att prata med dig. Jag ska vidare nu."
     },
     {
       "id": "N007",
@@ -1921,11 +1914,12 @@
       "functions": [
         "avsluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N007.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utgången: Jag ska röra på mig."
     },
     {
       "id": "N008",
@@ -1935,11 +1929,12 @@
       "functions": [
         "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/N008.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Tack för ditt tålamod."
     },
     {
       "id": "N009",
@@ -1949,11 +1944,12 @@
       "functions": [
         "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/N009.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Tack för att du lyssnar."
     },
     {
       "id": "N010",
@@ -1963,39 +1959,30 @@
       "functions": [
         "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/N010.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Tack för att du frågade."
     },
     {
       "id": "N011",
       "type": "method",
-      "text": "När någon frågar hur du mår: känsla – handling – tacksamhet",
+      "text": "När någon frågar hur du mår: känsla – hur du hanterar det – tacksamhet.",
       "primaryCategory": "relation",
       "functions": [
         "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/N011.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
-    },
-    {
-      "id": "N012",
-      "type": "phrase",
-      "text": "Jag är sur över något som jag inte vill prata om, och jag ville inte säga att allt var bra. Tack för att du frågade.",
-      "primaryCategory": "relation",
-      "functions": [
-        "relation"
+      "notes": "Övningen visar hur man hanterar känslan, inte bara vilken känsla man har. Familjestödet är ett exempel och ska ersättas med något sant för användaren.",
+      "steps": [
+        "Jag mår dåligt, men jag har bra stöd av min familj. Tack för att du frågade."
       ],
-      "image": null,
-      "style": null,
-      "source": "anteckningar",
-      "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "imageAlt": "Konstverk till Bron: När någon frågar hur du mår: känsla – hur du hanterar det – tacksamhet."
     },
     {
       "id": "N013",
@@ -2005,11 +1992,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/N013.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Kan du upprepa det?"
     },
     {
       "id": "N014",
@@ -2019,11 +2007,12 @@
       "functions": [
         "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/N014.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Utforskaren: Kan du säga det igen?"
     },
     {
       "id": "N015",
@@ -2033,11 +2022,12 @@
       "functions": [
         "pausa"
       ],
-      "image": null,
+      "image": "assets/art/cards/N015.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Tar emot kritik utan att behöva försvara sig eller hålla med: nu har du sagt det, nu går jag vidare.",
+      "imageAlt": "Konstverk till Pausknappen: Okej."
     },
     {
       "id": "N016",
@@ -2047,11 +2037,12 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/N016.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Muren: en gräns för det egna engagemanget. Jag går inte vidare med det du säger; jag släpper det.",
+      "imageAlt": "Konstverk till Muren: Jag släpper det."
     },
     {
       "id": "N017",
@@ -2061,53 +2052,12 @@
       "functions": [
         "grans"
       ],
-      "image": null,
+      "image": "assets/art/cards/N017.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
-    },
-    {
-      "id": "N018",
-      "type": "method",
-      "text": "DOR: Deposit (varm sann inledning) – Own (jagbudskap) – Room (utrymme för svar)",
-      "primaryCategory": "aterkoppla",
-      "functions": [
-        "aterkoppla"
-      ],
-      "image": null,
-      "style": null,
-      "source": "anteckningar",
-      "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
-    },
-    {
-      "id": "N019",
-      "type": "phrase",
-      "text": "Jag gillar att jobba med dig, det är därför jag tar upp det här. När mötet börjar och du inte är där så täcker jag upp och jag börjar känna mig utnyttjad. Vad tänker du om det?",
-      "primaryCategory": "aterkoppla",
-      "functions": [
-        "aterkoppla"
-      ],
-      "image": null,
-      "style": null,
-      "source": "anteckningar",
-      "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
-    },
-    {
-      "id": "N020",
-      "type": "method",
-      "text": "Försvara beslutet, inte dig själv.",
-      "primaryCategory": "besluta",
-      "functions": [
-        "besluta"
-      ],
-      "image": null,
-      "style": null,
-      "source": "anteckningar",
-      "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Avvisar press att agera, hålla med eller ta ställning i en konflikt. Behåll originalrepliken.",
+      "imageAlt": "Konstverk till Muren: Det står för dig, jag tar inte det."
     },
     {
       "id": "N021",
@@ -2117,11 +2067,12 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N021.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Bedömningen jag gjorde var…"
     },
     {
       "id": "N022",
@@ -2131,11 +2082,12 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N022.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Prioriteringen jag gjorde var…"
     },
     {
       "id": "N023",
@@ -2145,11 +2097,12 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N023.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Avvägningen jag gjorde var…"
     },
     {
       "id": "N024",
@@ -2159,53 +2112,42 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N024.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
-    },
-    {
-      "id": "N025",
-      "type": "method",
-      "text": "Evidence – Conclusion – Decision: underlag – slutsats – beslut",
-      "primaryCategory": "besluta",
-      "functions": [
-        "besluta"
-      ],
-      "image": null,
-      "style": null,
-      "source": "anteckningar",
-      "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Slutsatsen jag drog var…"
     },
     {
       "id": "N026",
       "type": "template",
-      "text": "På grund av X blev min slutsats Y och beslutet jag fattade var Z.",
+      "text": "På grund av … blev min slutsats … och beslutet jag fattade var …",
       "primaryCategory": "besluta",
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N026.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: På grund av … blev min slutsats … och beslutet jag fattade var …"
     },
     {
       "id": "N027",
       "type": "template",
-      "text": "Beslutet jag fattade var X, baserat på Y.",
+      "text": "Beslutet jag fattade var … utifrån …",
       "primaryCategory": "besluta",
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N027.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Försvara beslutet, inte dig själv. Flyttat från principkort N020. Beslutet ska vara i fokus, inte jaget.",
+      "imageAlt": "Konstverk till Vägskälet: Beslutet jag fattade var … utifrån …"
     },
     {
       "id": "N028",
@@ -2215,11 +2157,12 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N028.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Beslutet jag fattade var fel. Nästa gång ska jag basera det på…"
     },
     {
       "id": "N029",
@@ -2229,11 +2172,12 @@
       "functions": [
         "styra"
       ],
-      "image": null,
+      "image": "assets/art/cards/N029.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Det förflutna och framtiden ställs avsiktligt mot varandra för att föra samtalet konstruktivt framåt. Behåll originaltexten.",
+      "imageAlt": "Konstverk till Fyren: Vill du veta varför det blev så eller ska vi prata om vad vi ska göra annorlunda nästa gång?"
     },
     {
       "id": "N030",
@@ -2243,11 +2187,12 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N030.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Om det inte var det rätta beslutet, låt oss prata om vad det skulle ha baserats på."
     },
     {
       "id": "N031",
@@ -2257,39 +2202,42 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N031.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Det var det beslut jag fattade. Här är nästa steg…"
     },
     {
       "id": "N032",
-      "type": "method",
-      "text": "Acceptera inte en felaktig premiss.",
+      "type": "phrase",
+      "text": "Jag håller inte med om utgångspunkten för frågan.",
       "primaryCategory": "konflikt",
       "functions": [
         "konflikt"
       ],
-      "image": null,
+      "image": "assets/art/cards/N032.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag håller inte med om utgångspunkten för frågan."
     },
     {
       "id": "N033",
       "type": "phrase",
-      "text": "Det är beslutet jag har landat i. Nästa fråga.",
+      "text": "Det är beslutet jag har landat i. Nu går vi vidare.",
       "primaryCategory": "besluta",
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N033.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Det är beslutet jag har landat i. Nu går vi vidare."
     },
     {
       "id": "N034",
@@ -2299,53 +2247,59 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N034.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Du måste inte hålla med om beslutet, men det är beslutet som gäller."
     },
     {
       "id": "N035",
       "type": "phrase",
-      "text": "Tack, det betyder mycket – när det kommer från dig.",
+      "text": "Tack, det betyder mycket.",
       "primaryCategory": "relation",
       "functions": [
         "relation"
       ],
-      "image": null,
+      "image": "assets/art/cards/N035.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "”När det kommer från dig” kan läggas till om man verkligen menar det, men ingår inte i standardrepliken.",
+      "imageAlt": "Konstverk till Bron: Tack, det betyder mycket."
     },
     {
       "id": "N036",
       "type": "phrase",
       "text": "Vad är det du tittar efter, så kan jag kontrollera det extra noga nästa gång?",
-      "primaryCategory": "delegera",
+      "primaryCategory": "utforska",
       "functions": [
-        "delegera"
+        "utforska",
+        "aterkoppla"
       ],
-      "image": null,
+      "image": "assets/art/cards/N036.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Behåll originalet: efterfråga vad chefen granskar för att själv kunna kontrollera det extra noga nästa gång.",
+      "imageAlt": "Konstverk till Utforskaren: Vad är det du tittar efter, så kan jag kontrollera det extra noga nästa gång?"
     },
     {
       "id": "N037",
       "type": "phrase",
-      "text": "Kan du förklara vad du ändrade så att du inte behöver göra om det nästa gång?",
-      "primaryCategory": "delegera",
+      "text": "Kan du förklara vad du ändrade så att inte du behöver göra samma ändring nästa gång?",
+      "primaryCategory": "aterkoppla",
       "functions": [
-        "delegera"
+        "aterkoppla",
+        "utforska"
       ],
-      "image": null,
+      "image": "assets/art/cards/N037.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Betona DU: möjliggör lärande genom att framställa det som en lättnad för chefen att slippa göra om arbetet.",
+      "imageAlt": "Konstverk till Spegelverkstaden: Kan du förklara vad du ändrade så att inte du behöver göra samma ändring nästa gång?"
     },
     {
       "id": "N038",
@@ -2355,25 +2309,58 @@
       "functions": [
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N038.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Jag tänkte göra så här klockan 13 om jag inte hör något annat från dig."
     },
     {
       "id": "N039",
       "type": "template",
-      "text": "Jag bestämde X för att Y. Vill du vara delaktig i sådana beslut?",
-      "primaryCategory": "besluta",
+      "text": "Jag beslutade … för att … Vill du vara delaktig i sådana beslut?",
+      "primaryCategory": "grans",
       "functions": [
+        "grans",
         "besluta"
       ],
-      "image": null,
+      "image": "assets/art/cards/N039.webp",
       "style": null,
       "source": "anteckningar",
       "sourceLocation": "Anteckningar i chatten 2026-10-16",
-      "notes": null
+      "notes": "Gränssättning gentemot detaljstyrning från en chef. Frågan gäller delaktighet i sådana beslut, inte bara hur nästa beslut ska gå till.",
+      "imageAlt": "Konstverk till Muren: Jag beslutade … för att … Vill du vara delaktig i sådana beslut?"
+    },
+    {
+      "id": "N040",
+      "type": "phrase",
+      "text": "Får jag avbryta? Jag vill sammanfatta så vi kommer vidare.",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": "assets/art/cards/N040.webp",
+      "style": null,
+      "source": "redaktionell_genomgang",
+      "sourceLocation": "Användarbeslut i chatten 2026-10-17",
+      "notes": "Ny talbar replik. Ersätter inte metodkort W003 under samma ID.",
+      "imageAlt": "Konstverk till Fyren: Får jag avbryta? Jag vill sammanfatta så vi kommer vidare."
+    },
+    {
+      "id": "N041",
+      "type": "phrase",
+      "text": "Det är din tolkning, jag håller inte med.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": "assets/art/cards/N041.webp",
+      "style": null,
+      "source": "redaktionell_genomgang",
+      "sourceLocation": "Användarbeslut i chatten 2026-10-17",
+      "notes": "Ny variant bredvid N017. Avser att avvisa en tolkning, inte press att ta ställning.",
+      "imageAlt": "Konstverk till Muren: Det är din tolkning, jag håller inte med."
     }
   ]
 }

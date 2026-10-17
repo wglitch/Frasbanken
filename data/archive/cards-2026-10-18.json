@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-18",
+  "reason": "Parkerade efter uttryckligt godkännande under bildgranskning. Stabilt ID och historik bevaras.",
+  "parked": [
+    {
+      "id": "W001",
+      "type": "method",
+      "text": "SOAR: Source – Observation – Action – Result",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "N025",
+      "type": "method",
+      "text": "Evidence – Conclusion – Decision: underlag – slutsats – beslut",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    }
+  ]
+}

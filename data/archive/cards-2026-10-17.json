@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-17",
+  "reason": "Redaktionella beslut från användaren; historik-ID:n får inte återanvändas.",
+  "removed": [
+    {
+      "id": "W003",
+      "type": "method",
+      "text": "Bryt babblet: interrupt – yes-set – compliance-set – recap",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W004",
+      "type": "method",
+      "text": "Feel – Felt – Found",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W005",
+      "type": "method",
+      "text": "DESC: Describe – Effects – Say – Consequence",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W009",
+      "type": "method",
+      "text": "Mötesstrategier: summarize – clarify – be the source of truth",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W014",
+      "type": "method",
+      "text": "FORD: Family – Occupation – Recreation – Dreams",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W016",
+      "type": "method",
+      "text": "Warmth cues: triple nod – head tilt – vokalisera – savor smile",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "N005",
+      "type": "method",
+      "text": "Avsluta socialt samtal: spegla – pivot – ge en positiv kontakt – jagbudskap och gå vidare",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N012",
+      "type": "phrase",
+      "text": "Jag är sur över något som jag inte vill prata om, och jag ville inte säga att allt var bra. Tack för att du frågade.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N018",
+      "type": "method",
+      "text": "DOR: Deposit (varm sann inledning) – Own (jagbudskap) – Room (utrymme för svar)",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N019",
+      "type": "phrase",
+      "text": "Jag gillar att jobba med dig, det är därför jag tar upp det här. När mötet börjar och du inte är där så täcker jag upp och jag börjar känna mig utnyttjad. Vad tänker du om det?",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    },
+    {
+      "id": "N020",
+      "type": "method",
+      "text": "Försvara beslutet, inte dig själv.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": null,
+      "style": null,
+      "source": "anteckningar",
+      "sourceLocation": "Anteckningar i chatten 2026-10-16",
+      "notes": null
+    }
+  ],
+  "parked": [
+    {
+      "id": "W011",
+      "type": "method",
+      "text": "Competence cues: avslappnade axlar, högt huvud, steeple fingers",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W013",
+      "type": "method",
+      "text": "CRAC: Conclusion – Rule – Analysis – Conclusion",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    },
+    {
+      "id": "W015",
+      "type": "method",
+      "text": "Gester: iconic – metaforic – deictic – pragmatic – beat",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": null,
+      "style": null,
+      "source": "frameworks",
+      "sourceLocation": "Frameworks-leken, sidorna 1–2",
+      "notes": null
+    }
+  ]
+}

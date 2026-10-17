@@ -10,12 +10,14 @@ const views = JSON.parse(await readFile(new URL('../data/categories.json', impor
 const { cards, categories } = normalizeLibrary(source, views);
 const date = '2026-10-16T14:30:00.000Z';
 
-test('supplied library preserves all 165 cards, 12 worlds and all three types', () => {
+test('revised library preserves 151 cards, 12 category definitions and all three types', () => {
   validateLibrary(cards, categories);
-  assert.equal(cards.length, 165);
-  assert.equal(new Set(cards.map(card => card.category)).size, 12);
+  assert.equal(cards.length, 151);
+  assert.ok(!cards.some(card => ['W001', 'N025'].includes(card.id)));
+  assert.equal(categories.length, 12);
+  assert.equal(new Set(cards.map(card => card.category)).size, 11);
   assert.deepEqual(new Set(cards.map(card => card.type)), new Set(['phrase', 'template', 'method']));
-  for (const category of categories) assert.ok(cards.some(card => card.category === category.id));
+  assert.deepEqual(categories.filter(category => !cards.some(card => card.category === category.id)).map(category => category.id), ['delegera']);
   assert.deepEqual(cards.map(({category, ...card}) => card), source.cards);
   assert.throws(() => validateLibrary([...cards, cards[0]], categories));
 });

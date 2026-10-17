@@ -3,3 +3,7 @@ public/
 *.log
 test-results/
 preview.jpg
+
+# Keep local image masters and embedded review copies out of Git.
+assets/art/cards/*.png
+reviews/art/

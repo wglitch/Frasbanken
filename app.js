@@ -101,6 +101,7 @@ function paintCard(root, card) {
   const image = root.querySelector('.artwork img');
   const fallback = root.querySelector('.art-fallback');
   root.dataset.cardId = card.id;
+  root.dataset.cardType = card.type;
   image.style.objectFit = 'cover';
   image.style.objectPosition = card.imagePosition || group.imagePosition || '50% 50%';
   fallback.hidden = true;
@@ -408,7 +409,7 @@ $('#import-file').addEventListener('change', async event => {
 async function start() {
   try {
     const [library,views] = await Promise.all(['data/cards.json','data/categories.json'].map(async path => {
-      const response = await fetch(path);
+      const response = await fetch(path, {cache:'no-cache'});
       if (!response.ok) throw new Error('Kortbiblioteket kunde inte hämtas.');
       return response.json();
     }));
