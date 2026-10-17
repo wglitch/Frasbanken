@@ -1,7 +1,7 @@
 import { matchingCards, validateHistory, mergeHistory, validateLibrary } from './lib/repetition.js';
 import { openHistoryStore } from './lib/storage.js';
 import { normalizeLibrary } from './lib/library.js';
-import { Deck } from './lib/deck.js';
+import { Deck } from './lib/deck.js?v=2.1';
 import { dragDirection, basketAt, releaseAction } from './lib/gestures.js';
 import { artworkSources, localArtwork } from './lib/artwork.js';
 import { CardMotion } from './lib/card-motion.js';
