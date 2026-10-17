@@ -1,11 +1,21 @@
 # Current Next Step
 
-Provkör Frasbanken 2.0 på fysisk iPhone/Safari, särskilt släppytornas precision och svepgester. Samla återkoppling på kortkänslan. Nya konstverk tas fram separat. Den senaste lyckade publiceringen visade sig använda det förberedda Actions-flödet; 2.0 publiceras därför samma väg från main.
+Provkör helskärmskonsten och sorteringens rörelsekänsla på fysisk iPhone/Safari. Kontrollera safe areas, långtrycksmeny och korgarnas precision i handen. Bildproduktion och övriga funktioner ligger utanför denna iteration.
 
 # Elevator Pitch
 Frasbanken är en lugn repetitionsplats där samtalsfraser får bli en naturlig del av användarens eget språk.
 
 # Journal
+
+## 2026-10-17 – Helskärmskonst och kortanimation
+
+Done: Repetitionsvyn fyller skärmen utan ram, marginaler eller synliga kontroller. Frasen ligger över konstverket med läsbarhetstoning och anpassad storlek. Högerdrag lyfter ett fysiskt kort över ett förladdat nästa kort. Sortering ger en 200 ms utgående swoosh och 280 ms inkommande rörelse från vänster, överlappande till 300 ms. Animationen låser mot dubbelregistrering, avbrott städar lager och minskad rörelse tonar i 90 ms. Menyn nås med långtryck, högerklick, tangentbord och skärmläsare. 29 tester passerar. Desktop och 320 × 568 kontrollerade för stor text, cover, alla korgar, ångring, släpp utanför, bibliotek och minskad rörelse.
+
+Learned: Förhandsbilden måste använda samma reserverade slumpdragning och samma urvalsalgoritm som nästa kort. Absolut positionerade gradienter får inte skapa falsk skrollhöjd som krymper texten. Rotationsankaret behålls under återgången för att undvika ett litet hopp.
+
+Next: Publicera via befintligt GitHub Actions-flöde och verifiera webbadressen. Därefter fysisk iPhone/Safari-kontroll med användaren.
+
+Open Questions: Fysisk iPhone/Safari och verkliga safe areas är ännu inte verifierade. JSON, lokal lagring, kategorier och repetitionsregler är oförändrade. Ingen ny bildproduktion.
 
 ## 2026-10-16 – Frasbanken 2.0
 
@@ -13,7 +23,7 @@ Done: Huvudvyn ombyggd till en digital konstkortlek med endast bild, fras och di
 
 Learned: Ångring behöver återställa både skav och senaste tidpunkt, eller ta bort en ny historikpost. Biblioteket får inte ha horisontellt dolda kategorier. Konstproduktionen är en separat uppgift. Bilder begränsas till samma webbursprung och historik skickas inte till servern.
 
-Next: Publicera den verifierade ändringen på main och kontrollera Pages. Därefter fysisk iPhone/Safari-kontroll med användaren.
+Next: Fysisk iPhone/Safari-kontroll med användaren. Publicering slutförd: commit f2d8c0b047e0abf9cbfe01ca3bc6d9991d7810da, Actions run 38935625970 lyckades. Den publika sidan verifierades med HTTP 200, ny kortvy, 165 kort och 12 kategorier. Inga konsolfel i den publicerade vyn. Denna resultatanteckning sparas lokalt för nästa session.
 
 Open Questions: Fysisk iPhone/Safari och nya konstverk återstår. Kontroll av GitHub visade att den senaste lyckade publiceringen kördes av Publicera Frasbanken (run 38929568455). Actions-flödet behåller därför automatisk publicering från main, och ingen Pages-inställning har ändrats av agenten.
 

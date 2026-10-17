@@ -1,4 +1,4 @@
-# Frasbanken 2.0
+# Frasbanken 2.1
 
 En digital konstkortlek för att göra samtalsfraser till sina egna. 165 kort i 12 kategorier, utan timer, poäng eller automatisk bedömning.
 
@@ -7,17 +7,19 @@ En digital konstkortlek för att göra samtalsfraser till sina egna. 165 kort i 
 
 ## Användning
 
-I vila syns konstverket och frasen samt en diskret meny (···). Säg frasen högt så länge du vill.
+I vila syns endast ett konstverk i helskärm och frasen ovanpå bilden. Bilden fyller skärmen med object-fit: cover; en mjuk mörk toning och längdanpassad vit text ger läsbarhet. Säg frasen högt så länge du vill.
 
 - Dra åt höger: tre korgar visas. Släpp med fingret/pekaren inne i Motstånd (överst, 3), Ovant (mitten, 2) eller Naturligt (nederst, 1).
 - Släpp utanför: kortet går tillbaka utan att något sparas.
 - Svep vänster: ångra senaste sorteringen och återställ det tidigare skavvärdet och repetitionstidpunkten. Ett tidigare obedömt kort blir obedömt igen.
 - Svep uppåt: bibliotek med alla kategorier, repetitionsformer, historik, inställningar och Om appen.
-- Menyn (···) erbjuder samma funktioner med knappar, även Nästa utan att bedöma. Tangentbord: vänsterpil ångrar, uppåtpil öppnar biblioteket och högerpil öppnar kortmenyn.
+- Håll fingret stilla på kortet i ungefär en halv sekund, eller högerklicka, för samma funktioner med knappar, även Nästa utan att bedöma. Tangentbord: vänsterpil ångrar, uppåtpil öppnar biblioteket och högerpil öppnar kortmenyn. En skärmläsaråtkomlig menyknapp finns också och blir synlig när den får tangentbordsfokus.
 
 Ångring gäller sorteringar i den pågående kortleken. Ångring fungerar även efter kategoribyten. Import eller omladdning tömmer ångringskedjan men ändrar inte övrig sparad historik. Du kan alltid repetera ett bedömt kort och gradera om det. När bara ett kort matchar visas det igen efter sortering.
 
 Bibliotekets kategorier och repetitionsform kombineras. Alla, Ovant & motstånd, Obedömda och Bedömda finns. Urvalet prioriterar obedömda, högre skav och äldre repetitioner med viktad slumpning, men blandar även in välbekanta kort och undviker omedelbar upprepning när alternativ finns.
+
+Vid högerdrag lossnar helskärmsbilden till ett lätt roterat kort med rundade hörn och skugga. Nästa kort förladdas bakom det aktiva med en reserverad slumpdragning genom samma repetitionsalgoritm; inget registreras innan sorteringen sparas. Utgående kort accelererar mot korgen på 200 ms, medan det inkommande glider från vänster på 280 ms med 20 ms förskjutning. Rörelserna överlappar till totalt 300 ms. Gester är låsta tills övergången är klar. Släpp utanför återgår mjukt till helskärm. Minskad rörelse använder en 90 ms toning utan förflyttning; fingerdragningen följer fortfarande handen. Eventuell haptik används bara om webbläsaren stöder det.
 
 Introduktionen visas en gång per webbläsare och kan stängas direkt eller öppnas från Om appen. Inställningen Minska rörelser kompletterar operativsystemets inställning för minskad rörelse.
 
@@ -53,18 +55,18 @@ De ursprungliga prototypsfraserna F001–F018 skiljer sig från det nuvarande bi
 
 Alla kategorier från biblioteket visas automatiskt. Visuella kategoriinställningar ligger i `data/categories.json`. Nya kategorier utan inställningar får en standardbild och behöver ingen kodändring.
 
-Bildkedja: kortets `image` → kategorins `image` → eventuell `fallbackImage` → `assets/placeholder.svg` → neutral yta om även filen saknas. Använd relativa sökvägar, exempelvis `assets/cards/F001.webp`, och `imageAlt` för individuella bilder. Sätt vid behov `imageFit: "contain"` för att visa hela konstverket, eller `imagePosition: "35% 50%"` för beskärningens fokus. Samma visningsfält kan användas på kategoriinställningarna. `style` är metadata och skapar ingen bild automatiskt.
+Bildkedja: kortets `image` → kategorins `image` → eventuell `fallbackImage` → `assets/placeholder.svg` → neutral yta om även filen saknas. Använd relativa sökvägar, exempelvis `assets/cards/F001.webp`, och `imageAlt` för individuella bilder. Använd `imagePosition: "35% 50%"` för beskärningens fokus, även på kategoriinställningar. Repetitionsvyn använder alltid cover för att fylla skärmen och bevarar bildens proportioner. `style` är metadata och skapar ingen bild automatiskt.
 
 Ingen ny bildserie har genererats för 2.0. De befintliga tillfälliga illustrationerna ersätts separat med starkare konstverk. Originalbilderna kan återskapas med `python tools/build-art.py`.
 
 ## Arkitektur och verifiering
 
-Vanlig HTML/CSS/JavaScript, inga paketberoenden. `app.js` hanterar vy och Pointer Events, `lib/deck.js` kortföljd/ångring, `lib/gestures.js` gestklassificering och träffytor, `lib/storage.js` beständig historik, `lib/artwork.js` lokal bildkedja, `lib/library.js` JSON-format och `lib/repetition.js` viktning/validering.
+Vanlig HTML/CSS/JavaScript, inga paketberoenden. `app.js` hanterar vy och Pointer Events, `lib/deck.js` kortföljd/ångring och skrivskyddad förhandsvisning, `lib/card-motion.js` överlappande animationer och animationslås, `lib/gestures.js` gestklassificering och träffytor, `lib/storage.js` beständig historik, `lib/artwork.js` lokal bildkedja, `lib/library.js` JSON-format och `lib/repetition.js` viktning/validering.
 
 ```sh
 npm test
 ```
 
-23 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation och lokala bildadresser. Webbläsarkontroll i desktop- och 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
+29 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation, lokala bildadresser, oförändrat korturval vid förhandsvisning, parallella animationer, animationslås, avbrott och minskad rörelse. Webbläsarkontroll i desktop- och 320 × 568-vy av helskärmskonst, längdanpassning, förladdat nästa kort, övergångar, återgång utanför, ångring, bibliotek och minskad rörelse. Tidigare kontroll i 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
 
 Nästa steg finns i JOURNAL.md; framtida idéer i IDEAS.md.

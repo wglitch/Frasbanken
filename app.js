@@ -4,10 +4,16 @@ import { normalizeLibrary } from './lib/library.js';
 import { Deck } from './lib/deck.js';
 import { dragDirection, basketAt, releaseAction } from './lib/gestures.js';
 import { artworkSources, localArtwork } from './lib/artwork.js';
+import { CardMotion } from './lib/card-motion.js';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 let cards = [], categories = [], deck, store, gesture = null, working = false, noticeTimer;
+let reservedRoll = Math.random(), previewId = null, previewReady = Promise.resolve(), currentReady = Promise.resolve(), holdTimer;
+let lastOrigin = null;
+const motion = new CardMotion();
+const artworkLoads = new WeakMap();
+const reducedMotion = () => $('#reduce-motion').checked || matchMedia('(prefers-reduced-motion: reduce)').matches;
 const labels = {1:'Naturligt', 2:'Ovant', 3:'Motstånd'};
 const INTRO_KEY = 'frasbanken.intro.v2';
 const MOTION_KEY = 'frasbanken.reduce-motion';
@@ -31,6 +37,7 @@ function warn(message) {
 function preference(key) { try { return localStorage.getItem(key); } catch { return null; } }
 function setPreference(key, value) { try { localStorage.setItem(key, value); } catch { /* Rehearsal still works without preferences. */ } }
 function openDialog(id) {
+  if (working) return;
   cancelGesture();
   updateLibrary();
   if (!$(id).open) $(id).showModal();
@@ -40,38 +47,94 @@ function openLibrary() { closeActions(); openDialog('#library-dialog'); }
 function focusCard() { if (deck?.current) $('#card').focus({preventScroll:true}); }
 
 function showArtwork(image, sources, alt, exhausted = () => {}) {
-  const candidates = sources.map(path => localArtwork(path, document.baseURI)).filter(Boolean);
-  let index = 0;
-  image.alt = alt || '';
-  image.hidden = false;
-  image.onerror = () => {
-    if (index < candidates.length) image.src = candidates[index++];
-    else { image.onerror = null; image.hidden = true; exhausted(); }
-  };
-  if (candidates.length) image.src = candidates[index++];
-  else { image.hidden = true; exhausted(); }
+  artworkLoads.get(image)?.resolve(false);
+  return new Promise(resolve => {
+    const job = {resolve};
+    artworkLoads.set(image,job);
+    const candidates = sources.map(path => localArtwork(path,document.baseURI)).filter(Boolean);
+    let index = 0;
+    const finish = success => {
+      if (artworkLoads.get(image) !== job) return;
+      image.onload = image.onerror = null;
+      if (success) image.hidden = false;
+      resolve(success);
+    };
+    const load = () => {
+      if (index >= candidates.length) {
+        image.hidden = true;
+        exhausted();
+        finish(false);
+        return;
+      }
+      image.src = candidates[index++];
+      if (image.complete && image.naturalWidth) finish(true);
+    };
+    image.alt = alt || '';
+    image.hidden = false;
+    image.onload = () => finish(true);
+    image.onerror = load;
+    load();
+  });
 }
 
-function fitContent() {
-  if (!deck?.current) return;
-  const content = $('#phrase-content');
-  const phrase = $('#phrase');
-  const steps = $('#method-steps');
-  $('#card').classList.remove('overflowing');
+function fitContent(root = $('#card')) {
+  if (root.hidden) return;
+  const content = root.querySelector('.phrase-content');
+  const phrase = content.querySelector('h1,h2');
+  const steps = content.querySelector('ol');
+  root.classList.remove('overflowing');
   phrase.style.fontSize = '';
   steps.style.fontSize = '';
   let size = parseFloat(getComputedStyle(phrase).fontSize);
-  let stepSize = 15;
-  while (content.scrollHeight > content.clientHeight + 2 && size > 18) {
+  let stepSize = parseFloat(getComputedStyle(steps).fontSize);
+  while (content.scrollHeight > content.clientHeight + 2 && size > 20) {
     size -= 1;
-    stepSize = Math.max(12, stepSize - .4);
+    stepSize = Math.max(13,stepSize - .4);
     phrase.style.fontSize = `${size}px`;
     steps.style.fontSize = `${stepSize}px`;
   }
-  if (content.scrollHeight > content.clientHeight + 2) $('#card').classList.add('overflowing');
+  if (content.scrollHeight > content.clientHeight + 2) root.classList.add('overflowing');
 }
 
-function render(announce = false) {
+function paintCard(root, card) {
+  const group = categories.find(item => item.id === card.category);
+  const image = root.querySelector('.artwork img');
+  const fallback = root.querySelector('.art-fallback');
+  root.dataset.cardId = card.id;
+  image.style.objectFit = 'cover';
+  image.style.objectPosition = card.imagePosition || group.imagePosition || '50% 50%';
+  fallback.hidden = true;
+  const ready = showArtwork(image,artworkSources(card,group),card.image ? card.imageAlt : group.alt,() => {fallback.hidden = false;});
+  root.querySelector('h1,h2').textContent = card.text;
+  const steps = root.querySelector('ol');
+  steps.replaceChildren();
+  steps.hidden = !card.steps?.length;
+  for (const step of card.steps || []) {
+    const li = document.createElement('li');
+    li.textContent = step;
+    steps.append(li);
+  }
+  root.querySelector('.phrase-content').scrollTop = 0;
+  fitContent(root);
+  return ready;
+}
+
+function preparePreview(skav = 2) {
+  const next = deck?.peek(skav);
+  $('#next-card').hidden = !next;
+  if (!next) {previewId = null; return;}
+  if (previewId !== next.id) {
+    previewId = next.id;
+    previewReady = paintCard($('#next-card'),next);
+  }
+}
+function prepareNext() {
+  reservedRoll = Math.random();
+  previewId = null;
+  preparePreview();
+}
+
+function render(announce = false, prepare = true) {
   cancelGesture();
   $('#loading').hidden = true;
   $('#card').hidden = !deck.current;
@@ -80,30 +143,12 @@ function render(announce = false) {
   updateLibrary();
   if (!deck.current) {
     if (announce) $('#announcement').textContent = 'Inga kort i urvalet. Öppna biblioteket eller ångra sorteringen.';
+    if (prepare) prepareNext();
     return;
   }
-  const card = deck.current;
-  const group = categories.find(item => item.id === card.category);
-  $('#card-image').style.objectFit = card.imageFit === 'contain' || group.imageFit === 'contain' ? 'contain' : 'cover';
-  $('#card-image').style.objectPosition = card.imagePosition || group.imagePosition || '50% 50%';
-  $('#art-fallback').hidden = true;
-  showArtwork($('#card-image'), artworkSources(card, group), card.image ? card.imageAlt : group.alt, () => { $('#art-fallback').hidden = false; });
-  $('#phrase').textContent = card.text;
-  $('#method-steps').replaceChildren();
-  $('#method-steps').hidden = !card.steps?.length;
-  for (const step of card.steps || []) {
-    const li = document.createElement('li');
-    li.textContent = step;
-    $('#method-steps').append(li);
-  }
-  $('#phrase-content').scrollTop = 0;
-  $('#card').classList.remove('dealt');
-  if (announce) {
-    void $('#card').offsetWidth;
-    $('#card').classList.add('dealt');
-    $('#announcement').textContent = card.text;
-  }
-  fitContent();
+  currentReady = paintCard($('#card'),deck.current);
+  if (announce) $('#announcement').textContent = deck.current.text;
+  if (prepare) prepareNext();
 }
 
 function updateLibrary() {
@@ -138,19 +183,63 @@ function setWorking(value) {
   updateLibrary();
 }
 
+function outgoingSnapshot() {
+  const clone = $('#card').cloneNode(true);
+  clone.removeAttribute('id');
+  clone.removeAttribute('tabindex');
+  clone.removeAttribute('aria-describedby');
+  clone.setAttribute('aria-hidden','true');
+  clone.inert = true;
+  clone.classList.remove('dragging');
+  clone.classList.add('swoosh-ghost','lifted');
+  clone.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
+  return clone;
+}
+
 async function grade(skav) {
   if (working || !deck?.current) return;
-  cancelGesture();
+  clearTimeout(holdTimer);
+  preparePreview(skav);
+  const outgoing = outgoingSnapshot();
+  const width = $('#table').clientWidth, height = $('#table').clientHeight;
+  const context = {
+    width,height,origin:lastOrigin || {x:width/2,y:height/2},
+    start:$('#card').style.transform || 'none',
+    target:basketRects().find(target => target.skav === (skav ?? 2)),
+    reduced:reducedMotion()
+  };
+  // A button sort has no pointer-origin transform; use the visual centre.
+  if (!$('#card').style.transform) outgoing.style.transformOrigin = `${width/2}px ${height/2}px`;
   setWorking(true);
+  let saved = false;
   try {
     if (await deck.grade(skav)) {
+      saved = true;
       closeActions();
-      render(true);
+      // Keep the already decoded next artwork behind both moving layers.
+      // A slow image must never leave a white/empty frame or block interaction.
+      $('#table').append(outgoing);
+      render(true,false);
+      if (skav != null) {
+        $('#baskets').classList.add('visible');
+        $$('[data-basket]').forEach(element => element.classList.toggle('active',Number(element.dataset.basket) === skav));
+      }
+      await Promise.race([Promise.all([previewReady,currentReady]),new Promise(resolve => requestAnimationFrame(resolve))]);
+      if (!context.reduced && typeof navigator.vibrate === 'function') {
+        try { navigator.vibrate(8); } catch { /* Optional haptics must not interrupt sorting. */ }
+      }
+      await motion.play(outgoing,deck.current ? $('#card') : null,context);
       focusCard();
     }
   } catch {
-    warn('Sorteringen kunde inte sparas. Kortet ligger kvar. Försök igen eller exportera din befintliga historik i biblioteket.');
-  } finally { setWorking(false); }
+    if (!saved) warn('Sorteringen kunde inte sparas. Kortet ligger kvar. Försök igen eller exportera din befintliga historik i biblioteket.');
+    else render(true,false); // History is committed even if a browser cancels animation.
+  } finally {
+    outgoing.remove();
+    resetSurface();
+    if (saved) prepareNext();
+    setWorking(false);
+  }
 }
 
 async function goBack() {
@@ -176,65 +265,75 @@ function basketRects() {
   });
 }
 function resetSurface() {
-  $('#card').classList.remove('dragging');
+  $('#card').classList.remove('dragging','lifted');
   $('#card').style.transform = '';
+  lastOrigin = null;
   $('#baskets').classList.remove('visible');
   $$('[data-basket]').forEach(element => element.classList.remove('active'));
 }
-function cancelGesture() {
+function cancelGesture(reset = true) {
+  clearTimeout(holdTimer);
   const active = gesture;
   gesture = null;
   if (active && $('#card').hasPointerCapture(active.id)) $('#card').releasePointerCapture(active.id);
-  resetSurface();
+  if (reset) resetSurface();
 }
 const surface = $('#card');
-surface.addEventListener('pointerdown', event => {
-  if (!event.isPrimary) { cancelGesture(); return; }
+surface.addEventListener('pointerdown',event => {
+  if (!event.isPrimary) {cancelGesture();return;}
   if (working || !deck?.current || event.button !== 0 || $$('dialog').some(dialog => dialog.open)) return;
-  surface.classList.remove('dealt');
+  const rect = surface.getBoundingClientRect();
+  lastOrigin = {x:event.clientX - rect.left,y:event.clientY - rect.top};
+  surface.style.transformOrigin = `${lastOrigin.x}px ${lastOrigin.y}px`;
   gesture = {id:event.pointerId,x:event.clientX,y:event.clientY,direction:null,width:surface.offsetWidth};
   surface.setPointerCapture(event.pointerId);
+  holdTimer = setTimeout(() => {if (gesture && !working) openDialog('#actions-dialog');},550);
 });
-surface.addEventListener('pointermove', event => {
+surface.addEventListener('pointermove',event => {
   if (!gesture || event.pointerId !== gesture.id) return;
-  const dx = event.clientX - gesture.x;
-  const dy = event.clientY - gesture.y;
-  gesture.direction ||= dragDirection(dx, dy);
+  const dx = event.clientX - gesture.x, dy = event.clientY - gesture.y;
+  if (Math.hypot(dx,dy) > 8) clearTimeout(holdTimer);
+  gesture.direction ||= dragDirection(dx,dy);
   const direction = gesture.direction;
-  if (!direction || direction === 'cancel') return;
+  if (direction === 'cancel') return;
   if (event.cancelable) event.preventDefault();
   surface.classList.add('dragging');
-  const reduce = $('#reduce-motion').checked || matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const rotation = reduce ? 0 : Math.max(-8,Math.min(8,dx / 32));
+  if (!direction) {
+    surface.style.transform = `translate3d(${dx}px,${dy}px,0)`;
+    return;
+  }
+  const rotation = reducedMotion() ? 0 : Math.max(-7,Math.min(7,dx/34));
   if (direction === 'right') {
-    surface.style.transform = `translate(${dx}px,${dy}px) rotate(${rotation}deg)`;
+    surface.classList.add('lifted');
+    surface.style.transform = `translate3d(${dx}px,${dy}px,0) rotate(${rotation}deg) scale(.94)`;
     $('#baskets').classList.add('visible');
     const target = dx > 12 ? basketAt(event.clientX,event.clientY,basketRects()) : null;
     $$('[data-basket]').forEach(element => element.classList.toggle('active',Number(element.dataset.basket) === target));
+    preparePreview(target ?? 2);
   } else if (direction === 'left') {
-    surface.style.transform = `translate(${Math.min(0,dx) * .5}px,${dy * .15}px) rotate(${rotation * .5}deg)`;
+    surface.style.transform = `translate3d(${Math.min(0,dx)*.5}px,${dy*.15}px,0) rotate(${rotation*.5}deg)`;
   } else if (direction === 'up') {
-    surface.style.transform = `translate(${dx * .15}px,${Math.min(0,dy) * .45}px)`;
+    surface.style.transform = `translate3d(${dx*.15}px,${Math.min(0,dy)*.45}px,0)`;
   }
-}, {passive:false});
-surface.addEventListener('pointerup', event => {
+},{passive:false});
+surface.addEventListener('pointerup',event => {
   if (!gesture || event.pointerId !== gesture.id) return;
   const active = gesture;
-  const dx = event.clientX - active.x;
-  const dy = event.clientY - active.y;
+  const dx = event.clientX - active.x, dy = event.clientY - active.y;
   const direction = active.direction || dragDirection(dx,dy);
   const target = direction === 'right' ? basketAt(event.clientX,event.clientY,basketRects()) : null;
   const action = releaseAction(direction,dx,dy,target,active.width);
-  cancelGesture();
+  cancelGesture(action.type !== 'grade');
   if (action.type === 'grade') void grade(action.skav);
   else if (action.type === 'back') void goBack();
   else if (action.type === 'library') openLibrary();
 });
-surface.addEventListener('pointercancel', cancelGesture);
-surface.addEventListener('lostpointercapture', () => { if (gesture) cancelGesture(); });
-window.addEventListener('blur', cancelGesture);
-document.addEventListener('visibilitychange', () => { if (document.hidden) cancelGesture(); });
-window.addEventListener('resize', () => { cancelGesture(); fitContent(); });
+surface.addEventListener('pointercancel',() => cancelGesture());
+surface.addEventListener('lostpointercapture',() => {if (gesture) cancelGesture();});
+surface.addEventListener('contextmenu',event => {event.preventDefault();openDialog('#actions-dialog');});
+window.addEventListener('blur',() => {cancelGesture();motion.cancel();});
+document.addEventListener('visibilitychange',() => {if (document.hidden) {cancelGesture();motion.cancel();}});
+window.addEventListener('resize',() => {cancelGesture();motion.cancel();fitContent();fitContent($('#next-card'));});
 
 $('#menu-button').addEventListener('click', () => openDialog('#actions-dialog'));
 $('#open-library').addEventListener('click', openLibrary);
@@ -327,7 +426,7 @@ async function start() {
     deck = new Deck(cards,history,async records => {
       if (!store) throw new Error('Lagring saknas.');
       await store.write(records);
-    });
+    },() => reservedRoll);
     for (const item of categories) {
       const button = document.createElement('button');
       button.className = 'category-button';
