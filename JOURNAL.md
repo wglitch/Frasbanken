@@ -1,11 +1,22 @@
 # Current Next Step
 
-Verifiera publiceringen av Frasbanken 2.2 och prova sedan på fysisk iPhone/Safari: nya konstverk, textöverlägg, svep och skrollning av långa instruktioner. 151 WebP-bilder är kopplade till aktiva kort, totalt 50.09 MiB; originalen är lokalt bevarade. Molnområden och bibliotekssvep från nederkanten återstår som separata förbättringar.
+Verifiera publicering av Frasbanken 2.3 och prova molnområdena på fysisk iPhone/Safari: alla tre val, tydlig aktiv markering och släpp utanför. Molnens träffytor är oförändrade och flyttar sig inte när de markeras. Bibliotekssvep från nederkanten är en separat kommande förbättring.
 
 # Elevator Pitch
 Frasbanken är en lugn repetitionsplats där samtalsfraser får bli en naturlig del av användarens eget språk.
 
 # Journal
+
+## 2026-10-18 – Molntussar för sortering
+
+Done: Ersatt de rektangulära sorteringskorgarnas bakgrunder med mjuka, oregelbundna molnområden i varmrosa, sandgult och ljusgrönt. Aktivt mål ljusnar och får en tydligare kontur; träffytan står still. Symboler och etiketter bevarade, korgarnas dekorlinje borttagen och introduktionsbilden anpassad. Cacheversion och appinformation uppdaterade till 2.3. Alla 30 tester passerar; faktisk dragning till alla tre betyg med ångring, släpp i mellanrum, stabila träffytor, ingen sidledsskroll och minskad rörelse verifierade i 320 × 568, 390 × 844 och 1280 × 900. Visuellt kontrollerat i mobil och dator.
+
+Learned: Molnens övergångar ligger på pseudoelement; reglerna för minskad rörelse behöver omfatta även ::before och ::after. Visuell förstoring ska ligga på själva molnet och inte elementet som definierar släppytan.
+
+Next: Publicera och verifiera live, därefter användarens fysiska iPhone-kontroll.
+
+Open Questions: Hur känns molnens täthet och storlek vid verklig fingerdragning på telefonen? Bibliotekssvep från nederkanten återstår separat.
+
 
 ## 2026-10-18 – Webbkonst och publiceringskandidat 2.2
 
@@ -13,7 +24,7 @@ Done: Konverterat 151 aktiva kortbilder till WebP vid högst 1024 × 1536 och kv
 
 Learned: Full bildupplösning kan behållas med ungefär 89 procent mindre total filstorlek jämfört med första PNG-samlingen. På små skärmar blir långa instruktioner skrollbara i befintlig layout.
 
-Next: Pusha och verifiera GitHub Pages-publiceringen, därefter fysisk iPhone/Safari-kontroll.
+Next: Fysisk iPhone/Safari-kontroll. Publiceringen är klar: commit 7a7cc4519970eef34b080c2d06151c897da7249e, Actions run 39080030186 lyckades. Den publika appen verifierad: 151 avkodade WebP-bilder, två kortbilder vid start, sortering och ångring för alla tre betyg, 12 kategorier och tre skärmstorlekar. Inga HTTP- eller konsolfel. Git-checkout finns i C:\Users\wackn\Documents\Codex\2026-10-18\ligger-alla-150-bilder-som-vi\github-publish. Denna verifieringsanteckning sparas lokalt för nästa session.
 
 Open Questions: Molnområden och bibliotekssvep från nederkanten är separata kommande ändringar. Den verkliga iPhone-vyn återstår att kontrollera.
 

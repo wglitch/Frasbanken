@@ -1,4 +1,4 @@
-# Frasbanken 2.2
+# Frasbanken 2.3
 
 En digital konstkortlek för att göra samtalsfraser till sina egna. 151 aktiva kort och 12 kategorier (Stafettpinnen är tills vidare tom), utan timer, poäng eller automatisk bedömning.
 
@@ -9,7 +9,7 @@ En digital konstkortlek för att göra samtalsfraser till sina egna. 151 aktiva 
 
 I vila syns endast ett konstverk i helskärm och frasen ovanpå bilden. Bilden fyller skärmen med object-fit: cover; en mjuk mörk toning och längdanpassad vit text ger läsbarhet. Säg frasen högt så länge du vill.
 
-- Dra åt höger: tre korgar visas. Släpp med fingret/pekaren inne i Motstånd (överst, 3), Ovant (mitten, 2) eller Naturligt (nederst, 1).
+- Dra åt höger: tre mjuka molnområden visas. Molnet ljusnar när kortet är över det. Släpp med fingret/pekaren inne i Motstånd (överst, 3), Ovant (mitten, 2) eller Naturligt (nederst, 1).
 - Släpp utanför: kortet går tillbaka utan att något sparas.
 - Svep vänster: ångra senaste sorteringen och återställ det tidigare skavvärdet och repetitionstidpunkten. Ett tidigare obedömt kort blir obedömt igen.
 - Svep uppåt: bibliotek med alla kategorier, repetitionsformer, historik, inställningar och Om appen.

@@ -5,7 +5,7 @@
 # Concepts
 - Låt varje kategori ha ett gemensamt, framträdande huvudmotiv som tolkas utifrån varje fras; motivet, frasens särskilda element och en varierad konststil bygger tillsammans bildens minneskrok.
 - Växla mellan konstnärsreferenser som Dalí, Picasso, Rembrandt, Monet, Warhol och van Gogh samt bredare genrer; håll produktionen enkel och prioritera tydlig riktning framför många finjusteringsrundor. De tre första Pausknappen-förslagen är godkända som riktning.
-- Låt sorteringsmålen framträda som diffusa molnområden över konsten med tydlig markering och precisa släppytor.
+- Genomfört i 2.3: sorteringsmålen är diffusa molnområden över konsten med tydlig markering och fasta släppytor; samla återkoppling på känslan vid fingerdragning.
 - Stäm av kategoriernas funktioner innan konstproduktion; schackbräde för ledarskap och bron för förhandling respektive relation är ännu arbetsförslag.
 - Hitta ett bättre konstnärligt namn för återkopplingskategorin, som tills vidare heter Spegelverkstaden.
 - Utöka W008 med uppriktiga komplimanger om process, ansträngning och lärande.
