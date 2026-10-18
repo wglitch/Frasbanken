@@ -143,7 +143,7 @@ test('target geometry distinguishes all baskets and rejects gaps and outside dro
 
 test('gesture intent prevents left and up swipes from registering any rating', () => {
   assert.equal(dragDirection(5,4),null);
-  assert.equal(dragDirection(60,60),null);
+  assert.equal(dragDirection(60,60),'right');
   assert.equal(dragDirection(30,2),'right');
   assert.equal(dragDirection(-30,2),'left');
   assert.equal(dragDirection(2,-30),'up');

@@ -2,7 +2,7 @@ import { matchingCards, validateHistory, mergeHistory, validateLibrary } from '.
 import { openHistoryStore } from './lib/storage.js';
 import { normalizeLibrary } from './lib/library.js';
 import { Deck } from './lib/deck.js?v=2.1';
-import { dragDirection, basketAt, releaseAction } from './lib/gestures.js';
+import { dragDirection, swipeGrade, releaseAction } from './lib/gestures.js?v=2.4';
 import { artworkSources, localArtwork } from './lib/artwork.js';
 import { CardMotion } from './lib/card-motion.js';
 
@@ -308,7 +308,7 @@ surface.addEventListener('pointermove',event => {
     surface.classList.add('lifted');
     surface.style.transform = `translate3d(${dx}px,${dy}px,0) rotate(${rotation}deg) scale(.94)`;
     $('#baskets').classList.add('visible');
-    const target = dx > 12 ? basketAt(event.clientX,event.clientY,basketRects()) : null;
+    const target = swipeGrade(dx,dy);
     $$('[data-basket]').forEach(element => element.classList.toggle('active',Number(element.dataset.basket) === target));
     preparePreview(target ?? 2);
   } else if (direction === 'left') {
@@ -322,7 +322,7 @@ surface.addEventListener('pointerup',event => {
   const active = gesture;
   const dx = event.clientX - active.x, dy = event.clientY - active.y;
   const direction = active.direction || dragDirection(dx,dy);
-  const target = direction === 'right' ? basketAt(event.clientX,event.clientY,basketRects()) : null;
+  const target = direction === 'right' ? swipeGrade(dx,dy) : null;
   const action = releaseAction(direction,dx,dy,target,active.width);
   cancelGesture(action.type !== 'grade');
   if (action.type === 'grade') void grade(action.skav);

@@ -6,9 +6,24 @@
   <meta name="theme-color" content="#10150f">
   <meta name="description" content="En digital konstkortlek. Säg frasen högt och gör orden till dina.">
   <title>Frasbanken · Gör orden till dina</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=2.3">
-  <script type="module" src="app.js?v=2.3"></script>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Frasbanken">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Frasbanken – Gör orden till dina">
+  <meta property="og:description" content="En digital konstkortlek för att göra samtalsfraser till sina egna.">
+  <meta property="og:url" content="https://wglitch.github.io/Frasbanken/">
+  <meta property="og:image" content="https://wglitch.github.io/Frasbanken/assets/share-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frasbankens gröna kortlek med ett f på det främsta kortet.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css?v=2.4">
+  <script type="module" src="app.js?v=2.4"></script>
 </head>
 <body>
   <main id="table" aria-label="Frasbankens kortlek">
@@ -22,13 +37,13 @@
       <div id="phrase-content" class="phrase-content"><h1 id="phrase"></h1><ol id="method-steps" class="method-steps" hidden></ol></div>
     </article>
     <div id="baskets" class="baskets" aria-hidden="true" inert>
-      <div class="basket resistance" data-basket="3"><span class="basket-mark" aria-hidden="true">ϟ</span><span>Motstånd</span></div>
-      <div class="basket unfamiliar" data-basket="2"><span class="basket-mark" aria-hidden="true">∿</span><span>Ovant</span></div>
-      <div class="basket natural" data-basket="1"><span class="basket-mark" aria-hidden="true">◡</span><span>Naturligt</span></div>
+      <div class="basket resistance" data-basket="3"><span class="basket-mark" aria-hidden="true">ϟ</span><span>↗ Motstånd</span></div>
+      <div class="basket unfamiliar" data-basket="2"><span class="basket-mark" aria-hidden="true">∿</span><span>→ Ovant</span></div>
+      <div class="basket natural" data-basket="1"><span class="basket-mark" aria-hidden="true">◡</span><span>↘ Naturligt</span></div>
     </div>
     <section id="empty" class="empty" hidden><span aria-hidden="true">✳</span><h1>Inga kort i det här urvalet.</h1><p>Välj en annan kategori eller repetitionsform i biblioteket.</p><button id="empty-library">Öppna biblioteket</button><button id="empty-back">Ångra senaste sorteringen</button></section>
     <button id="menu-button" class="menu-button" aria-label="Kortmeny – sortera, ångra eller öppna biblioteket" aria-haspopup="dialog"><span aria-hidden="true">···</span></button>
-    <p id="gesture-help" class="sr-only">Dra kortet åt höger till Motstånd överst, Ovant i mitten eller Naturligt nederst. Svep vänster för att ångra. Svep upp för biblioteket. Håll fingret stilla på kortet en stund eller högerklicka för kortmenyn om du föredrar knappar. Med tangentbord: vänsterpil ångrar, uppåtpil öppnar biblioteket och högerpil öppnar sorteringsmenyn.</p>
+    <p id="gesture-help" class="sr-only">Svep kort från där fingret börjar: snett uppåt höger för Motstånd, åt höger för Ovant eller snett nedåt höger för Naturligt. Du behöver inte nå molnen. Dra tillbaka innan du släpper för att avbryta. Svep vänster för att ångra. Svep upp för biblioteket. Håll fingret stilla på kortet en stund eller högerklicka för kortmenyn om du föredrar knappar. Med tangentbord: vänsterpil ångrar, uppåtpil öppnar biblioteket och högerpil öppnar sorteringsmenyn.</p>
     <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
   </main>
   <p id="notice" class="notice" role="status" hidden></p>
@@ -59,7 +74,7 @@
       <button id="resume-button" class="primary full">Till kortleken <span aria-hidden="true">↓</span></button>
       <section aria-labelledby="stats-title"><h3 id="stats-title">Din historik</h3><p id="history-summary" class="muted"></p><dl class="stats"><div><dt>Naturligt</dt><dd id="natural-count">0</dd></div><div><dt>Ovant</dt><dd id="unfamiliar-count">0</dd></div><div><dt>Motstånd</dt><dd id="resistance-count">0</dd></div><div><dt>Obedömda</dt><dd id="new-count">0</dd></div></dl><p class="small muted">Dina egna känslor just nu. Inga poäng eller mål.</p></section>
       <section aria-labelledby="settings-title"><h3 id="settings-title">Inställningar & säkerhetskopia</h3><label class="motion-setting"><input type="checkbox" id="reduce-motion"> Minska rörelser</label><div class="backup-actions"><button id="export-button">Exportera historik ↓</button><label class="file-label">Importera historik ↑<input type="file" id="import-file" accept="application/json,.json"></label></div><p class="small muted">Import slår ihop historiken. Senaste repetitionen per kort behålls, även för kort som inte finns i biblioteket längre.</p><p id="backup-status" role="status" class="small"></p></section>
-      <section class="about" aria-labelledby="about-title"><span class="eyebrow">OM APPEN</span><h3 id="about-title">Gör orden till dina.</h3><p>Mer teaterrepetition än glosförhör. Lyft blicken, säg frasen högt och prova olika uttryck. Stanna så länge du vill.</p><button id="intro-button">Visa den korta introduktionen ↗</button><h4>Din data stannar i din webbläsare.</h4><p>Din träningshistorik sparas lokalt och skickas inte till någon server. Om du rensar webbläsardata kan historiken försvinna. Du kan exportera en säkerhetskopia.</p><p class="small muted">Ingen inloggning, analys eller spårning. GitHub Pages levererar appens filer och kan hantera vanliga anslutningsuppgifter som IP-adress. Historiken ingår aldrig i dessa hämtningar. Bilder läses bara från samma webbplats. Import och export sker på din enhet.</p><p class="small muted">De 151 aktiva korten är ett redaktionellt arbetsbibliotek med individuella konstverk. Frasbanken 2.3.</p></section>
+      <section class="about" aria-labelledby="about-title"><span class="eyebrow">OM APPEN</span><h3 id="about-title">Gör orden till dina.</h3><p>Mer teaterrepetition än glosförhör. Lyft blicken, säg frasen högt och prova olika uttryck. Stanna så länge du vill.</p><button id="intro-button">Visa den korta introduktionen ↗</button><h4>Din data stannar i din webbläsare.</h4><p>Din träningshistorik sparas lokalt och skickas inte till någon server. Om du rensar webbläsardata kan historiken försvinna. Du kan exportera en säkerhetskopia.</p><p class="small muted">Ingen inloggning, analys eller spårning. GitHub Pages levererar appens filer och kan hantera vanliga anslutningsuppgifter som IP-adress. Historiken ingår aldrig i dessa hämtningar. Bilder läses bara från samma webbplats. Import och export sker på din enhet.</p><p class="small muted">De 151 aktiva korten är ett redaktionellt arbetsbibliotek med individuella konstverk. Frasbanken 2.4.</p></section>
     </div>
   </dialog>
 
@@ -67,8 +82,8 @@
     <header class="dialog-header"><span class="eyebrow">EN KORT INTRODUKTION</span><button class="close" id="dismiss-intro" aria-label="Stäng introduktionen direkt">×</button></header>
     <h2 id="intro-title">Låt orden landa.</h2>
     <p>Läs frasen. Lyft blicken och säg den högt tills den känns naturlig.</p>
-    <p>Dra sedan kortet till den hög som bäst beskriver hur det kändes.</p>
-    <div class="intro-diagram" aria-label="Dra åt höger: Motstånd överst, Ovant i mitten, Naturligt nederst."><div class="mini-card" aria-hidden="true">✳<span>→</span></div><div class="mini-baskets"><span>ϟ &nbsp; Motstånd</span><span>∿ &nbsp; Ovant</span><span>◡ &nbsp; Naturligt</span></div></div>
+    <p>Gör ett kort svep från där fingret börjar: ↗ Motstånd, → Ovant eller ↘ Naturligt. Molnet visar valet. Dra tillbaka innan du släpper för att avbryta.</p>
+    <div class="intro-diagram" aria-label="Korta riktningssvep: nordöst Motstånd, öst Ovant, sydöst Naturligt."><div class="mini-card" aria-hidden="true">✳<span>→</span></div><div class="mini-baskets"><span>ϟ &nbsp; Motstånd</span><span>∿ &nbsp; Ovant</span><span>◡ &nbsp; Naturligt</span></div></div>
     <div class="intro-other"><span>← Ångra</span><span>↑ Bibliotek</span><span>Håll stilla · Knappar</span></div>
     <button id="start-button" class="primary full">Öppna kortleken <span aria-hidden="true">→</span></button>
   </dialog>

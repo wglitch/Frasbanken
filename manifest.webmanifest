@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "Frasbanken – Gör orden till dina",
+  "short_name": "Frasbanken",
+  "description": "En digital konstkortlek för att göra samtalsfraser till sina egna.",
+  "lang": "sv",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#20392d",
+  "theme_color": "#10150f",
+  "icons": [
+    {"src": "assets/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

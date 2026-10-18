@@ -26,7 +26,7 @@ jobs:
       - name: Samla enbart webbplatsens filer
         run: |
           mkdir public
-          cp index.html styles.css app.js public/
+          cp index.html styles.css app.js manifest.webmanifest public/
           cp -r assets data lib public/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v4
