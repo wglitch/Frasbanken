@@ -2,7 +2,8 @@ import { matchingCards, validateHistory, mergeHistory, validateLibrary } from '.
 import { openHistoryStore } from './lib/storage.js';
 import { normalizeLibrary } from './lib/library.js';
 import { Deck } from './lib/deck.js?v=2.1';
-import { dragDirection, swipeGrade, releaseAction } from './lib/gestures.js?v=2.4';
+import { dragDirection, swipeGrade, releaseAction } from './lib/gestures.js?v=2.5';
+import { CloudFeedback } from './lib/cloud-feedback.js?v=2.5';
 import { artworkSources, localArtwork } from './lib/artwork.js';
 import { CardMotion } from './lib/card-motion.js';
 
@@ -15,6 +16,21 @@ const motion = new CardMotion();
 const artworkLoads = new WeakMap();
 const reducedMotion = () => $('#reduce-motion').checked || matchMedia('(prefers-reduced-motion: reduce)').matches;
 const labels = {1:'Naturligt', 2:'Ovant', 3:'Motstånd'};
+const cloudSymbols = {1:'◡', 2:'∿', 3:'ϟ'};
+const cloudFeedback = new CloudFeedback(({phase, target}) => {
+  const clouds = $('#baskets');
+  clouds.classList.toggle('visible', phase !== 'hidden');
+  // Keep the receipt's appearance while the whole group fades out; otherwise
+  // the other clouds and the old symbol briefly flash back during that fade.
+  if (phase === 'hidden') return;
+  clouds.classList.toggle('settled', phase === 'pending' || phase === 'confirmed');
+  clouds.classList.toggle('confirmed', phase === 'confirmed');
+  $$('[data-basket]').forEach(element => {
+    const selected = Number(element.dataset.basket) === target;
+    element.classList.toggle('active', selected);
+    element.querySelector('.basket-mark').textContent = phase === 'confirmed' && selected ? '✓' : cloudSymbols[element.dataset.basket];
+  });
+});
 const INTRO_KEY = 'frasbanken.intro.v2';
 const MOTION_KEY = 'frasbanken.reduce-motion';
 
@@ -38,6 +54,7 @@ function preference(key) { try { return localStorage.getItem(key); } catch { ret
 function setPreference(key, value) { try { localStorage.setItem(key, value); } catch { /* Rehearsal still works without preferences. */ } }
 function openDialog(id) {
   if (working) return;
+  cloudFeedback.clear();
   cancelGesture();
   updateLibrary();
   if (!$(id).open) $(id).showModal();
@@ -212,6 +229,8 @@ async function grade(skav) {
   // A button sort has no pointer-origin transform; use the visual centre.
   if (!$('#card').style.transform) outgoing.style.transformOrigin = `${width/2}px ${height/2}px`;
   setWorking(true);
+  if (skav == null) cloudFeedback.clear();
+  else cloudFeedback.hold(skav);
   let saved = false;
   try {
     if (await deck.grade(skav)) {
@@ -222,8 +241,8 @@ async function grade(skav) {
       $('#table').append(outgoing);
       render(true,false);
       if (skav != null) {
-        $('#baskets').classList.add('visible');
-        $$('[data-basket]').forEach(element => element.classList.toggle('active',Number(element.dataset.basket) === skav));
+        cloudFeedback.confirm(skav);
+        $('#announcement').textContent = `Sparat som ${labels[skav]}. ${deck.current?.text || 'Inga fler kort i urvalet.'}`;
       }
       await Promise.race([Promise.all([previewReady,currentReady]),new Promise(resolve => requestAnimationFrame(resolve))]);
       if (!context.reduced && typeof navigator.vibrate === 'function') {
@@ -237,6 +256,7 @@ async function grade(skav) {
     else render(true,false); // History is committed even if a browser cancels animation.
   } finally {
     outgoing.remove();
+    if (!saved) cloudFeedback.clear();
     resetSurface();
     if (saved) prepareNext();
     setWorking(false);
@@ -245,6 +265,7 @@ async function grade(skav) {
 
 async function goBack() {
   if (working || !deck) return;
+  cloudFeedback.clear();
   cancelGesture();
   if (!deck.trail.length) { notice('Inget tidigare sorterat kort i den här kortleken ännu.'); return; }
   setWorking(true);
@@ -269,8 +290,7 @@ function resetSurface() {
   $('#card').classList.remove('dragging','lifted');
   $('#card').style.transform = '';
   lastOrigin = null;
-  $('#baskets').classList.remove('visible');
-  $$('[data-basket]').forEach(element => element.classList.remove('active'));
+  cloudFeedback.reset();
 }
 function cancelGesture(reset = true) {
   clearTimeout(holdTimer);
@@ -283,6 +303,7 @@ const surface = $('#card');
 surface.addEventListener('pointerdown',event => {
   if (!event.isPrimary) {cancelGesture();return;}
   if (working || !deck?.current || event.button !== 0 || $$('dialog').some(dialog => dialog.open)) return;
+  cloudFeedback.clear();
   const rect = surface.getBoundingClientRect();
   lastOrigin = {x:event.clientX - rect.left,y:event.clientY - rect.top};
   surface.style.transformOrigin = `${lastOrigin.x}px ${lastOrigin.y}px`;
@@ -307,9 +328,9 @@ surface.addEventListener('pointermove',event => {
   if (direction === 'right') {
     surface.classList.add('lifted');
     surface.style.transform = `translate3d(${dx}px,${dy}px,0) rotate(${rotation}deg) scale(.94)`;
-    $('#baskets').classList.add('visible');
-    const target = swipeGrade(dx,dy);
-    $$('[data-basket]').forEach(element => element.classList.toggle('active',Number(element.dataset.basket) === target));
+    const target = swipeGrade(dx,dy,gesture.target);
+    gesture.target = target;
+    cloudFeedback.preview(target);
     preparePreview(target ?? 2);
   } else if (direction === 'left') {
     surface.style.transform = `translate3d(${Math.min(0,dx)*.5}px,${dy*.15}px,0) rotate(${rotation*.5}deg)`;
@@ -322,7 +343,7 @@ surface.addEventListener('pointerup',event => {
   const active = gesture;
   const dx = event.clientX - active.x, dy = event.clientY - active.y;
   const direction = active.direction || dragDirection(dx,dy);
-  const target = direction === 'right' ? swipeGrade(dx,dy) : null;
+  const target = direction === 'right' ? swipeGrade(dx,dy,active.target) : null;
   const action = releaseAction(direction,dx,dy,target,active.width);
   cancelGesture(action.type !== 'grade');
   if (action.type === 'grade') void grade(action.skav);
@@ -332,9 +353,9 @@ surface.addEventListener('pointerup',event => {
 surface.addEventListener('pointercancel',() => cancelGesture());
 surface.addEventListener('lostpointercapture',() => {if (gesture) cancelGesture();});
 surface.addEventListener('contextmenu',event => {event.preventDefault();openDialog('#actions-dialog');});
-window.addEventListener('blur',() => {cancelGesture();motion.cancel();});
-document.addEventListener('visibilitychange',() => {if (document.hidden) {cancelGesture();motion.cancel();}});
-window.addEventListener('resize',() => {cancelGesture();motion.cancel();fitContent();fitContent($('#next-card'));});
+window.addEventListener('blur',() => {cancelGesture();cloudFeedback.clear();motion.cancel();});
+document.addEventListener('visibilitychange',() => {if (document.hidden) {cancelGesture();cloudFeedback.clear();motion.cancel();}});
+window.addEventListener('resize',() => {cancelGesture();cloudFeedback.clear();motion.cancel();fitContent();fitContent($('#next-card'));});
 
 $('#menu-button').addEventListener('click', () => openDialog('#actions-dialog'));
 $('#open-library').addEventListener('click', openLibrary);

@@ -34,3 +34,9 @@ dialog{color:var(--ink);background:var(--paper);border:1px solid #ffffffb3;borde
 .mini-baskets span::before{content:'';position:absolute;z-index:-1;inset:1px -5px;background:radial-gradient(ellipse at 48% 60%,#efdbd0 35%,transparent 72%),radial-gradient(ellipse at 35% 33%,#efdbd0 27%,transparent 64%),radial-gradient(ellipse at 72% 46%,#efdbd0 23%,transparent 59%);filter:blur(3px)}
 .mini-baskets span:nth-child(2)::before{background:radial-gradient(ellipse at 48% 60%,#efe0b2 35%,transparent 72%),radial-gradient(ellipse at 35% 33%,#efe0b2 27%,transparent 64%),radial-gradient(ellipse at 72% 46%,#efe0b2 23%,transparent 59%)}
 .mini-baskets span:nth-child(3)::before{background:radial-gradient(ellipse at 48% 60%,#cfe2c2 35%,transparent 72%),radial-gradient(ellipse at 35% 33%,#cfe2c2 27%,transparent 64%),radial-gradient(ellipse at 72% 46%,#cfe2c2 23%,transparent 59%)}
+
+/* Keep only the chosen cloud as a short, stable receipt after release. */
+.basket{transition:opacity 160ms ease}
+.baskets.settled .basket:not(.active){opacity:0}
+.baskets.confirmed .basket.active::before{filter:blur(3px) drop-shadow(0 0 10px #fff9);opacity:1}
+.baskets.confirmed .basket.active .basket-mark{transform:none;font-size:30px;opacity:1}

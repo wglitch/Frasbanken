@@ -34,3 +34,14 @@ test('sector boundaries leave a generous east sector and reject mostly vertical 
   assert.equal(swipeGrade(80,40),1);
   assert.equal(swipeGrade(30,-100),null);
 });
+
+test('small release movements keep the highlighted sector while deliberate changes still work', () => {
+  assert.equal(swipeGrade(80,-36,2),2);
+  assert.equal(swipeGrade(80,-28,3),3);
+  assert.equal(swipeGrade(80,36,2),2);
+  assert.equal(swipeGrade(80,28,1),1);
+  assert.equal(swipeGrade(80,-55,2),3);
+  assert.equal(swipeGrade(80,55,2),1);
+  assert.equal(swipeGrade(80,0,3),2);
+  assert.equal(swipeGrade(20,-10,3),null);
+});
