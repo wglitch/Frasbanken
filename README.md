@@ -1,4 +1,4 @@
-# Frasbanken 2.5
+# Frasbanken 2.6
 
 En digital konstkortlek för att göra samtalsfraser till sina egna. 151 aktiva kort och 12 kategorier (Stafettpinnen är tills vidare tom), utan timer, poäng eller automatisk bedömning.
 
@@ -9,7 +9,7 @@ En digital konstkortlek för att göra samtalsfraser till sina egna. 151 aktiva 
 
 I vila syns endast ett konstverk i helskärm och frasen ovanpå bilden. Bilden fyller skärmen med object-fit: cover; en mjuk mörk toning och längdanpassad vit text ger läsbarhet. Säg frasen högt så länge du vill.
 
-- Gör ett kort riktningssvep från där fingret börjar: nordöst ↗ väljer Motstånd (3), öst → väljer Ovant (2) och sydöst ↘ väljer Naturligt (1). Ett drag på minst 56 skärmpixlar räcker. Molnet markerar valet; du behöver inte nå fram till det. Efter släpp ligger det valda molnet kvar ensamt med en bock i en sekund. Små rörelser nära riktningsgränsen behåller det markerade valet.
+- Gör ett kort riktningssvep från där fingret börjar: nordöst ↗ väljer Motstånd (3), öst → väljer Ovant (2) och sydöst ↘ väljer Naturligt (1). Ett drag på minst 56 skärmpixlar räcker. Molnet markerar valet; du behöver inte nå fram till det. Molnens storlek följer dragriktningen mjukt; mellan två riktningar växer båda grannmolnen. Vid släpp krymper de andra på cirka 180 ms och det valda på cirka 720 ms, tills alla försvinner automatiskt. Små rörelser nära riktningsgränsen behåller det markerade valet.
 - Dra tillbaka nära startpunkten innan du släpper för att avbryta. Små rörelser registrerar inget.
 - Svep vänster: ångra senaste sorteringen och återställ det tidigare skavvärdet och repetitionstidpunkten. Ett tidigare obedömt kort blir obedömt igen.
 - Svep uppåt: bibliotek med alla kategorier, repetitionsformer, historik, inställningar och Om appen.
@@ -73,6 +73,6 @@ Vanlig HTML/CSS/JavaScript, inga paketberoenden. `app.js` hanterar vy och Pointe
 npm test
 ```
 
-38 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation, lokala bildadresser, oförändrat korturval vid förhandsvisning, parallella animationer, animationslås, avbrott och minskad rörelse. Webbläsarkontroll i desktop- och 320 × 568-vy av helskärmskonst, längdanpassning, 151 WebP-filer med kontrollsummor, förladdat nästa kort, övergångar, återgång utanför, ångring, bibliotek och minskad rörelse. Tidigare kontroll i 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
+40 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation, lokala bildadresser, oförändrat korturval vid förhandsvisning, parallella animationer, animationslås, avbrott och minskad rörelse. Webbläsarkontroll i desktop- och 320 × 568-vy av helskärmskonst, längdanpassning, 151 WebP-filer med kontrollsummor, förladdat nästa kort, övergångar, återgång utanför, ångring, bibliotek och minskad rörelse. Tidigare kontroll i 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
 
 Nästa steg finns i JOURNAL.md; framtida idéer i IDEAS.md.

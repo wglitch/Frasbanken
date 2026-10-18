@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { dragDirection, swipeGrade, releaseAction } from '../lib/gestures.js';
+import { dragDirection, swipeGrade, releaseAction, cloudWeights } from '../lib/gestures.js';
 
 test('short northeast, east and southeast strokes select the same grade from any origin', () => {
   for (const start of [{x:20,y:200},{x:150,y:700},{x:250,y:350}]) {
@@ -44,4 +44,21 @@ test('small release movements keep the highlighted sector while deliberate chang
   assert.equal(swipeGrade(80,55,2),1);
   assert.equal(swipeGrade(80,0,3),2);
   assert.equal(swipeGrade(20,-10,3),null);
+});
+
+test('cloud emphasis blends only adjacent choices smoothly across the whole rightward arc', () => {
+  assert.deepEqual(cloudWeights(100,0),{1:0,2:1,3:0});
+  assert.deepEqual(cloudWeights(100,100),{1:1,2:0,3:0});
+  assert.deepEqual(cloudWeights(100,-100),{1:0,2:0,3:1});
+  for(const sign of [-1,1]) {
+    const w=cloudWeights(100,sign*100*Math.tan(Math.PI/8));
+    assert.ok(Math.abs(w[2]-.5)<1e-10);
+    assert.ok(Math.abs(w[sign<0?3:1]-.5)<1e-10);
+    assert.equal(w[sign<0?1:3],0);
+  }
+  const before=cloudWeights(100,41.3),after=cloudWeights(100,41.5);
+  assert.ok(Math.abs(before[1]-after[1])<.01,'no visual size jump at the choice boundary');
+  assert.deepEqual(cloudWeights(-100,0),{1:0,2:0,3:0});
+  assert.deepEqual(cloudWeights(0,0),{1:0,2:0,3:0});
+  assert.ok(cloudWeights(30,0)[2]<cloudWeights(56,0)[2]);
 });

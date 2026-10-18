@@ -2,8 +2,8 @@ import { matchingCards, validateHistory, mergeHistory, validateLibrary } from '.
 import { openHistoryStore } from './lib/storage.js';
 import { normalizeLibrary } from './lib/library.js';
 import { Deck } from './lib/deck.js?v=2.1';
-import { dragDirection, swipeGrade, releaseAction } from './lib/gestures.js?v=2.5';
-import { CloudFeedback } from './lib/cloud-feedback.js?v=2.5';
+import { dragDirection, swipeGrade, cloudWeights, releaseAction } from './lib/gestures.js?v=2.6';
+import { CloudFeedback } from './lib/cloud-feedback.js?v=2.6';
 import { artworkSources, localArtwork } from './lib/artwork.js';
 import { CardMotion } from './lib/card-motion.js';
 
@@ -17,18 +17,20 @@ const artworkLoads = new WeakMap();
 const reducedMotion = () => $('#reduce-motion').checked || matchMedia('(prefers-reduced-motion: reduce)').matches;
 const labels = {1:'Naturligt', 2:'Ovant', 3:'Motstånd'};
 const cloudSymbols = {1:'◡', 2:'∿', 3:'ϟ'};
-const cloudFeedback = new CloudFeedback(({phase, target}) => {
+const cloudFeedback = new CloudFeedback(({phase, target, weights}) => {
   const clouds = $('#baskets');
   clouds.classList.toggle('visible', phase !== 'hidden');
-  // Keep the receipt's appearance while the whole group fades out; otherwise
-  // the other clouds and the old symbol briefly flash back during that fade.
+  // Do not restore any cloud while its release animation fades away.
   if (phase === 'hidden') return;
   clouds.classList.toggle('settled', phase === 'pending' || phase === 'confirmed');
   clouds.classList.toggle('confirmed', phase === 'confirmed');
   $$('[data-basket]').forEach(element => {
-    const selected = Number(element.dataset.basket) === target;
+    const id = Number(element.dataset.basket);
+    const selected = id === target;
     element.classList.toggle('active', selected);
-    element.querySelector('.basket-mark').textContent = phase === 'confirmed' && selected ? '✓' : cloudSymbols[element.dataset.basket];
+    element.style.setProperty('--cloud-scale', String(1 + .45 * weights[id]));
+    element.style.setProperty('--cloud-strength', String(weights[id]));
+    element.querySelector('.basket-mark').textContent = cloudSymbols[id];
   });
 });
 const INTRO_KEY = 'frasbanken.intro.v2';
@@ -330,7 +332,7 @@ surface.addEventListener('pointermove',event => {
     surface.style.transform = `translate3d(${dx}px,${dy}px,0) rotate(${rotation}deg) scale(.94)`;
     const target = swipeGrade(dx,dy,gesture.target);
     gesture.target = target;
-    cloudFeedback.preview(target);
+    cloudFeedback.preview(target,cloudWeights(dx,dy));
     preparePreview(target ?? 2);
   } else if (direction === 'left') {
     surface.style.transform = `translate3d(${Math.min(0,dx)*.5}px,${dy*.15}px,0) rotate(${rotation*.5}deg)`;
