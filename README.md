@@ -1,4 +1,4 @@
-# Frasbanken 2.7
+# Frasbanken 2.8
 
 En digital konstkortlek för att göra samtalsfraser till sina egna. 225 aktiva kort och 13 kategorier, utan timer, poäng eller automatisk bedömning.
 
@@ -17,11 +17,15 @@ I vila syns endast ett konstverk i helskärm och frasen ovanpå bilden. Bilden f
 
 Ångring gäller sorteringar i den pågående kortleken. Ångring fungerar även efter kategoribyten. Import eller omladdning tömmer ångringskedjan men ändrar inte övrig sparad historik. Du kan alltid repetera ett bedömt kort och gradera om det. När bara ett kort matchar visas det igen efter sortering.
 
-Bibliotekets kategorier och repetitionsform kombineras. Alla, Ovant & motstånd, Obedömda och Bedömda finns. Urvalet prioriterar obedömda, högre skav och äldre repetitioner med viktad slumpning, men blandar även in välbekanta kort och undviker omedelbar upprepning när alternativ finns.
+Bibliotekets kategorier och repetitionsform kombineras. Välj flera kategorier samtidigt för att blanda deras kort; tydliga ramar och bockar visar urvalet. Alla kategorier återställer till hela leken. Urvalet sparas lokalt till nästa besök. Varje kategori har ett utsnitt ur befintlig konst och en kort funktionsförklaring. Alla, Ovant & motstånd, Obedömda och Bedömda finns. Urvalet prioriterar obedömda, högre skav och äldre repetitioner med viktad slumpning, men blandar även in välbekanta kort och undviker omedelbar upprepning när alternativ finns.
 
 Vid högerdrag lossnar helskärmsbilden till ett lätt roterat kort med rundade hörn och skugga. Nästa kort förladdas bakom det aktiva med en reserverad slumpdragning genom samma repetitionsalgoritm; inget registreras innan sorteringen sparas. Utgående kort accelererar mot korgen på 200 ms, medan det inkommande glider från vänster på 280 ms med 20 ms förskjutning. Rörelserna överlappar till totalt 300 ms. Gester är låsta tills övergången är klar. Avbrutet svep återgår mjukt till helskärm. Minskad rörelse använder en 90 ms toning utan förflyttning; fingerdragningen följer fortfarande handen. Eventuell haptik används bara om webbläsaren stöder det.
 
 Introduktionen visas en gång per webbläsare och kan stängas direkt eller öppnas från Om appen. Inställningen Minska rörelser kompletterar operativsystemets inställning för minskad rörelse.
+
+Molnen visar bara symbolerna ϟ, ∿ och ◡. Betydelserna Motstånd, Ovant och Naturligt finns kvar i introduktionen, knappmenyn och för skärmläsare.
+
+Inställningen **Visa hela konstverken** visar hela det stående konstkortet med bevarade proportioner och luft runtom där skärmens format kräver det. Georgia-texten och toningen ligger kvar på bilden; svep, förhandsvisning och ångring fungerar även här. Inställningen sparas lokalt. Avstängt fyller bilden åter hela skärmen.
 
 Instruktionskort visas med kursiv rubrik och etiketten Instruktion. Talbara fraser och frasmallar behåller rak stil.
 
@@ -75,6 +79,6 @@ Vanlig HTML/CSS/JavaScript, inga paketberoenden. `app.js` hanterar vy och Pointe
 npm test
 ```
 
-43 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation, lokala bildadresser, oförändrat korturval vid förhandsvisning, parallella animationer, animationslås, avbrott och minskad rörelse. Webbläsarkontroll i desktop- och 320 × 568-vy av helskärmskonst, längdanpassning, 225 WebP-filer med kontrollsummor, förladdat nästa kort, övergångar, återgång utanför, ångring, bibliotek och minskad rörelse. Tidigare kontroll i 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
+45 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation, lokala bildadresser, oförändrat korturval vid förhandsvisning, parallella animationer, animationslås, avbrott och minskad rörelse. Webbläsarkontroll i desktop- och 320 × 568-vy av helskärmskonst, längdanpassning, 225 WebP-filer med kontrollsummor, förladdat nästa kort, övergångar, återgång utanför, ångring, bibliotek och minskad rörelse. Tidigare kontroll i 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
 
 Nästa steg finns i JOURNAL.md; framtida idéer i IDEAS.md.

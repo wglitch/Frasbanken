@@ -2,118 +2,131 @@
   {
     "id": "utforska",
     "name": "Utforskaren",
-    "description": "Ställa frågor och förstå",
+    "description": "Fråga och förstå",
     "icon": "⌕",
     "tint": "#e0e6c7",
-    "image": "assets/utforskaren.svg",
-    "alt": "Ett stort förstoringsglas bland böljande gröna kullar."
+    "image": "assets/art/cards/F001.webp",
+    "alt": "Utsnitt ur ett konstverk till Utforskaren.",
+    "imagePosition": "50% 40%"
   },
   {
     "id": "spegla",
     "name": "Spegeln",
-    "description": "Lyssna, spegla och bekräfta",
+    "description": "Lyssna och bekräfta",
     "icon": "◒",
     "tint": "#e9ddce",
-    "image": "assets/spegeln.svg",
-    "alt": "En välvd spegel som speglar ett stilla, varmt landskap."
+    "image": "assets/art/cards/F051.webp",
+    "alt": "Utsnitt ur ett konstverk till Spegeln.",
+    "imagePosition": "50% 38%"
   },
   {
     "id": "pausa",
     "name": "Pausknappen",
-    "description": "Vinna tid och tänka",
+    "description": "Tänka efter",
     "icon": "Ⅱ",
     "tint": "#e5dfa9",
-    "image": "assets/pausknappen.svg",
-    "alt": "En stor rund pausknapp i ett solgult landskap."
+    "image": "assets/art/cards/A005.webp",
+    "alt": "Utsnitt ur ett konstverk till Pausknappen.",
+    "imagePosition": "50% 58%"
   },
   {
     "id": "grans",
     "name": "Muren",
-    "description": "Sätta gränser och invända",
+    "description": "Sätta gränser",
     "icon": "⊓",
     "tint": "#e6cfc3",
-    "image": "assets/muren.svg",
-    "alt": "En terrakottafärgad mur med en öppen välvd port."
+    "image": "assets/art/cards/A063.webp",
+    "alt": "Utsnitt ur ett konstverk till Muren.",
+    "imagePosition": "50% 40%"
   },
   {
     "id": "styra",
     "name": "Fyren",
-    "description": "Förtydliga och styra samtal",
+    "description": "Fokusera samtal",
     "icon": "⌁",
     "tint": "#ccdedc",
-    "image": "assets/fyren.svg",
-    "alt": "En fyr som lyser över ett lugnt, blågrönt hav."
+    "image": "assets/art/cards/A062.webp",
+    "alt": "Utsnitt ur ett konstverk till Fyren.",
+    "imagePosition": "22% 26%"
   },
   {
     "id": "avsluta",
     "name": "Utgången",
-    "description": "Avsluta och lämna samtal",
+    "description": "Avsluta samtal",
     "icon": "↗",
     "tint": "#e3dbb9",
-    "image": "assets/utgangen.svg",
-    "alt": "En öppen dörr leder ut mot ett ljust landskap."
+    "image": "assets/art/cards/A013.webp",
+    "alt": "Utsnitt ur ett konstverk till Utgången.",
+    "imagePosition": "50% 38%"
   },
   {
     "id": "besluta",
     "name": "Vägskälet",
-    "description": "Fatta och förklara beslut",
+    "description": "Fatta beslut",
     "icon": "⑂",
     "tint": "#e4dcb8",
-    "image": "assets/placeholder.svg",
-    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+    "image": "assets/art/cards/A054.webp",
+    "alt": "Utsnitt ur ett konstverk till Vägskälet.",
+    "imagePosition": "50% 42%"
   },
   {
     "id": "delegera",
     "name": "Stafettpinnen",
-    "description": "Lämna över och ge utrymme",
+    "description": "Delegera",
     "icon": "↗",
     "tint": "#d8dfc2",
     "image": "assets/art/cards/A030.webp",
-    "alt": "En stafettpinne lämnas över och mottagaren tar ansvaret."
+    "alt": "Utsnitt ur ett konstverk till Stafettpinnen.",
+    "imagePosition": "50% 43%"
   },
   {
     "id": "relation",
     "name": "Bron",
-    "description": "Kontakt, förståelse och olika viljor",
+    "description": "Skapa kontakt",
     "icon": "⌒",
     "tint": "#ead6cd",
-    "image": "assets/placeholder.svg",
-    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+    "image": "assets/art/cards/A073.webp",
+    "alt": "Utsnitt ur ett konstverk till Bron.",
+    "imagePosition": "50% 48%"
   },
   {
     "id": "aterkoppla",
     "name": "Spiraltrappan",
-    "description": "Ge och ta emot återkoppling",
+    "description": "Återkoppling",
     "icon": "◒",
     "tint": "#ded4e1",
-    "image": "assets/art/cards/A014.webp",
-    "alt": "En spiraltrappa som stiger ett varv i taget genom en ljus trädgård."
+    "image": "assets/art/cards/A019.webp",
+    "alt": "Utsnitt ur ett konstverk till Spiraltrappan.",
+    "imagePosition": "50% 38%"
   },
   {
     "id": "konflikt",
     "name": "Stormen",
-    "description": "Möta motstånd och oenighet",
+    "description": "Konflikt",
     "icon": "≈",
     "tint": "#cdd9df",
-    "image": "assets/placeholder.svg",
-    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+    "image": "assets/art/cards/A001.webp",
+    "alt": "Utsnitt ur ett konstverk till Stormen.",
+    "imagePosition": "50% 25%"
   },
   {
     "id": "kommunicera",
     "name": "Scenen",
-    "description": "Berätta och nå fram",
+    "description": "Berätta",
     "icon": "◇",
     "tint": "#e4d8b6",
-    "image": "assets/placeholder.svg",
-    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+    "image": "assets/art/cards/A060.webp",
+    "alt": "Utsnitt ur ett konstverk till Scenen.",
+    "imagePosition": "50% 42%"
   },
   {
     "id": "ledarskap",
     "name": "Schackbrädet",
-    "description": "Ledarskap, mandat och ansvar",
+    "description": "Leda",
     "icon": "♟",
     "tint": "#ded6bf",
     "image": "assets/art/cards/A040.webp",
-    "alt": "Ett schackbräde där flera perspektiv samlas inför ett gemensamt beslut."
+    "alt": "Utsnitt ur ett konstverk till Schackbrädet.",
+    "imagePosition": "50% 57%"
   }
 ]

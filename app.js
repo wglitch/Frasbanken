@@ -1,7 +1,7 @@
-import { matchingCards, validateHistory, mergeHistory, validateLibrary } from './lib/repetition.js';
+import { matchingCards, validateHistory, mergeHistory, validateLibrary } from './lib/repetition.js?v=2.8';
 import { openHistoryStore } from './lib/storage.js';
 import { normalizeLibrary } from './lib/library.js';
-import { Deck } from './lib/deck.js?v=2.1';
+import { Deck } from './lib/deck.js?v=2.8';
 import { dragDirection, swipeGrade, cloudWeights, releaseAction } from './lib/gestures.js?v=2.6';
 import { CloudFeedback } from './lib/cloud-feedback.js?v=2.6';
 import { artworkSources, localArtwork } from './lib/artwork.js';
@@ -35,6 +35,14 @@ const cloudFeedback = new CloudFeedback(({phase, target, weights}) => {
 });
 const INTRO_KEY = 'frasbanken.intro.v2';
 const MOTION_KEY = 'frasbanken.reduce-motion';
+const CATEGORIES_KEY = 'frasbanken.categories';
+const FULL_ART_KEY = 'frasbanken.full-art';
+const selectedCategories = () => Array.isArray(deck?.category) ? deck.category : deck?.category ? [deck.category] : [];
+function selectCategories(ids) {
+  deck.select(deck.mode,ids.length ? ids : null);
+  setPreference(CATEGORIES_KEY,JSON.stringify(ids));
+  render();
+}
 
 function notice(message) {
   $('#notice').textContent = message;
@@ -121,7 +129,7 @@ function paintCard(root, card) {
   const fallback = root.querySelector('.art-fallback');
   root.dataset.cardId = card.id;
   root.dataset.cardType = card.type;
-  image.style.objectFit = 'cover';
+  image.style.objectFit = $('#full-art').checked ? 'contain' : 'cover';
   image.style.objectPosition = card.imagePosition || group.imagePosition || '50% 50%';
   fallback.hidden = true;
   const ready = showArtwork(image,artworkSources(card,group),card.image ? card.imageAlt : group.alt,() => {fallback.hidden = false;});
@@ -175,11 +183,12 @@ function updateLibrary() {
   if (!deck) return;
   const history = deck.history;
   for (const mode of ['all', 'high', 'unrated', 'rated']) {
-    $(`#${mode}-count`).textContent = matchingCards(cards, history, mode).length;
+    $(`#${mode}-count`).textContent = matchingCards(cards, history, mode,deck.category).length;
   }
   $$('[data-mode]').forEach(button => button.setAttribute('aria-pressed', button.dataset.mode === deck.mode));
-  $$('[data-category]').forEach(button => button.setAttribute('aria-pressed', button.dataset.category === deck.category));
-  $('#all-categories').setAttribute('aria-pressed', deck.category == null);
+  const selected = selectedCategories();
+  $$('[data-category]').forEach(button => button.setAttribute('aria-pressed', selected.includes(button.dataset.category)));
+  $('#all-categories').setAttribute('aria-pressed', !selected.length);
   $('#resume-button').firstChild.textContent = `Till kortleken · ${deck.pool.length} kort `;
   const ratings = cards.map(card => history[card.id]?.skav ?? null);
   $('#natural-count').textContent = ratings.filter(value => value === 1).length;
@@ -199,7 +208,7 @@ function updateLibrary() {
 function setWorking(value) {
   working = value;
   $('#card').setAttribute('aria-busy', String(value));
-  $$('[data-mode],[data-category],#all-categories,#export-button,#import-file').forEach(control => { control.disabled = value; });
+  $$('[data-mode],[data-category],#all-categories,#export-button,#import-file,#full-art').forEach(control => { control.disabled = value; });
   updateLibrary();
 }
 
@@ -221,11 +230,12 @@ async function grade(skav) {
   clearTimeout(holdTimer);
   preparePreview(skav);
   const outgoing = outgoingSnapshot();
-  const width = $('#table').clientWidth, height = $('#table').clientHeight;
+  const rect = {left:$('#card').offsetLeft,top:$('#card').offsetTop};
+  const width = $('#card').clientWidth, height = $('#card').clientHeight;
   const context = {
     width,height,origin:lastOrigin || {x:width/2,y:height/2},
     start:$('#card').style.transform || 'none',
-    target:basketRects().find(target => target.skav === (skav ?? 2)),
+    target:(() => {const target=basketRects().find(target => target.skav === (skav ?? 2));return {...target,left:target.left-rect.left,right:target.right-rect.left,top:target.top-rect.top,bottom:target.bottom-rect.top};})(),
     reduced:reducedMotion()
   };
   // A button sort has no pointer-origin transform; use the visual centre.
@@ -380,7 +390,7 @@ $$('[data-mode]').forEach(button => button.addEventListener('click', () => {
   deck.select(button.dataset.mode,deck.category);
   render();
 }));
-$('#all-categories').addEventListener('click', () => { if (deck && !working) { deck.select(deck.mode,null); render(); } });
+$('#all-categories').addEventListener('click', () => { if (deck && !working) selectCategories([]); });
 $('#intro-button').addEventListener('click', () => openDialog('#intro-dialog'));
 function dismissIntro() { $('#intro-dialog').close(); }
 $('#dismiss-intro').addEventListener('click', dismissIntro);
@@ -391,6 +401,14 @@ document.body.classList.toggle('reduce-motion',$('#reduce-motion').checked);
 $('#reduce-motion').addEventListener('change', event => {
   setPreference(MOTION_KEY,String(event.target.checked));
   document.body.classList.toggle('reduce-motion',event.target.checked);
+});
+$('#full-art').checked = preference(FULL_ART_KEY) === 'true';
+document.body.classList.toggle('full-art',$('#full-art').checked);
+$('#full-art').addEventListener('change',event => {
+  cancelGesture(); cloudFeedback.clear(); motion.cancel();
+  setPreference(FULL_ART_KEY,String(event.target.checked));
+  document.body.classList.toggle('full-art',event.target.checked);
+  if (deck) {previewId=null;render();}
 });
 document.addEventListener('keydown', event => {
   if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || $$('dialog').some(dialog => dialog.open) || ['INPUT','TEXTAREA','SELECT','BUTTON'].includes(event.target.tagName)) return;
@@ -451,6 +469,13 @@ async function start() {
       if (!store) throw new Error('Lagring saknas.');
       await store.write(records);
     },() => reservedRoll);
+    try {
+      const saved = JSON.parse(preference(CATEGORIES_KEY) || '[]');
+      if (Array.isArray(saved)) {
+        const ids = [...new Set(saved.filter(id => categories.some(c => c.id === id)))];
+        if (ids.length) deck.select(deck.mode,ids);
+      }
+    } catch { /* Invalid saved preferences must not stop rehearsal. */ }
     for (const item of categories) {
       const button = document.createElement('button');
       button.className = 'category-button';
@@ -459,17 +484,25 @@ async function start() {
       const image = document.createElement('img');
       image.alt = '';
       image.loading = 'lazy';
+      image.style.objectPosition = item.imagePosition || '50% 50%';
       showArtwork(image,artworkSources({},item),'');
       const label = document.createElement('span');
-      label.append(document.createTextNode(item.name));
+      label.className = 'category-label';
+      const name = document.createElement('span');
+      name.className = 'category-name';
+      name.textContent = item.name;
+      const description = document.createElement('span');
+      description.className = 'category-description';
+      description.textContent = item.description;
       const count = document.createElement('small');
       count.textContent = cards.filter(card => card.category === item.id).length;
-      label.append(count);
+      count.className = 'category-count';
+      label.append(name,description,count);
       button.append(image,label);
       button.addEventListener('click', () => {
         if (working) return;
-        deck.select(deck.mode,deck.category === item.id ? null : item.id);
-        render();
+        const selected = selectedCategories();
+        selectCategories(selected.includes(item.id) ? selected.filter(id => id !== item.id) : [...selected,item.id]);
       });
       $('#categories').append(button);
     }
