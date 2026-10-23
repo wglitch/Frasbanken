@@ -68,13 +68,13 @@
     "description": "Lämna över och ge utrymme",
     "icon": "↗",
     "tint": "#d8dfc2",
-    "image": "assets/placeholder.svg",
-    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+    "image": "assets/art/cards/A030.webp",
+    "alt": "En stafettpinne lämnas över och mottagaren tar ansvaret."
   },
   {
     "id": "relation",
     "name": "Bron",
-    "description": "Skapa kontakt och visa värme",
+    "description": "Kontakt, förståelse och olika viljor",
     "icon": "⌒",
     "tint": "#ead6cd",
     "image": "assets/placeholder.svg",
@@ -82,12 +82,12 @@
   },
   {
     "id": "aterkoppla",
-    "name": "Spegelverkstaden",
+    "name": "Spiraltrappan",
     "description": "Ge och ta emot återkoppling",
     "icon": "◒",
     "tint": "#ded4e1",
-    "image": "assets/placeholder.svg",
-    "alt": "En slingrande stig genom ett lugnt grönt landskap."
+    "image": "assets/art/cards/A014.webp",
+    "alt": "En spiraltrappa som stiger ett varv i taget genom en ljus trädgård."
   },
   {
     "id": "konflikt",
@@ -106,5 +106,14 @@
     "tint": "#e4d8b6",
     "image": "assets/placeholder.svg",
     "alt": "En slingrande stig genom ett lugnt grönt landskap."
+  },
+  {
+    "id": "ledarskap",
+    "name": "Schackbrädet",
+    "description": "Ledarskap, mandat och ansvar",
+    "icon": "♟",
+    "tint": "#ded6bf",
+    "image": "assets/art/cards/A040.webp",
+    "alt": "Ett schackbräde där flera perspektiv samlas inför ett gemensamt beslut."
   }
 ]

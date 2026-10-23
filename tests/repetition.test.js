@@ -10,22 +10,25 @@ const views = JSON.parse(await readFile(new URL('../data/categories.json', impor
 const { cards, categories } = normalizeLibrary(source, views);
 const date = '2026-10-16T14:30:00.000Z';
 
-test('revised library preserves 151 cards, 12 category definitions and all three types', () => {
+test('expanded library contains 225 cards, 13 populated categories and all three types', () => {
   validateLibrary(cards, categories);
-  assert.equal(cards.length, 151);
+  assert.equal(cards.length, 225);
   assert.ok(!cards.some(card => ['W001', 'N025'].includes(card.id)));
-  assert.equal(categories.length, 12);
-  assert.equal(new Set(cards.map(card => card.category)).size, 11);
+  assert.equal(categories.length, 13);
+  assert.equal(new Set(cards.map(card => card.category)).size, 13);
   assert.deepEqual(new Set(cards.map(card => card.type)), new Set(['phrase', 'template', 'method']));
-  assert.deepEqual(categories.filter(category => !cards.some(card => card.category === category.id)).map(category => category.id), ['delegera']);
+  assert.deepEqual(categories.filter(category => !cards.some(card => card.category === category.id)).map(category => category.id), []);
   assert.deepEqual(cards.map(({category, ...card}) => card), source.cards);
   assert.throws(() => validateLibrary([...cards, cards[0]], categories));
 });
 
 test('every referenced image exists, including a Pages subpath', async () => {
   for (const category of categories) {
-    const svg = await readFile(new URL(`../${category.image}`, import.meta.url), 'utf8');
-    assert.match(svg, /<svg/);
+    const image = await readFile(new URL(`../${category.image}`, import.meta.url));
+    if (category.image.endsWith('.webp')) {
+      assert.equal(image.toString('ascii', 0, 4), 'RIFF');
+      assert.equal(image.toString('ascii', 8, 12), 'WEBP');
+    } else assert.match(image.toString('utf8'), /<svg/);
     assert.equal(new URL(category.image, 'https://example.org/frasbanken/').pathname, `/frasbanken/${category.image}`);
   }
 });

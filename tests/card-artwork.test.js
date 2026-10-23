@@ -22,7 +22,7 @@ test('each active card has a unique complete local WebP matching the release man
     bytes += image.length;
   }
   assert.equal(manifest.totalBytes, bytes);
-  assert.ok(bytes < 60 * 1024 * 1024, 'artwork must fit the 60 MiB release budget');
+  assert.ok(bytes < 90 * 1024 * 1024, '225 artworks must fit the 90 MiB release budget');
   const archived = JSON.parse(await readFile(new URL('../data/archive/cards-2026-10-18.json', import.meta.url)));
   assert.deepEqual(new Set(archived.parked.map(card => card.id)), new Set(['W001', 'N025']));
 });

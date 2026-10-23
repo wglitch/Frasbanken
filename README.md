@@ -1,6 +1,6 @@
-# Frasbanken 2.6
+# Frasbanken 2.7
 
-En digital konstkortlek för att göra samtalsfraser till sina egna. 151 aktiva kort och 12 kategorier (Stafettpinnen är tills vidare tom), utan timer, poäng eller automatisk bedömning.
+En digital konstkortlek för att göra samtalsfraser till sina egna. 225 aktiva kort och 13 kategorier, utan timer, poäng eller automatisk bedömning.
 
 **App:** https://wglitch.github.io/Frasbanken/  
 **Källkod:** https://github.com/wglitch/Frasbanken
@@ -63,7 +63,9 @@ Alla kategorier från biblioteket visas automatiskt. Visuella kategoriinställni
 
 Bildkedja: kortets `image` → kategorins `image` → eventuell `fallbackImage` → `assets/placeholder.svg` → neutral yta om även filen saknas. Använd relativa sökvägar, exempelvis `assets/cards/F001.webp`, och `imageAlt` för individuella bilder. Använd `imagePosition: "35% 50%"` för beskärningens fokus, även på kategoriinställningar. Repetitionsvyn använder alltid cover för att fylla skärmen och bevarar bildens proportioner. `style` är metadata och skapar ingen bild automatiskt.
 
-Alla 151 aktiva kort har egna WebP-konstverk i `assets/art/cards`, högst 1024 × 1536 pixlar. Tre reviderade motiv används för F041/F052/F060. PNG-original och granskningsgallerier behålls lokalt. Webbversionerna skapas med Pillow genom `python tools/build-card-webp.py --source-root "sökväg till lokala originalprojektet"`; filkopplingar, storlekar och kontrollsummor finns i `assets/art/manifest.json`. Endast aktuellt och nästa kort förladdas i repetitionsvyn.
+Alla 225 aktiva kort har egna WebP-konstverk i `assets/art/cards`, högst 1024 × 1536 pixlar. Tre reviderade motiv används för F041/F052/F060. PNG-original och granskningsgallerier behålls lokalt. De ursprungliga webbversionerna skapades med Pillow genom `python tools/build-card-webp.py --source-root "sökväg till lokala originalprojektet"`; filkopplingar, storlekar och kontrollsummor finns i `assets/art/manifest.json`. Endast aktuellt och nästa kort förladdas i repetitionsvyn.
+
+Version 2.7 lägger till 74 text- och bildgodkända kort med nya ID:n A001–A074. Alla 151 äldre kort och bildfiler är oförändrade; historiknycklarna behålls. Återkopplingskategorin heter nu Spiraltrappan med samma kategori-ID `aterkoppla`. Schackbrädet (`ledarskap`) samlar ledarskap, mandat och ansvar. De nya korten använder samma Georgia-typografi som de äldre. Kopplingen från granskningsnummer till slutligt kort-ID finns i `reviews/2026-10-23-tillskott.json`. De nya WebP-filerna kopieras från den godkända lokala bildproduktionen; hela webbuppsättningen är cirka 81,64 MiB. PNG-original, prompter och granskningsgallerier behålls lokalt utanför webbplatsen.
 
 ## Arkitektur och verifiering
 
@@ -73,6 +75,6 @@ Vanlig HTML/CSS/JavaScript, inga paketberoenden. `app.js` hanterar vy och Pointe
 npm test
 ```
 
-40 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation, lokala bildadresser, oförändrat korturval vid förhandsvisning, parallella animationer, animationslås, avbrott och minskad rörelse. Webbläsarkontroll i desktop- och 320 × 568-vy av helskärmskonst, längdanpassning, 151 WebP-filer med kontrollsummor, förladdat nästa kort, övergångar, återgång utanför, ångring, bibliotek och minskad rörelse. Tidigare kontroll i 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
+43 tester täcker biblioteket, bilder, filter, viktning, import/sammanslagning, sortering, sparfel, snabba upprepade handlingar, ångring med återställd tidpunkt, tomma urval, gestseparation, lokala bildadresser, oförändrat korturval vid förhandsvisning, parallella animationer, animationslås, avbrott och minskad rörelse. Webbläsarkontroll i desktop- och 320 × 568-vy av helskärmskonst, längdanpassning, 225 WebP-filer med kontrollsummor, förladdat nästa kort, övergångar, återgång utanför, ångring, bibliotek och minskad rörelse. Tidigare kontroll i 390 × 844-vy: dragning till alla tre korgar, återgång vid släpp utanför, vänstersvep, uppåtsvep, knappalternativ, sparad historik efter omladdning och introduktion en gång. Fysisk iPhone/Safari är ännu inte verifierad. Webbplatsen har ingen särskild offlinelagring av appfilerna.
 
 Nästa steg finns i JOURNAL.md; framtida idéer i IDEAS.md.

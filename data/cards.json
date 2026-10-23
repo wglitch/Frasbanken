@@ -50,7 +50,7 @@
     },
     {
       "id": "aterkoppla",
-      "name": "Spegelverkstaden",
+      "name": "Spiraltrappan",
       "image": null
     },
     {
@@ -62,6 +62,11 @@
       "id": "kommunicera",
       "name": "Scenen",
       "image": null
+    },
+    {
+      "id": "ledarskap",
+      "name": "Schackbrädet",
+      "image": "assets/art/cards/A040.webp"
     }
   ],
   "cards": [
@@ -2361,6 +2366,1116 @@
       "sourceLocation": "Användarbeslut i chatten 2026-10-17",
       "notes": "Ny variant bredvid N017. Avser att avvisa en tolkning, inte press att ta ställning.",
       "imageAlt": "Konstverk till Muren: Det är din tolkning, jag håller inte med."
+    },
+    {
+      "id": "A001",
+      "type": "phrase",
+      "text": "Vi verkar ha olika bilder av vad som hände.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A001.webp",
+      "style": "Kubism / Picasso",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY001",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Vi verkar ha olika bilder av vad som hände."
+    },
+    {
+      "id": "A002",
+      "type": "phrase",
+      "text": "Jag märker att jag börjar försvara mig. Jag vill hellre förstå vad du reagerar på.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A002.webp",
+      "style": "Broderi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY002",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag märker att jag börjar försvara mig. Jag vill hellre förstå vad du reagerar på."
+    },
+    {
+      "id": "A003",
+      "type": "phrase",
+      "text": "Det låter som du är arg. Vad är det viktigaste du vill att jag ska förstå?",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A003.webp",
+      "style": "Manga",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY003",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Det låter som du är arg. Vad är det viktigaste du vill att jag ska förstå?"
+    },
+    {
+      "id": "A004",
+      "type": "phrase",
+      "text": "Jag kommer inte att ändra mig bara för att du blir arg.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A004.webp",
+      "style": "Träsnitt",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY004",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag kommer inte att ändra mig bara för att du blir arg."
+    },
+    {
+      "id": "A005",
+      "type": "phrase",
+      "text": "Jag vill inte säga något nu som jag behöver ta tillbaka senare.",
+      "primaryCategory": "pausa",
+      "functions": [
+        "pausa"
+      ],
+      "image": "assets/art/cards/A005.webp",
+      "style": "Dalí / surrealism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY005",
+      "notes": null,
+      "imageAlt": "Konstverk till Pausknappen: Jag vill inte säga något nu som jag behöver ta tillbaka senare."
+    },
+    {
+      "id": "A006",
+      "type": "phrase",
+      "text": "Jag är irriterad just nu, men jag vill fortfarande lösa det här.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A006.webp",
+      "style": "Van Gogh / postimpressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY006",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag är irriterad just nu, men jag vill fortfarande lösa det här."
+    },
+    {
+      "id": "A007",
+      "type": "phrase",
+      "text": "Jag känner inte igen mig i den beskrivningen.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A007.webp",
+      "style": "Kornigt svartvitt fotografi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY007",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag känner inte igen mig i den beskrivningen."
+    },
+    {
+      "id": "A008",
+      "type": "phrase",
+      "text": "Jag vill gärna prata om vad jag har gjort, men inte om vem du tycker att jag är.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A008.webp",
+      "style": "Naturvetenskaplig plansch",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY008",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag vill gärna prata om vad jag har gjort, men inte om vem du tycker att jag är."
+    },
+    {
+      "id": "A009",
+      "type": "phrase",
+      "text": "Jag tänker inte försvara mig mot något jag inte har påstått.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A009.webp",
+      "style": "Dalí / surrealism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY009",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag tänker inte försvara mig mot något jag inte har påstått."
+    },
+    {
+      "id": "A010",
+      "type": "phrase",
+      "text": "Vi kan diskutera det här utan att försöka såra varandra.",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A010.webp",
+      "style": "Barnteckning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY010",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Vi kan diskutera det här utan att försöka såra varandra."
+    },
+    {
+      "id": "A011",
+      "type": "phrase",
+      "text": "Jag tror att vi har förstått varandras ståndpunkter. Vad gör vi nu?",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A011.webp",
+      "style": "Papperscollage",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY011",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Jag tror att vi har förstått varandras ståndpunkter. Vad gör vi nu?"
+    },
+    {
+      "id": "A012",
+      "type": "phrase",
+      "text": "Vad behöver vi komma överens om för att kunna gå vidare?",
+      "primaryCategory": "konflikt",
+      "functions": [
+        "konflikt"
+      ],
+      "image": "assets/art/cards/A012.webp",
+      "style": "Teknisk ritning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY012",
+      "notes": null,
+      "imageAlt": "Konstverk till Stormen: Vad behöver vi komma överens om för att kunna gå vidare?"
+    },
+    {
+      "id": "A013",
+      "type": "phrase",
+      "text": "Jag har sagt vad jag behöver säga. Jag tänker lämna det där.",
+      "primaryCategory": "avsluta",
+      "functions": [
+        "avsluta"
+      ],
+      "image": "assets/art/cards/A013.webp",
+      "style": "Kornigt svartvitt fotografi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY013",
+      "notes": null,
+      "imageAlt": "Konstverk till Utgången: Jag har sagt vad jag behöver säga. Jag tänker lämna det där."
+    },
+    {
+      "id": "A014",
+      "type": "phrase",
+      "text": "Jag vill ta upp en sak som jag tror att vi kan göra bättre.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A014.webp",
+      "style": "Monet / impressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY014",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag vill ta upp en sak som jag tror att vi kan göra bättre."
+    },
+    {
+      "id": "A015",
+      "type": "template",
+      "text": "Jag uppskattar verkligen det du gjorde, särskilt att du…",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A015.webp",
+      "style": "Rembrandt / ljusdunkel",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY015",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag uppskattar verkligen det du gjorde, särskilt att du…"
+    },
+    {
+      "id": "A016",
+      "type": "phrase",
+      "text": "Det här blev inte så bra som jag hade förväntat mig.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A016.webp",
+      "style": "Barnteckning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY016",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Det här blev inte så bra som jag hade förväntat mig."
+    },
+    {
+      "id": "A017",
+      "type": "phrase",
+      "text": "Vad skulle du vilja att jag gjorde annorlunda nästa gång?",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A017.webp",
+      "style": "Teknisk ritning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY017",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Vad skulle du vilja att jag gjorde annorlunda nästa gång?"
+    },
+    {
+      "id": "A018",
+      "type": "phrase",
+      "text": "Det där var svårt att höra, men jag vill förstå vad du menar.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A018.webp",
+      "style": "Broderi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY018",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Det där var svårt att höra, men jag vill förstå vad du menar."
+    },
+    {
+      "id": "A019",
+      "type": "phrase",
+      "text": "Kan du ge mig ett konkret exempel?",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A019.webp",
+      "style": "Naturvetenskaplig plansch",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY019",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Kan du ge mig ett konkret exempel?"
+    },
+    {
+      "id": "A020",
+      "type": "phrase",
+      "text": "Jag tycker inte att det här håller den kvalitet vi behöver.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A020.webp",
+      "style": "Träsnitt",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY020",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag tycker inte att det här håller den kvalitet vi behöver."
+    },
+    {
+      "id": "A021",
+      "type": "phrase",
+      "text": "Vad tar vi med oss från det här till nästa gång?",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A021.webp",
+      "style": "Papperscollage",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY021",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Vad tar vi med oss från det här till nästa gång?"
+    },
+    {
+      "id": "A022",
+      "type": "phrase",
+      "text": "Jag har dragit mig för att säga det här, men jag tycker att det är viktigt.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A022.webp",
+      "style": "Kornigt svartvitt fotografi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY022",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag har dragit mig för att säga det här, men jag tycker att det är viktigt."
+    },
+    {
+      "id": "A023",
+      "type": "phrase",
+      "text": "Jag ifrågasätter inte dina avsikter. Jag pratar om vad som blev resultatet.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A023.webp",
+      "style": "Kubism / Picasso",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY023",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag ifrågasätter inte dina avsikter. Jag pratar om vad som blev resultatet."
+    },
+    {
+      "id": "A024",
+      "type": "phrase",
+      "text": "Jag hör din förklaring. Samtidigt behöver vi prata om vad som inte fungerade.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A024.webp",
+      "style": "Warhol / popkonst",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY024",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag hör din förklaring. Samtidigt behöver vi prata om vad som inte fungerade."
+    },
+    {
+      "id": "A025",
+      "type": "phrase",
+      "text": "Jag vill förstå hur det blev så här och hitta ett bättre sätt framåt.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A025.webp",
+      "style": "Dalí / surrealism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY025",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag vill förstå hur det blev så här och hitta ett bättre sätt framåt."
+    },
+    {
+      "id": "A026",
+      "type": "phrase",
+      "text": "Jag märker att jag vill förklara mig, men jag vill höra klart först.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A026.webp",
+      "style": "Manga",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY026",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag märker att jag vill förklara mig, men jag vill höra klart först."
+    },
+    {
+      "id": "A027",
+      "type": "phrase",
+      "text": "Vad tycker du att jag borde ha gjort i stället?",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A027.webp",
+      "style": "Teknisk ritning / genomskärning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY027",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Vad tycker du att jag borde ha gjort i stället?"
+    },
+    {
+      "id": "A028",
+      "type": "phrase",
+      "text": "Vi har pratat om det här tidigare, men jag ser inte den förändring vi kom överens om.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A028.webp",
+      "style": "Van Gogh / postimpressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY028",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Vi har pratat om det här tidigare, men jag ser inte den förändring vi kom överens om."
+    },
+    {
+      "id": "A029",
+      "type": "phrase",
+      "text": "Jag behöver se en förändring, inte bara höra att du har förstått.",
+      "primaryCategory": "aterkoppla",
+      "functions": [
+        "aterkoppla"
+      ],
+      "image": "assets/art/cards/A029.webp",
+      "style": "Broderi / textil",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY029",
+      "notes": null,
+      "imageAlt": "Konstverk till Spiraltrappan: Jag behöver se en förändring, inte bara höra att du har förstått."
+    },
+    {
+      "id": "A030",
+      "type": "phrase",
+      "text": "Jag vill att du tar ansvar för det här.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A030.webp",
+      "style": "Rembrandt / ljusdunkel",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY030",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Jag vill att du tar ansvar för det här."
+    },
+    {
+      "id": "A031",
+      "type": "phrase",
+      "text": "Hur du löser det bestämmer du själv.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A031.webp",
+      "style": "Dalí / surrealism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY031",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Hur du löser det bestämmer du själv."
+    },
+    {
+      "id": "A032",
+      "type": "phrase",
+      "text": "Vad behöver du från mig för att kunna genomföra det?",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A032.webp",
+      "style": "Broderi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY032",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Vad behöver du från mig för att kunna genomföra det?"
+    },
+    {
+      "id": "A033",
+      "type": "phrase",
+      "text": "Det här behöver du prioritera före det andra.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A033.webp",
+      "style": "Manga",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY033",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Det här behöver du prioritera före det andra."
+    },
+    {
+      "id": "A034",
+      "type": "phrase",
+      "text": "Jag förstår att du har mycket att göra. Vad behöver vi prioritera bort?",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A034.webp",
+      "style": "Papperscollage",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY034",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Jag förstår att du har mycket att göra. Vad behöver vi prioritera bort?"
+    },
+    {
+      "id": "A035",
+      "type": "phrase",
+      "text": "Jag vill att du gör en egen bedömning och fattar beslutet.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A035.webp",
+      "style": "Kubism / Picasso",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY035",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Jag vill att du gör en egen bedömning och fattar beslutet."
+    },
+    {
+      "id": "A036",
+      "type": "phrase",
+      "text": "Jag kan hjälpa dig att komma vidare, men jag kommer inte att ta över uppgiften.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A036.webp",
+      "style": "Träsnitt",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY036",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Jag kan hjälpa dig att komma vidare, men jag kommer inte att ta över uppgiften."
+    },
+    {
+      "id": "A037",
+      "type": "phrase",
+      "text": "Jag vill att du säger till i god tid om du inte kommer att hinna.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A037.webp",
+      "style": "Van Gogh / postimpressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY037",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Jag vill att du säger till i god tid om du inte kommer att hinna."
+    },
+    {
+      "id": "A038",
+      "type": "phrase",
+      "text": "Jag behöver veta när du kan leverera, inte varför det har blivit försenat.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A038.webp",
+      "style": "Kornigt svartvitt fotografi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY039",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Jag behöver veta när du kan leverera, inte varför det har blivit försenat."
+    },
+    {
+      "id": "A039",
+      "type": "phrase",
+      "text": "Vad behöver jag förtydliga i uppdraget för att du ska kunna komma vidare?",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A039.webp",
+      "style": "Teknisk ritning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY040",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Vad behöver jag förtydliga i uppdraget för att du ska kunna komma vidare?"
+    },
+    {
+      "id": "A040",
+      "type": "phrase",
+      "text": "Jag har hört era synpunkter. Nu behöver vi fatta ett beslut.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A040.webp",
+      "style": "Papperscollage",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY041",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag har hört era synpunkter. Nu behöver vi fatta ett beslut."
+    },
+    {
+      "id": "A041",
+      "type": "phrase",
+      "text": "Jag vill att vi gör så här.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A041.webp",
+      "style": "Träsnitt",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY042",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag vill att vi gör så här."
+    },
+    {
+      "id": "A042",
+      "type": "phrase",
+      "text": "Det här är mitt ansvar, och jag tar det.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A042.webp",
+      "style": "Rembrandt / ljusdunkel",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY043",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Det här är mitt ansvar, och jag tar det."
+    },
+    {
+      "id": "A043",
+      "type": "phrase",
+      "text": "Jag vill ha dina invändningar innan jag fattar beslutet.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A043.webp",
+      "style": "Teknisk ritning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY044",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag vill ha dina invändningar innan jag fattar beslutet."
+    },
+    {
+      "id": "A044",
+      "type": "phrase",
+      "text": "Jag borde ha varit tydligare med vad jag förväntade mig.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A044.webp",
+      "style": "Kornigt svartvitt fotografi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY045",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag borde ha varit tydligare med vad jag förväntade mig."
+    },
+    {
+      "id": "A045",
+      "type": "phrase",
+      "text": "Jag ser att det här skapar merarbete. Det är ändå den prioritering jag gör.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A045.webp",
+      "style": "Van Gogh / postimpressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY046",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag ser att det här skapar merarbete. Det är ändå den prioritering jag gör."
+    },
+    {
+      "id": "A046",
+      "type": "phrase",
+      "text": "Jag tar ansvar för beslutet. Du behöver inte försvara det åt mig.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A046.webp",
+      "style": "Broderi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY047",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag tar ansvar för beslutet. Du behöver inte försvara det åt mig."
+    },
+    {
+      "id": "A047",
+      "type": "phrase",
+      "text": "Det här är den riktning jag vill att vi arbetar mot.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A047.webp",
+      "style": "Monet / impressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY048",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Det här är den riktning jag vill att vi arbetar mot."
+    },
+    {
+      "id": "A048",
+      "type": "phrase",
+      "text": "Jag vill att du säger emot när du tycker att jag har fel.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A048.webp",
+      "style": "Manga",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY049",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag vill att du säger emot när du tycker att jag har fel."
+    },
+    {
+      "id": "A049",
+      "type": "phrase",
+      "text": "Jag märker att jag har varit otydlig. Det är mitt ansvar att rätta till.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A049.webp",
+      "style": "Barnteckning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY050",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag märker att jag har varit otydlig. Det är mitt ansvar att rätta till."
+    },
+    {
+      "id": "A050",
+      "type": "phrase",
+      "text": "Jag vill inte fatta det här beslutet åt dig. Jag vill hjälpa dig att fatta det själv.",
+      "primaryCategory": "delegera",
+      "functions": [
+        "delegera"
+      ],
+      "image": "assets/art/cards/A050.webp",
+      "style": "Naturvetenskaplig plansch",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY051",
+      "notes": null,
+      "imageAlt": "Konstverk till Stafettpinnen: Jag vill inte fatta det här beslutet åt dig. Jag vill hjälpa dig att fatta det själv."
+    },
+    {
+      "id": "A051",
+      "type": "phrase",
+      "text": "Jag förstår att du inte håller med. Jag vill ändå att vi genomför det här.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A051.webp",
+      "style": "Kubism / Picasso",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY052",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag förstår att du inte håller med. Jag vill ändå att vi genomför det här."
+    },
+    {
+      "id": "A052",
+      "type": "phrase",
+      "text": "Med facit i hand hade jag gjort en annan bedömning.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A052.webp",
+      "style": "Kornigt svartvitt fotografi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY053",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Med facit i hand hade jag gjort en annan bedömning."
+    },
+    {
+      "id": "A053",
+      "type": "phrase",
+      "text": "Jag kan ha fel, men jag väljer att göra så här.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A053.webp",
+      "style": "Träsnitt",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY054",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Jag kan ha fel, men jag väljer att göra så här."
+    },
+    {
+      "id": "A054",
+      "type": "phrase",
+      "text": "Låt oss skilja på ett dåligt beslut och ett dåligt utfall.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A054.webp",
+      "style": "Naturvetenskaplig plansch",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY055",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Låt oss skilja på ett dåligt beslut och ett dåligt utfall."
+    },
+    {
+      "id": "A055",
+      "type": "phrase",
+      "text": "Jag ser risken, men bedömer att alternativet är sämre.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A055.webp",
+      "style": "Van Gogh / postimpressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY056",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Jag ser risken, men bedömer att alternativet är sämre."
+    },
+    {
+      "id": "A056",
+      "type": "phrase",
+      "text": "Vilken del av min bedömning håller du inte med om?",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A056.webp",
+      "style": "Teknisk ritning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY057",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Vilken del av min bedömning håller du inte med om?"
+    },
+    {
+      "id": "A057",
+      "type": "phrase",
+      "text": "Jag ser två rimliga alternativ. Jag väljer det här.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A057.webp",
+      "style": "Broderi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY058",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Jag ser två rimliga alternativ. Jag väljer det här."
+    },
+    {
+      "id": "A058",
+      "type": "phrase",
+      "text": "Jag kan stå för beslutet även om resultatet inte blir som jag hoppas.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A058.webp",
+      "style": "Rembrandt / ljusdunkel",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY059",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Jag kan stå för beslutet även om resultatet inte blir som jag hoppas."
+    },
+    {
+      "id": "A059",
+      "type": "phrase",
+      "text": "Jag är öppen för att ändra beslutet om det kommer nya skäl. Tills dess står det fast.",
+      "primaryCategory": "besluta",
+      "functions": [
+        "besluta"
+      ],
+      "image": "assets/art/cards/A059.webp",
+      "style": "Dalí / surrealism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY060",
+      "notes": null,
+      "imageAlt": "Konstverk till Vägskälet: Jag är öppen för att ändra beslutet om det kommer nya skäl. Tills dess står det fast."
+    },
+    {
+      "id": "A060",
+      "type": "template",
+      "text": "Om jag ska sammanfatta det i en mening…",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": "assets/art/cards/A060.webp",
+      "style": "Papperscollage",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY061",
+      "notes": null,
+      "imageAlt": "Konstverk till Scenen: Om jag ska sammanfatta det i en mening…"
+    },
+    {
+      "id": "A061",
+      "type": "phrase",
+      "text": "Jag tror att jag uttryckte mig otydligt. Jag försöker igen.",
+      "primaryCategory": "kommunicera",
+      "functions": [
+        "kommunicera"
+      ],
+      "image": "assets/art/cards/A061.webp",
+      "style": "Manga",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY062",
+      "notes": null,
+      "imageAlt": "Konstverk till Scenen: Jag tror att jag uttryckte mig otydligt. Jag försöker igen."
+    },
+    {
+      "id": "A062",
+      "type": "phrase",
+      "text": "Innan vi går vidare vill jag försäkra mig om att vi menar samma sak.",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": "assets/art/cards/A062.webp",
+      "style": "Monet / impressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY063",
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Innan vi går vidare vill jag försäkra mig om att vi menar samma sak."
+    },
+    {
+      "id": "A063",
+      "type": "phrase",
+      "text": "Låt mig tala till punkt, sen vill jag gärna höra din invändning.",
+      "primaryCategory": "grans",
+      "functions": [
+        "grans"
+      ],
+      "image": "assets/art/cards/A063.webp",
+      "style": "Träsnitt",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY064",
+      "notes": null,
+      "imageAlt": "Konstverk till Muren: Låt mig tala till punkt, sen vill jag gärna höra din invändning."
+    },
+    {
+      "id": "A064",
+      "type": "template",
+      "text": "Jag tror att vi behöver börja med att definiera vad vi menar med…",
+      "primaryCategory": "styra",
+      "functions": [
+        "styra"
+      ],
+      "image": "assets/art/cards/A064.webp",
+      "style": "Naturvetenskaplig plansch",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY066",
+      "notes": null,
+      "imageAlt": "Konstverk till Fyren: Jag tror att vi behöver börja med att definiera vad vi menar med…"
+    },
+    {
+      "id": "A065",
+      "type": "phrase",
+      "text": "Det här är vad jag vill. Jag vill höra hur du ser på det.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A065.webp",
+      "style": "Kubism / Picasso",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY067",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Det här är vad jag vill. Jag vill höra hur du ser på det."
+    },
+    {
+      "id": "A066",
+      "type": "phrase",
+      "text": "Jag kan tänka mig att diskutera hur vi gör det, men inte om vi ska göra det.",
+      "primaryCategory": "ledarskap",
+      "functions": [
+        "ledarskap"
+      ],
+      "image": "assets/art/cards/A066.webp",
+      "style": "Dalí / surrealism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY068",
+      "notes": null,
+      "imageAlt": "Konstverk till Schackbrädet: Jag kan tänka mig att diskutera hur vi gör det, men inte om vi ska göra det."
+    },
+    {
+      "id": "A067",
+      "type": "phrase",
+      "text": "Jag förstår att du inte vill. Det förändrar inte vad jag tycker är viktigt.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A067.webp",
+      "style": "Träsnitt",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY069",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Jag förstår att du inte vill. Det förändrar inte vad jag tycker är viktigt."
+    },
+    {
+      "id": "A068",
+      "type": "phrase",
+      "text": "Jag är beredd att kompromissa, men jag vill först vara tydlig med vad jag önskar.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A068.webp",
+      "style": "Papperscollage",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY070",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Jag är beredd att kompromissa, men jag vill först vara tydlig med vad jag önskar."
+    },
+    {
+      "id": "A069",
+      "type": "phrase",
+      "text": "Jag vill gärna höra vad du tänker om det jag just sa.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A069.webp",
+      "style": "Monet / impressionism",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY071",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Jag vill gärna höra vad du tänker om det jag just sa."
+    },
+    {
+      "id": "A070",
+      "type": "phrase",
+      "text": "Jag vill inte övertala dig. Jag vill att du förstår varför det här är viktigt för mig.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A070.webp",
+      "style": "Rembrandt / ljusdunkel",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY072",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Jag vill inte övertala dig. Jag vill att du förstår varför det här är viktigt för mig."
+    },
+    {
+      "id": "A071",
+      "type": "phrase",
+      "text": "Jag hör att du inte vill. Kan du hjälpa mig förstå vad det är som tar emot?",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A071.webp",
+      "style": "Manga",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY073",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Jag hör att du inte vill. Kan du hjälpa mig förstå vad det är som tar emot?"
+    },
+    {
+      "id": "A072",
+      "type": "phrase",
+      "text": "Jag vill inte fylla i ditt svar åt dig. Jag vill höra vad du själv tänker.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A072.webp",
+      "style": "Barnteckning",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY074",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Jag vill inte fylla i ditt svar åt dig. Jag vill höra vad du själv tänker."
+    },
+    {
+      "id": "A073",
+      "type": "phrase",
+      "text": "Det är viktigt för mig att vi kan prata om det här, även om vi inte kommer överens.",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A073.webp",
+      "style": "Broderi",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY075",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Det är viktigt för mig att vi kan prata om det här, även om vi inte kommer överens."
+    },
+    {
+      "id": "A074",
+      "type": "phrase",
+      "text": "Jag märker att jag börjar upprepa mig. Vad är det du hör mig säga?",
+      "primaryCategory": "relation",
+      "functions": [
+        "relation"
+      ],
+      "image": "assets/art/cards/A074.webp",
+      "style": "Warhol / popkonst",
+      "source": "frasbanken_utvalda_76",
+      "sourceLocation": "Textgranskning 2026-10-22, NY076",
+      "notes": null,
+      "imageAlt": "Konstverk till Bron: Jag märker att jag börjar upprepa mig. Vad är det du hör mig säga?"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "date": "2026-10-18",
+  "date": "2026-10-23",
   "format": "WebP",
-  "total": 151,
-  "totalBytes": 52521990,
+  "total": 225,
+  "totalBytes": 85600674,
   "masters": "Local PNG originals are retained outside deployment.",
   "cards": [
     {
@@ -1515,6 +1515,746 @@
       "height": 1536,
       "bytes": 393996,
       "sha256": "2836c5249170c4257a496b96d00452a9fa36dc5dc52b531969daa76979b57bf4"
+    },
+    {
+      "id": "A001",
+      "file": "assets/art/cards/A001.webp",
+      "source": "art-production/stormen/NY001-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 400472,
+      "sha256": "b1ac9c9d21ffd4e4166dc0dff5cbaa7cc284635b9d7571450ce8e1e188094b60"
+    },
+    {
+      "id": "A002",
+      "file": "assets/art/cards/A002.webp",
+      "source": "art-production/stormen/NY002-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 663566,
+      "sha256": "80509c46509daa0aa7d8ae444aca42724f56b548110286e3ae722615ac61ffd7"
+    },
+    {
+      "id": "A003",
+      "file": "assets/art/cards/A003.webp",
+      "source": "art-production/stormen/NY003-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 473328,
+      "sha256": "e13598cd3776924d4b3ce4336f2665ac95c059789c981c2063a9e7037eab052a"
+    },
+    {
+      "id": "A004",
+      "file": "assets/art/cards/A004.webp",
+      "source": "art-production/stormen/NY004-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 625950,
+      "sha256": "cd26fce2c49fdd144b9e1714256f3bfd7dbe97da7c190c19da0bf5a594ab4b33"
+    },
+    {
+      "id": "A005",
+      "file": "assets/art/cards/A005.webp",
+      "source": "art-production/pausknappen/NY005-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 239046,
+      "sha256": "5cbe07480d1fa6b43435961d88747e27d17f8480bc5a75fa65520e942a5e59cd"
+    },
+    {
+      "id": "A006",
+      "file": "assets/art/cards/A006.webp",
+      "source": "art-production/stormen/NY006-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 620546,
+      "sha256": "08d93a0c2f773fa8735fa9d1b518f286a78554dc776aacce34e71159d89867bc"
+    },
+    {
+      "id": "A007",
+      "file": "assets/art/cards/A007.webp",
+      "source": "art-production/stormen/NY007-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 192116,
+      "sha256": "dae2657df2d9de7ec5414822881d3f1e8681709d6a301d5f64d98eb9ec006c21"
+    },
+    {
+      "id": "A008",
+      "file": "assets/art/cards/A008.webp",
+      "source": "art-production/stormen/NY008-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 611804,
+      "sha256": "79ea8635b923b70fa0194dadd6cd13b6e6d8ebd354abe7cd752fcb4d9c44a012"
+    },
+    {
+      "id": "A009",
+      "file": "assets/art/cards/A009.webp",
+      "source": "art-production/stormen/NY009-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 303684,
+      "sha256": "9bfb20e2970f0e6bb35a3b9c28ca5129a077272971c1f1c9e61fcc8c43d13113"
+    },
+    {
+      "id": "A010",
+      "file": "assets/art/cards/A010.webp",
+      "source": "art-production/stormen/NY010-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 702792,
+      "sha256": "858972190ddada8bae12000c400bb73e9cbb08fd12daef4901ebdf830d1e689b"
+    },
+    {
+      "id": "A011",
+      "file": "assets/art/cards/A011.webp",
+      "source": "art-production/stormen/NY011-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 510722,
+      "sha256": "930e20633e32184c8bf565fd659a702e800281570ab55fb2a2cae5a41282bc65"
+    },
+    {
+      "id": "A012",
+      "file": "assets/art/cards/A012.webp",
+      "source": "art-production/stormen/NY012-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 395484,
+      "sha256": "3edea7fb1e2d6f30fca743d997a04b682c3e76b470a0b1173f8d81e7edbb7ebc"
+    },
+    {
+      "id": "A013",
+      "file": "assets/art/cards/A013.webp",
+      "source": "art-production/utgangen/NY013-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 176900,
+      "sha256": "1cef5603ef9a695213d2eeb48237b66f9ce0c90a522a0bbd57322ecc684da136"
+    },
+    {
+      "id": "A014",
+      "file": "assets/art/cards/A014.webp",
+      "source": "art-production/spiraltrappan/NY014-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 489378,
+      "sha256": "f5b6e7d9278253273e81c05992202801dfb4d11b5bb2b84c327c8470aeb7a108"
+    },
+    {
+      "id": "A015",
+      "file": "assets/art/cards/A015.webp",
+      "source": "art-production/spiraltrappan/NY015-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 214188,
+      "sha256": "8e591470abba10b1d54ec7cb03c15b11b304f5e06d5de1675b5d4c924fa10fd5"
+    },
+    {
+      "id": "A016",
+      "file": "assets/art/cards/A016.webp",
+      "source": "art-production/spiraltrappan/NY016-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 560766,
+      "sha256": "ac5e0a2c07cedf96facebf7dbf004bb3339b2c3232dc1d67bfe3321e34e90283"
+    },
+    {
+      "id": "A017",
+      "file": "assets/art/cards/A017.webp",
+      "source": "art-production/spiraltrappan/NY017-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 422136,
+      "sha256": "c4b9213355d5403871069a051db9b5fa4365bfddd8c924f155e7523c951368c2"
+    },
+    {
+      "id": "A018",
+      "file": "assets/art/cards/A018.webp",
+      "source": "art-production/spiraltrappan/NY018-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 530906,
+      "sha256": "5d7494a3391634e7f4d9a6c523d68eea466026bbdabcb87bb7c9e3b0e6473950"
+    },
+    {
+      "id": "A019",
+      "file": "assets/art/cards/A019.webp",
+      "source": "art-production/spiraltrappan/NY019-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 512000,
+      "sha256": "625a70abefd34087d4f9125921cc88e0f8a913db859a907ebcce17ac08a0ee35"
+    },
+    {
+      "id": "A020",
+      "file": "assets/art/cards/A020.webp",
+      "source": "art-production/spiraltrappan/NY020-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 599234,
+      "sha256": "6829b20f557ec7628806ee3e4a3abd405737eb8c45d94c6d103f7978cbe278aa"
+    },
+    {
+      "id": "A021",
+      "file": "assets/art/cards/A021.webp",
+      "source": "art-production/spiraltrappan/NY021-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 478252,
+      "sha256": "66760dd954c6c65f30ba799ae567a52a921adc2092a1a10ad9c1552f6e2d475e"
+    },
+    {
+      "id": "A022",
+      "file": "assets/art/cards/A022.webp",
+      "source": "art-production/spiraltrappan/NY022-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 189276,
+      "sha256": "f6427097d8882d622e34148ef05e1d218227f8101936ca4a249d9fb16323034c"
+    },
+    {
+      "id": "A023",
+      "file": "assets/art/cards/A023.webp",
+      "source": "art-production/spiraltrappan/NY023-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 359140,
+      "sha256": "67d3eb4c29bc469a1ffab603f59f2c7f8a3c6add96116d3c0f9e8c10a7d97814"
+    },
+    {
+      "id": "A024",
+      "file": "assets/art/cards/A024.webp",
+      "source": "art-production/spiraltrappan/NY024-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 600958,
+      "sha256": "8ee51699aa461e063e73231c83cc7ce2ee645e10e8814d714f1ca2a88975c69e"
+    },
+    {
+      "id": "A025",
+      "file": "assets/art/cards/A025.webp",
+      "source": "art-production/spiraltrappan/NY025-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 355518,
+      "sha256": "93fafb253128e2b66f9cf5730cf1d1a9fa62ba1c3f581616a935bcefcd606a43"
+    },
+    {
+      "id": "A026",
+      "file": "assets/art/cards/A026.webp",
+      "source": "art-production/spiraltrappan/NY026-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 402276,
+      "sha256": "509a870f550ee8a11cf69192b50762b0cb2e767c446625e8c91eaf3ea97cf338"
+    },
+    {
+      "id": "A027",
+      "file": "assets/art/cards/A027.webp",
+      "source": "art-production/spiraltrappan/NY027-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 360124,
+      "sha256": "e822e216adc608e81ef277325ef6c92cbe83d5dbba8e899a15ca2a1ac092fce5"
+    },
+    {
+      "id": "A028",
+      "file": "assets/art/cards/A028.webp",
+      "source": "art-production/spiraltrappan/NY028-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 542070,
+      "sha256": "5f48032d6b328d7c80c9230c0808b4b406e393aebc005db70352318525c4a9ea"
+    },
+    {
+      "id": "A029",
+      "file": "assets/art/cards/A029.webp",
+      "source": "art-production/spiraltrappan/NY029-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 618618,
+      "sha256": "674da8661cb08151c176668514fdbde6ada03f2b7fe113143a099c8c216ed2b3"
+    },
+    {
+      "id": "A030",
+      "file": "assets/art/cards/A030.webp",
+      "source": "art-production/stafettpinnen/NY030-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 192082,
+      "sha256": "89654d4f9a00f94f52854867bbe81b2fd2fb8a2acf2e78812356b06e92ad1ba2"
+    },
+    {
+      "id": "A031",
+      "file": "assets/art/cards/A031.webp",
+      "source": "art-production/stafettpinnen/NY031-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 335518,
+      "sha256": "2ae490a25b9864c79096bcc4cbf9723241571a2c73ca0246abad336bad8b96ae"
+    },
+    {
+      "id": "A032",
+      "file": "assets/art/cards/A032.webp",
+      "source": "art-production/stafettpinnen/NY032-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 632142,
+      "sha256": "31556efb46a84a9a6e357d474bf11cf6e69ecec3aad4ed4cfde96b748c853108"
+    },
+    {
+      "id": "A033",
+      "file": "assets/art/cards/A033.webp",
+      "source": "art-production/stafettpinnen/NY033-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 343456,
+      "sha256": "e0cae5d65d82c141c95ab1368193c55ff2d5ebeeb538aafb81c76f94f17d6062"
+    },
+    {
+      "id": "A034",
+      "file": "assets/art/cards/A034.webp",
+      "source": "art-production/stafettpinnen/NY034-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 391960,
+      "sha256": "7cf2eeb812b9e5c7664985b950032285f36faca5d57827f303c9e983f56e8a57"
+    },
+    {
+      "id": "A035",
+      "file": "assets/art/cards/A035.webp",
+      "source": "art-production/stafettpinnen/NY035-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 293376,
+      "sha256": "cf4ab70eaadc9c9c9e730cf2aa8f87236bf4a7670edf7d2d6eb54a84d21be8f0"
+    },
+    {
+      "id": "A036",
+      "file": "assets/art/cards/A036.webp",
+      "source": "art-production/stafettpinnen/NY036-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 607722,
+      "sha256": "bf1a7911e1117ac597168d0d9de020e93e13f32291d6db30d5b5ee3d1adce196"
+    },
+    {
+      "id": "A037",
+      "file": "assets/art/cards/A037.webp",
+      "source": "art-production/stafettpinnen/NY037-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 675554,
+      "sha256": "2a99a777f9476d7b5328c71e91ec55aa94a5ade202c12dfbbf02e8e7d221511f"
+    },
+    {
+      "id": "A038",
+      "file": "assets/art/cards/A038.webp",
+      "source": "art-production/stafettpinnen/NY039-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 141382,
+      "sha256": "f73fec86fe63a15311eff3dd01cefd5f453612fdaf3d21b8661f824cc81ca565"
+    },
+    {
+      "id": "A039",
+      "file": "assets/art/cards/A039.webp",
+      "source": "art-production/stafettpinnen/NY040-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 378676,
+      "sha256": "007a6342a8d3a81c8aa8263327eb56bc739905534a6382f52f56834121f281b5"
+    },
+    {
+      "id": "A040",
+      "file": "assets/art/cards/A040.webp",
+      "source": "art-production/schackbradet/NY041-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 453768,
+      "sha256": "2f326b5b7067b87ca9aa18fc717829bbfc43cbbf9f368493a669bfd667953f86"
+    },
+    {
+      "id": "A041",
+      "file": "assets/art/cards/A041.webp",
+      "source": "art-production/schackbradet/NY042-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 609280,
+      "sha256": "e437b17923067dc5c3638f4b479950ee3e3882525d370f7d942e7416e10efc44"
+    },
+    {
+      "id": "A042",
+      "file": "assets/art/cards/A042.webp",
+      "source": "art-production/schackbradet/NY043-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 167736,
+      "sha256": "d02c76c6b28ca0a7988701fb42f529eb184a212ae057d024c7b81980ec46bd81"
+    },
+    {
+      "id": "A043",
+      "file": "assets/art/cards/A043.webp",
+      "source": "art-production/schackbradet/NY044-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 386398,
+      "sha256": "8e6e16d4b24dd3caeefb9962a1bf87a2f0ed2ce96cad9dfcf4f9b1ffdda32498"
+    },
+    {
+      "id": "A044",
+      "file": "assets/art/cards/A044.webp",
+      "source": "art-production/schackbradet/NY045-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 102606,
+      "sha256": "3efbfc5db6d99a88af535be5d1271ad5502675b903dbf7d883126577600f83eb"
+    },
+    {
+      "id": "A045",
+      "file": "assets/art/cards/A045.webp",
+      "source": "art-production/schackbradet/NY046-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 554918,
+      "sha256": "a124297b213011bdc1d98407cc2cb12d84aeff2157637b12cae9c9fe25340677"
+    },
+    {
+      "id": "A046",
+      "file": "assets/art/cards/A046.webp",
+      "source": "art-production/schackbradet/NY047-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 489010,
+      "sha256": "64916ee5d9305ca642c0cd7b064067ae63b564af4000bf54bf9f0a34d89de616"
+    },
+    {
+      "id": "A047",
+      "file": "assets/art/cards/A047.webp",
+      "source": "art-production/schackbradet/NY048-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 436136,
+      "sha256": "b4c8a0623623ddbc94cb926d1610b61a3513ab9bff30efc58dd836c5c1e4dcab"
+    },
+    {
+      "id": "A048",
+      "file": "assets/art/cards/A048.webp",
+      "source": "art-production/schackbradet/NY049-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 350020,
+      "sha256": "2450ba24449414a34333144ca35f1591219f9993633afbd6cef42680f1eca0a8"
+    },
+    {
+      "id": "A049",
+      "file": "assets/art/cards/A049.webp",
+      "source": "art-production/schackbradet/NY050-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 660188,
+      "sha256": "3c522548416a059de249c90a73c3b315efa66553326cd9cc517fbd7f2b223acf"
+    },
+    {
+      "id": "A050",
+      "file": "assets/art/cards/A050.webp",
+      "source": "art-production/stafettpinnen/NY051-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 596192,
+      "sha256": "157eca903fd6a83bd751711dfc0b39bdfd6f9b9983abd49450643d7b0c84f87f"
+    },
+    {
+      "id": "A051",
+      "file": "assets/art/cards/A051.webp",
+      "source": "art-production/schackbradet/NY052-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 352754,
+      "sha256": "44d4cf4f6d63125e176677249fbdcf850debb548fcbb4b6edb1a781e5a207676"
+    },
+    {
+      "id": "A052",
+      "file": "assets/art/cards/A052.webp",
+      "source": "art-production/vagskalet/NY053-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 349634,
+      "sha256": "11bc3f0102219eb1e3058386715b4a28a54657a077a599a68136cc826bb0a21d"
+    },
+    {
+      "id": "A053",
+      "file": "assets/art/cards/A053.webp",
+      "source": "art-production/vagskalet/NY054-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 597362,
+      "sha256": "1bdb9af7fda4356bddb4e172fb7222c993ce95bf6b2308d5bde39f76388e929a"
+    },
+    {
+      "id": "A054",
+      "file": "assets/art/cards/A054.webp",
+      "source": "art-production/vagskalet/NY055-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 746674,
+      "sha256": "77cbb0c388ba3e3fb957efc942842142e3bcff850b3f02a1b207de352a6bb515"
+    },
+    {
+      "id": "A055",
+      "file": "assets/art/cards/A055.webp",
+      "source": "art-production/vagskalet/NY056-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 673012,
+      "sha256": "3d654332daa9d28aeb8b23883a8ba9797864080aef5196f126f2466d4f02d99a"
+    },
+    {
+      "id": "A056",
+      "file": "assets/art/cards/A056.webp",
+      "source": "art-production/vagskalet/NY057-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 342594,
+      "sha256": "75fad23e9d8509aa69bdf2e513f678b1c5ff7349a887b0fa715b7e5417066722"
+    },
+    {
+      "id": "A057",
+      "file": "assets/art/cards/A057.webp",
+      "source": "art-production/vagskalet/NY058-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 679214,
+      "sha256": "7ae81d7b06685bc184ac19147ebacdb504e39a6233f0671064db4e0dbdbd11ad"
+    },
+    {
+      "id": "A058",
+      "file": "assets/art/cards/A058.webp",
+      "source": "art-production/vagskalet/NY059-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 356964,
+      "sha256": "643bb60161a77f782c6f250d3ac27b17173f93dd6fb8dce8ddbdf0f9b608650d"
+    },
+    {
+      "id": "A059",
+      "file": "assets/art/cards/A059.webp",
+      "source": "art-production/vagskalet/NY060-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 308708,
+      "sha256": "fbc75529e58c8bbe93d2d70aa0e1f8998137db9b697bf11c356db55d4a7c3ec8"
+    },
+    {
+      "id": "A060",
+      "file": "assets/art/cards/A060.webp",
+      "source": "art-production/scenen/NY061-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 321540,
+      "sha256": "88dbb77e34f948a608f57019a68b57f464ba2d20af39d36850dd7105f562574e"
+    },
+    {
+      "id": "A061",
+      "file": "assets/art/cards/A061.webp",
+      "source": "art-production/scenen/NY062-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 251344,
+      "sha256": "1d5577b5063c0664c43025480ae73cb82930c600395f3f493cd16fedf6279a92"
+    },
+    {
+      "id": "A062",
+      "file": "assets/art/cards/A062.webp",
+      "source": "art-production/fyren/NY063-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 403034,
+      "sha256": "361e7aa5e436c7cb47cfca9492037645d745e1882ab7fee4641bcffad85c78a4"
+    },
+    {
+      "id": "A063",
+      "file": "assets/art/cards/A063.webp",
+      "source": "art-production/muren/NY064-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 624512,
+      "sha256": "fd5dca2e25d10141db54a9e07f961d837426e69b5e6bff4c9cdcb0057bc5c6e7"
+    },
+    {
+      "id": "A064",
+      "file": "assets/art/cards/A064.webp",
+      "source": "art-production/fyren/NY066-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 572452,
+      "sha256": "9a56f9ff54ace8ab7ffa88ff317d2932b2555b99d76d54bfc114f91e82350515"
+    },
+    {
+      "id": "A065",
+      "file": "assets/art/cards/A065.webp",
+      "source": "art-production/bron/NY067-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 318770,
+      "sha256": "099978e1fd52a5ee519db1b830097c9e805f30398fa44c0a25b6d07757ac21f2"
+    },
+    {
+      "id": "A066",
+      "file": "assets/art/cards/A066.webp",
+      "source": "art-production/schackbradet/NY068-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 358008,
+      "sha256": "d6ca5aec76a6ca6433da9060cd832b694c40362ea96c17231ae2c28f2c535d95"
+    },
+    {
+      "id": "A067",
+      "file": "assets/art/cards/A067.webp",
+      "source": "art-production/bron/NY069-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 512494,
+      "sha256": "d994e38ea58a73c55a43f0ac1638b3f45b3461b9bf2c33fe7c95ec47a7328b8a"
+    },
+    {
+      "id": "A068",
+      "file": "assets/art/cards/A068.webp",
+      "source": "art-production/bron/NY070-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 445172,
+      "sha256": "d9875ad4769e26c5bc4cc8fa96e903bae03b6f85cdd5b6781a55ad73e9c3a9b5"
+    },
+    {
+      "id": "A069",
+      "file": "assets/art/cards/A069.webp",
+      "source": "art-production/bron/NY071-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 425452,
+      "sha256": "b467de151429007d860fa9259f80093d2741f81ca43a1ca6d37790fa183ab1e1"
+    },
+    {
+      "id": "A070",
+      "file": "assets/art/cards/A070.webp",
+      "source": "art-production/bron/NY072-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 262976,
+      "sha256": "5396eb9cafd25bd0e62e5da95b8dd61a922cb1c56f18895e25548458c52895f3"
+    },
+    {
+      "id": "A071",
+      "file": "assets/art/cards/A071.webp",
+      "source": "art-production/bron/NY073-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 469106,
+      "sha256": "cb97ccbc3b125479c518315c0c4704c63c2fa529f316d452692968ce352cfd55"
+    },
+    {
+      "id": "A072",
+      "file": "assets/art/cards/A072.webp",
+      "source": "art-production/bron/NY074-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 615262,
+      "sha256": "cff022d77fc562f51f1d802d31b324ae2c3a156bd082b5635da3ed42f56d70b9"
+    },
+    {
+      "id": "A073",
+      "file": "assets/art/cards/A073.webp",
+      "source": "art-production/bron/NY075-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 642468,
+      "sha256": "f561f3c30a5b3554f5889c5f588aa67c78d51f693a23165e4d75bb72be3272ff"
+    },
+    {
+      "id": "A074",
+      "file": "assets/art/cards/A074.webp",
+      "source": "art-production/bron/NY076-v1.png",
+      "quality": 86,
+      "width": 1024,
+      "height": 1536,
+      "bytes": 499808,
+      "sha256": "adc017913fd7045779163e04c5c6f15dfaafb9dbc6ad9776b004cc737721ccdb"
     }
   ]
 }

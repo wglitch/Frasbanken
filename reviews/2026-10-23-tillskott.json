@@ -1,0 +1,597 @@
+{
+  "version": "2.7",
+  "approvedNewCards": [
+    {
+      "reviewNumber": "NY001",
+      "id": "A001",
+      "text": "Vi verkar ha olika bilder av vad som hände.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A001.webp",
+      "style": "Kubism / Picasso"
+    },
+    {
+      "reviewNumber": "NY002",
+      "id": "A002",
+      "text": "Jag märker att jag börjar försvara mig. Jag vill hellre förstå vad du reagerar på.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A002.webp",
+      "style": "Broderi"
+    },
+    {
+      "reviewNumber": "NY003",
+      "id": "A003",
+      "text": "Det låter som du är arg. Vad är det viktigaste du vill att jag ska förstå?",
+      "category": "konflikt",
+      "image": "assets/art/cards/A003.webp",
+      "style": "Manga"
+    },
+    {
+      "reviewNumber": "NY004",
+      "id": "A004",
+      "text": "Jag kommer inte att ändra mig bara för att du blir arg.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A004.webp",
+      "style": "Träsnitt"
+    },
+    {
+      "reviewNumber": "NY005",
+      "id": "A005",
+      "text": "Jag vill inte säga något nu som jag behöver ta tillbaka senare.",
+      "category": "pausa",
+      "image": "assets/art/cards/A005.webp",
+      "style": "Dalí / surrealism"
+    },
+    {
+      "reviewNumber": "NY006",
+      "id": "A006",
+      "text": "Jag är irriterad just nu, men jag vill fortfarande lösa det här.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A006.webp",
+      "style": "Van Gogh / postimpressionism"
+    },
+    {
+      "reviewNumber": "NY007",
+      "id": "A007",
+      "text": "Jag känner inte igen mig i den beskrivningen.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A007.webp",
+      "style": "Kornigt svartvitt fotografi"
+    },
+    {
+      "reviewNumber": "NY008",
+      "id": "A008",
+      "text": "Jag vill gärna prata om vad jag har gjort, men inte om vem du tycker att jag är.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A008.webp",
+      "style": "Naturvetenskaplig plansch"
+    },
+    {
+      "reviewNumber": "NY009",
+      "id": "A009",
+      "text": "Jag tänker inte försvara mig mot något jag inte har påstått.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A009.webp",
+      "style": "Dalí / surrealism"
+    },
+    {
+      "reviewNumber": "NY010",
+      "id": "A010",
+      "text": "Vi kan diskutera det här utan att försöka såra varandra.",
+      "category": "konflikt",
+      "image": "assets/art/cards/A010.webp",
+      "style": "Barnteckning"
+    },
+    {
+      "reviewNumber": "NY011",
+      "id": "A011",
+      "text": "Jag tror att vi har förstått varandras ståndpunkter. Vad gör vi nu?",
+      "category": "konflikt",
+      "image": "assets/art/cards/A011.webp",
+      "style": "Papperscollage"
+    },
+    {
+      "reviewNumber": "NY012",
+      "id": "A012",
+      "text": "Vad behöver vi komma överens om för att kunna gå vidare?",
+      "category": "konflikt",
+      "image": "assets/art/cards/A012.webp",
+      "style": "Teknisk ritning"
+    },
+    {
+      "reviewNumber": "NY013",
+      "id": "A013",
+      "text": "Jag har sagt vad jag behöver säga. Jag tänker lämna det där.",
+      "category": "avsluta",
+      "image": "assets/art/cards/A013.webp",
+      "style": "Kornigt svartvitt fotografi"
+    },
+    {
+      "reviewNumber": "NY014",
+      "id": "A014",
+      "text": "Jag vill ta upp en sak som jag tror att vi kan göra bättre.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A014.webp",
+      "style": "Monet / impressionism"
+    },
+    {
+      "reviewNumber": "NY015",
+      "id": "A015",
+      "text": "Jag uppskattar verkligen det du gjorde, särskilt att du…",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A015.webp",
+      "style": "Rembrandt / ljusdunkel"
+    },
+    {
+      "reviewNumber": "NY016",
+      "id": "A016",
+      "text": "Det här blev inte så bra som jag hade förväntat mig.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A016.webp",
+      "style": "Barnteckning"
+    },
+    {
+      "reviewNumber": "NY017",
+      "id": "A017",
+      "text": "Vad skulle du vilja att jag gjorde annorlunda nästa gång?",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A017.webp",
+      "style": "Teknisk ritning"
+    },
+    {
+      "reviewNumber": "NY018",
+      "id": "A018",
+      "text": "Det där var svårt att höra, men jag vill förstå vad du menar.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A018.webp",
+      "style": "Broderi"
+    },
+    {
+      "reviewNumber": "NY019",
+      "id": "A019",
+      "text": "Kan du ge mig ett konkret exempel?",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A019.webp",
+      "style": "Naturvetenskaplig plansch"
+    },
+    {
+      "reviewNumber": "NY020",
+      "id": "A020",
+      "text": "Jag tycker inte att det här håller den kvalitet vi behöver.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A020.webp",
+      "style": "Träsnitt"
+    },
+    {
+      "reviewNumber": "NY021",
+      "id": "A021",
+      "text": "Vad tar vi med oss från det här till nästa gång?",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A021.webp",
+      "style": "Papperscollage"
+    },
+    {
+      "reviewNumber": "NY022",
+      "id": "A022",
+      "text": "Jag har dragit mig för att säga det här, men jag tycker att det är viktigt.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A022.webp",
+      "style": "Kornigt svartvitt fotografi"
+    },
+    {
+      "reviewNumber": "NY023",
+      "id": "A023",
+      "text": "Jag ifrågasätter inte dina avsikter. Jag pratar om vad som blev resultatet.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A023.webp",
+      "style": "Kubism / Picasso"
+    },
+    {
+      "reviewNumber": "NY024",
+      "id": "A024",
+      "text": "Jag hör din förklaring. Samtidigt behöver vi prata om vad som inte fungerade.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A024.webp",
+      "style": "Warhol / popkonst"
+    },
+    {
+      "reviewNumber": "NY025",
+      "id": "A025",
+      "text": "Jag vill förstå hur det blev så här och hitta ett bättre sätt framåt.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A025.webp",
+      "style": "Dalí / surrealism"
+    },
+    {
+      "reviewNumber": "NY026",
+      "id": "A026",
+      "text": "Jag märker att jag vill förklara mig, men jag vill höra klart först.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A026.webp",
+      "style": "Manga"
+    },
+    {
+      "reviewNumber": "NY027",
+      "id": "A027",
+      "text": "Vad tycker du att jag borde ha gjort i stället?",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A027.webp",
+      "style": "Teknisk ritning / genomskärning"
+    },
+    {
+      "reviewNumber": "NY028",
+      "id": "A028",
+      "text": "Vi har pratat om det här tidigare, men jag ser inte den förändring vi kom överens om.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A028.webp",
+      "style": "Van Gogh / postimpressionism"
+    },
+    {
+      "reviewNumber": "NY029",
+      "id": "A029",
+      "text": "Jag behöver se en förändring, inte bara höra att du har förstått.",
+      "category": "aterkoppla",
+      "image": "assets/art/cards/A029.webp",
+      "style": "Broderi / textil"
+    },
+    {
+      "reviewNumber": "NY030",
+      "id": "A030",
+      "text": "Jag vill att du tar ansvar för det här.",
+      "category": "delegera",
+      "image": "assets/art/cards/A030.webp",
+      "style": "Rembrandt / ljusdunkel"
+    },
+    {
+      "reviewNumber": "NY031",
+      "id": "A031",
+      "text": "Hur du löser det bestämmer du själv.",
+      "category": "delegera",
+      "image": "assets/art/cards/A031.webp",
+      "style": "Dalí / surrealism"
+    },
+    {
+      "reviewNumber": "NY032",
+      "id": "A032",
+      "text": "Vad behöver du från mig för att kunna genomföra det?",
+      "category": "delegera",
+      "image": "assets/art/cards/A032.webp",
+      "style": "Broderi"
+    },
+    {
+      "reviewNumber": "NY033",
+      "id": "A033",
+      "text": "Det här behöver du prioritera före det andra.",
+      "category": "delegera",
+      "image": "assets/art/cards/A033.webp",
+      "style": "Manga"
+    },
+    {
+      "reviewNumber": "NY034",
+      "id": "A034",
+      "text": "Jag förstår att du har mycket att göra. Vad behöver vi prioritera bort?",
+      "category": "delegera",
+      "image": "assets/art/cards/A034.webp",
+      "style": "Papperscollage"
+    },
+    {
+      "reviewNumber": "NY035",
+      "id": "A035",
+      "text": "Jag vill att du gör en egen bedömning och fattar beslutet.",
+      "category": "delegera",
+      "image": "assets/art/cards/A035.webp",
+      "style": "Kubism / Picasso"
+    },
+    {
+      "reviewNumber": "NY036",
+      "id": "A036",
+      "text": "Jag kan hjälpa dig att komma vidare, men jag kommer inte att ta över uppgiften.",
+      "category": "delegera",
+      "image": "assets/art/cards/A036.webp",
+      "style": "Träsnitt"
+    },
+    {
+      "reviewNumber": "NY037",
+      "id": "A037",
+      "text": "Jag vill att du säger till i god tid om du inte kommer att hinna.",
+      "category": "delegera",
+      "image": "assets/art/cards/A037.webp",
+      "style": "Van Gogh / postimpressionism"
+    },
+    {
+      "reviewNumber": "NY039",
+      "id": "A038",
+      "text": "Jag behöver veta när du kan leverera, inte varför det har blivit försenat.",
+      "category": "delegera",
+      "image": "assets/art/cards/A038.webp",
+      "style": "Kornigt svartvitt fotografi"
+    },
+    {
+      "reviewNumber": "NY040",
+      "id": "A039",
+      "text": "Vad behöver jag förtydliga i uppdraget för att du ska kunna komma vidare?",
+      "category": "delegera",
+      "image": "assets/art/cards/A039.webp",
+      "style": "Teknisk ritning"
+    },
+    {
+      "reviewNumber": "NY041",
+      "id": "A040",
+      "text": "Jag har hört era synpunkter. Nu behöver vi fatta ett beslut.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A040.webp",
+      "style": "Papperscollage"
+    },
+    {
+      "reviewNumber": "NY042",
+      "id": "A041",
+      "text": "Jag vill att vi gör så här.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A041.webp",
+      "style": "Träsnitt"
+    },
+    {
+      "reviewNumber": "NY043",
+      "id": "A042",
+      "text": "Det här är mitt ansvar, och jag tar det.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A042.webp",
+      "style": "Rembrandt / ljusdunkel"
+    },
+    {
+      "reviewNumber": "NY044",
+      "id": "A043",
+      "text": "Jag vill ha dina invändningar innan jag fattar beslutet.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A043.webp",
+      "style": "Teknisk ritning"
+    },
+    {
+      "reviewNumber": "NY045",
+      "id": "A044",
+      "text": "Jag borde ha varit tydligare med vad jag förväntade mig.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A044.webp",
+      "style": "Kornigt svartvitt fotografi"
+    },
+    {
+      "reviewNumber": "NY046",
+      "id": "A045",
+      "text": "Jag ser att det här skapar merarbete. Det är ändå den prioritering jag gör.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A045.webp",
+      "style": "Van Gogh / postimpressionism"
+    },
+    {
+      "reviewNumber": "NY047",
+      "id": "A046",
+      "text": "Jag tar ansvar för beslutet. Du behöver inte försvara det åt mig.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A046.webp",
+      "style": "Broderi"
+    },
+    {
+      "reviewNumber": "NY048",
+      "id": "A047",
+      "text": "Det här är den riktning jag vill att vi arbetar mot.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A047.webp",
+      "style": "Monet / impressionism"
+    },
+    {
+      "reviewNumber": "NY049",
+      "id": "A048",
+      "text": "Jag vill att du säger emot när du tycker att jag har fel.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A048.webp",
+      "style": "Manga"
+    },
+    {
+      "reviewNumber": "NY050",
+      "id": "A049",
+      "text": "Jag märker att jag har varit otydlig. Det är mitt ansvar att rätta till.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A049.webp",
+      "style": "Barnteckning"
+    },
+    {
+      "reviewNumber": "NY051",
+      "id": "A050",
+      "text": "Jag vill inte fatta det här beslutet åt dig. Jag vill hjälpa dig att fatta det själv.",
+      "category": "delegera",
+      "image": "assets/art/cards/A050.webp",
+      "style": "Naturvetenskaplig plansch"
+    },
+    {
+      "reviewNumber": "NY052",
+      "id": "A051",
+      "text": "Jag förstår att du inte håller med. Jag vill ändå att vi genomför det här.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A051.webp",
+      "style": "Kubism / Picasso"
+    },
+    {
+      "reviewNumber": "NY053",
+      "id": "A052",
+      "text": "Med facit i hand hade jag gjort en annan bedömning.",
+      "category": "besluta",
+      "image": "assets/art/cards/A052.webp",
+      "style": "Kornigt svartvitt fotografi"
+    },
+    {
+      "reviewNumber": "NY054",
+      "id": "A053",
+      "text": "Jag kan ha fel, men jag väljer att göra så här.",
+      "category": "besluta",
+      "image": "assets/art/cards/A053.webp",
+      "style": "Träsnitt"
+    },
+    {
+      "reviewNumber": "NY055",
+      "id": "A054",
+      "text": "Låt oss skilja på ett dåligt beslut och ett dåligt utfall.",
+      "category": "besluta",
+      "image": "assets/art/cards/A054.webp",
+      "style": "Naturvetenskaplig plansch"
+    },
+    {
+      "reviewNumber": "NY056",
+      "id": "A055",
+      "text": "Jag ser risken, men bedömer att alternativet är sämre.",
+      "category": "besluta",
+      "image": "assets/art/cards/A055.webp",
+      "style": "Van Gogh / postimpressionism"
+    },
+    {
+      "reviewNumber": "NY057",
+      "id": "A056",
+      "text": "Vilken del av min bedömning håller du inte med om?",
+      "category": "besluta",
+      "image": "assets/art/cards/A056.webp",
+      "style": "Teknisk ritning"
+    },
+    {
+      "reviewNumber": "NY058",
+      "id": "A057",
+      "text": "Jag ser två rimliga alternativ. Jag väljer det här.",
+      "category": "besluta",
+      "image": "assets/art/cards/A057.webp",
+      "style": "Broderi"
+    },
+    {
+      "reviewNumber": "NY059",
+      "id": "A058",
+      "text": "Jag kan stå för beslutet även om resultatet inte blir som jag hoppas.",
+      "category": "besluta",
+      "image": "assets/art/cards/A058.webp",
+      "style": "Rembrandt / ljusdunkel"
+    },
+    {
+      "reviewNumber": "NY060",
+      "id": "A059",
+      "text": "Jag är öppen för att ändra beslutet om det kommer nya skäl. Tills dess står det fast.",
+      "category": "besluta",
+      "image": "assets/art/cards/A059.webp",
+      "style": "Dalí / surrealism"
+    },
+    {
+      "reviewNumber": "NY061",
+      "id": "A060",
+      "text": "Om jag ska sammanfatta det i en mening…",
+      "category": "kommunicera",
+      "image": "assets/art/cards/A060.webp",
+      "style": "Papperscollage"
+    },
+    {
+      "reviewNumber": "NY062",
+      "id": "A061",
+      "text": "Jag tror att jag uttryckte mig otydligt. Jag försöker igen.",
+      "category": "kommunicera",
+      "image": "assets/art/cards/A061.webp",
+      "style": "Manga"
+    },
+    {
+      "reviewNumber": "NY063",
+      "id": "A062",
+      "text": "Innan vi går vidare vill jag försäkra mig om att vi menar samma sak.",
+      "category": "styra",
+      "image": "assets/art/cards/A062.webp",
+      "style": "Monet / impressionism"
+    },
+    {
+      "reviewNumber": "NY064",
+      "id": "A063",
+      "text": "Låt mig tala till punkt, sen vill jag gärna höra din invändning.",
+      "category": "grans",
+      "image": "assets/art/cards/A063.webp",
+      "style": "Träsnitt"
+    },
+    {
+      "reviewNumber": "NY066",
+      "id": "A064",
+      "text": "Jag tror att vi behöver börja med att definiera vad vi menar med…",
+      "category": "styra",
+      "image": "assets/art/cards/A064.webp",
+      "style": "Naturvetenskaplig plansch"
+    },
+    {
+      "reviewNumber": "NY067",
+      "id": "A065",
+      "text": "Det här är vad jag vill. Jag vill höra hur du ser på det.",
+      "category": "relation",
+      "image": "assets/art/cards/A065.webp",
+      "style": "Kubism / Picasso"
+    },
+    {
+      "reviewNumber": "NY068",
+      "id": "A066",
+      "text": "Jag kan tänka mig att diskutera hur vi gör det, men inte om vi ska göra det.",
+      "category": "ledarskap",
+      "image": "assets/art/cards/A066.webp",
+      "style": "Dalí / surrealism"
+    },
+    {
+      "reviewNumber": "NY069",
+      "id": "A067",
+      "text": "Jag förstår att du inte vill. Det förändrar inte vad jag tycker är viktigt.",
+      "category": "relation",
+      "image": "assets/art/cards/A067.webp",
+      "style": "Träsnitt"
+    },
+    {
+      "reviewNumber": "NY070",
+      "id": "A068",
+      "text": "Jag är beredd att kompromissa, men jag vill först vara tydlig med vad jag önskar.",
+      "category": "relation",
+      "image": "assets/art/cards/A068.webp",
+      "style": "Papperscollage"
+    },
+    {
+      "reviewNumber": "NY071",
+      "id": "A069",
+      "text": "Jag vill gärna höra vad du tänker om det jag just sa.",
+      "category": "relation",
+      "image": "assets/art/cards/A069.webp",
+      "style": "Monet / impressionism"
+    },
+    {
+      "reviewNumber": "NY072",
+      "id": "A070",
+      "text": "Jag vill inte övertala dig. Jag vill att du förstår varför det här är viktigt för mig.",
+      "category": "relation",
+      "image": "assets/art/cards/A070.webp",
+      "style": "Rembrandt / ljusdunkel"
+    },
+    {
+      "reviewNumber": "NY073",
+      "id": "A071",
+      "text": "Jag hör att du inte vill. Kan du hjälpa mig förstå vad det är som tar emot?",
+      "category": "relation",
+      "image": "assets/art/cards/A071.webp",
+      "style": "Manga"
+    },
+    {
+      "reviewNumber": "NY074",
+      "id": "A072",
+      "text": "Jag vill inte fylla i ditt svar åt dig. Jag vill höra vad du själv tänker.",
+      "category": "relation",
+      "image": "assets/art/cards/A072.webp",
+      "style": "Barnteckning"
+    },
+    {
+      "reviewNumber": "NY075",
+      "id": "A073",
+      "text": "Det är viktigt för mig att vi kan prata om det här, även om vi inte kommer överens.",
+      "category": "relation",
+      "image": "assets/art/cards/A073.webp",
+      "style": "Broderi"
+    },
+    {
+      "reviewNumber": "NY076",
+      "id": "A074",
+      "text": "Jag märker att jag börjar upprepa mig. Vad är det du hör mig säga?",
+      "category": "relation",
+      "image": "assets/art/cards/A074.webp",
+      "style": "Warhol / popkonst"
+    }
+  ]
+}
